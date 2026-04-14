@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 300px;
+  background-color: #141414;
+  color: white;
+  margin: 0;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #e50914; /* Netflix Red */
+}
+
+.description {
+  font-size: 12px;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+.level-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.level-btn {
+  background-color: #333;
+  border: 2px solid transparent;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.level-btn:hover {
+  background-color: #444;
+}
+
+.level-btn.active {
+  border-color: #e50914;
+  background-color: #444;
+}
+
+/* CEFR Color coding */
+.level-btn[data-level="A1"], .level-btn[data-level="A2"] { color: #2ecc71; } /* Green */
+.level-btn[data-level="B1"], .level-btn[data-level="B2"] { color: #f1c40f; } /* Yellow */
+.level-btn[data-level="C1"], .level-btn[data-level="C2"] { color: #e67e22; } /* Orange */
+
+.status {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  color: #888;
+}
+
+#current-level {
+  font-weight: bold;
+  color: white;
+}

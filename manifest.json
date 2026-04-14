@@ -7,6 +7,19 @@
   "host_permissions": [
     "*://www.netflix.com/*"
   ],
+  "icons": {
+    "16": "assets/icons/icon-192.png",
+    "48": "assets/icons/icon-192.png",
+    "128": "assets/icons/icon-512.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-192.png",
+      "32": "assets/icons/icon-192.png",
+      "48": "assets/icons/icon-192.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": ["*://www.netflix.com/*"],

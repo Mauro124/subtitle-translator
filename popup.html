@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NWT Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Translation Level</h1>
+    <p class="description">Select your English proficiency to filter common words.</p>
+    
+    <div class="level-selector" id="level-selector">
+      <button class="level-btn" data-level="A1" title="Beginner - All translations">A1</button>
+      <button class="level-btn" data-level="A2" title="Elementary">A2</button>
+      <button class="level-btn" data-level="B1" title="Intermediate">B1</button>
+      <button class="level-btn" data-level="B2" title="Upper Intermediate">B2</button>
+      <button class="level-btn" data-level="C1" title="Advanced">C1</button>
+      <button class="level-btn" data-level="C2" title="Proficient - Only rare words">C2</button>
+    </div>
+    
+    <div class="status" id="status">
+      Current Level: <span id="current-level">A1</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

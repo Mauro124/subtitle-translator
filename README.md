@@ -5,6 +5,7 @@ A Chrome Extension (Manifest V3) designed to help you master advanced English wh
 ## ✨ Key Features
 
 - **Non-Invasive Overlay Architecture**: Translations are rendered in a parallel layer over the video. **Zero Netflix DOM mutations**, preventing conflicts with its internal React state and Virtual DOM.
+- **Translation Difficulty Levels**: Select your English proficiency (A1-C2) from the extension popup. Filter out common words and focus on terms that match your learning level.
 - **Intelligent Positioning**: 
   - **First-line** translations appear above the word.
   - **Second-line** translations appear below the word.

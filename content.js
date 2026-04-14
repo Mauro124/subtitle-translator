@@ -5,12 +5,15 @@
  */
 
 let DICTIONARY = new Map();
+const LEVEL_MAP = { 'A1': 1, 'A2': 2, 'B1': 3, 'B2': 4, 'C1': 5, 'C2': 6 };
 
 class NetflixTranslator {
   constructor() {
     this.overlay = null;
     this.observer = null;
+    this.observedNode = null; // Track the node the observer is watching
     this.isDictionaryLoaded = false;
+    this.selectedLevelValue = 1; // Default to A1 (show all)
     this.init();
   }
 
@@ -18,15 +21,35 @@ class NetflixTranslator {
    * Initialize the dictionary, overlay, and observer.
    */
   async init() {
+    // 1. Load dictionary and user settings
     try {
-      const url = chrome.runtime.getURL('dictionary.json');
-      const response = await fetch(url);
-      if (!response.ok) throw new Error(`HTTP status ${response.status}`);
-      const data = await response.json();
+      const [dictResponse, settings] = await Promise.all([
+        fetch(chrome.runtime.getURL('dictionary.json')),
+        chrome.storage.local.get('selectedLevel')
+      ]);
+
+      if (!dictResponse.ok) throw new Error(`HTTP status ${dictResponse.status}`);
+      const data = await dictResponse.json();
       DICTIONARY = new Map(Object.entries(data));
       this.isDictionaryLoaded = true;
+
+      if (settings.selectedLevel) {
+        this.selectedLevelValue = LEVEL_MAP[settings.selectedLevel] || 1;
+      }
+
+      // T006: Listen for real-time changes
+      chrome.storage.onChanged.addListener((changes, area) => {
+        if (area === 'local' && changes.selectedLevel) {
+          this.selectedLevelValue = LEVEL_MAP[changes.selectedLevel.newValue] || 1;
+          // FIX #3: Only clear — the live Observer handles the next subtitle cycle.
+          // Re-processing the container root here is a no-op: DOM Ranges are only
+          // valid during the current paint cycle, so getBoundingClientRect() returns
+          // zeros for already-rendered nodes. Let MutationObserver do it naturally.
+          this.clearOverlay();
+        }
+      });
     } catch (e) {
-      console.error("NWT: Failed to load dictionary", e);
+      console.error("NWT: Failed to load dictionary or settings", e);
       return; 
     }
 
@@ -39,6 +62,7 @@ class NetflixTranslator {
         this.setupOverlay(video);
         this.setupObserver(container);
         this.processNode(container);
+        this.startSentinel(); // FIX #2: Watch for Netflix DOM replacement between episodes
       }
     }, 1000);
   }
@@ -63,6 +87,8 @@ class NetflixTranslator {
    * @param {HTMLElement} container 
    */
   setupObserver(container) {
+    this.observedNode = container; // FIX #2: Track for sentinel checks
+
     this.observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.type === 'childList') {
@@ -84,6 +110,28 @@ class NetflixTranslator {
       subtree: true,
       characterData: true
     });
+  }
+
+  /**
+   * FIX #2: Periodically verify the observed node is still in the live DOM.
+   * Netflix replaces `.player-timedtext` between episodes, silently detaching the observer.
+   */
+  startSentinel() {
+    setInterval(() => {
+      if (this.observedNode && !document.contains(this.observedNode)) {
+        console.log('NWT: Subtitle node detached — re-initializing observer.');
+        if (this.observer) this.observer.disconnect();
+        this.clearOverlay();
+
+        const newContainer = document.querySelector('.player-timedtext') || document.querySelector('.watch-video--timed-text-container');
+        const newVideo = document.querySelector('video');
+
+        if (newContainer && newVideo) {
+          this.setupOverlay(newVideo);
+          this.setupObserver(newContainer);
+        }
+      }
+    }, 2000);
   }
 
   /**
@@ -120,8 +168,15 @@ class NetflixTranslator {
       const word = match[0];
       const normalized = word.toLowerCase();
       
-      if (DICTIONARY.has(normalized)) {
-        this.injectTranslation(textNode, match.index, match.index + word.length, DICTIONARY.get(normalized));
+      const entry = DICTIONARY.get(normalized);
+      if (entry) {
+        const wordLevelValue = LEVEL_MAP[entry.level] || 6; // Default to C2 if missing
+        
+        // Only translate if word is AT or ABOVE user's proficiency threshold
+        // (Beginners see A1+, Experts see only C2)
+        if (wordLevelValue >= this.selectedLevelValue) {
+          this.injectTranslation(textNode, match.index, match.index + word.length, entry.translation);
+        }
       }
     }
   }
@@ -141,15 +196,17 @@ class NetflixTranslator {
       const rect = range.getBoundingClientRect();
       const overlayRect = this.overlay.getBoundingClientRect();
 
+      // FIX #1: If overlay has no dimensions yet, coordinates will be wrong (0,0).
+      // Skip this cycle — the observer will fire again on the next subtitle.
+      if (overlayRect.width === 0) return;
+
       const left = rect.left - overlayRect.left + (rect.width / 2);
       
-      // Determine if the word is in the first or second line
       const subtitleContainer = textNode.parentElement.closest('.player-timedtext-text-container');
       let isSecondLine = false;
       
       if (subtitleContainer) {
         const containerRect = subtitleContainer.getBoundingClientRect();
-        // If the word's top is more than 40% down the container, it's likely a second line
         if ((rect.top - containerRect.top) > (containerRect.height * 0.4)) {
           isSecondLine = true;
         }
@@ -161,11 +218,9 @@ class NetflixTranslator {
       label.style.left = `${left}px`;
 
       if (isSecondLine) {
-        // Position BELOW the word for second lines
         label.style.top = `${rect.bottom - overlayRect.top}px`;
         label.style.transform = `translate(-50%, 15%)`;
       } else {
-        // Position ABOVE the word for first lines
         label.style.top = `${rect.top - overlayRect.top}px`;
         label.style.transform = `translate(-50%, -125%)`;
       }

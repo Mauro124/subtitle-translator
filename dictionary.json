@@ -1,2028 +1,5090 @@
 {
-  "abnegation": "abnegación",
-  "abstruse": "abstruso",
-  "acumen": "perspicacia",
-  "adumbrate": "esbozar",
-  "alacrity": "alacridad",
-  "anachronistic": "anacrónico",
-  "antediluvian": "antediluviano",
-  "apocryphal": "apócrifo",
-  "approbation": "aprobación",
-  "arcane": "arcano",
-  "ascetic": "ascético",
-  "assiduous": "asiduo",
-  "atrophy": "atrofia",
-  "avarice": "avaricia",
-  "blandishment": "halago",
-  "cacophony": "cacofonía",
-  "cajole": "engatusar",
-  "calumny": "calumnia",
-  "capitulate": "capitular",
-  "carouse": "parrandear",
-  "caucus": "reunión de grupo",
-  "circumlocution": "circunloquio",
-  "circumspect": "circunspecto",
-  "cleave": "hendir",
-  "cognizant": "consciente",
-  "conflagration": "conflagración",
-  "concomitant": "concomitante",
-  "confluent": "confluente",
-  "congenial": "congenial",
-  "connotation": "connotación",
-  "contusion": "contusión",
-  "contrite": "contrito",
-  "conundrum": "acertijo",
-  "convivial": "convivial",
-  "cupidity": "cupidez",
-  "dearth": "escasez",
-  "debacle": "debacle",
-  "demagogue": "demagogo",
-  "denigrate": "denigrar",
-  "desiccated": "desecado",
-  "diaphanous": "diáfano",
-  "didactic": "didáctico",
-  "discursive": "discursivo",
-  "dissemble": "disimular",
-  "dither": "vacilar",
-  "ebullient": "ebulliente",
-  "edict": "edicto",
-  "effrontery": "descaro",
-  "egregious": "atroz",
-  "elucidate": "elucidar",
-  "enervate": "enervar",
-  "ephemeral": "efímero",
-  "eschew": "evitar",
-  "exculpate": "exculpar",
-  "execrable": "execrable",
-  "exegesis": "exégesis",
-  "expiate": "expiar",
-  "expunge": "borrar",
-  "extant": "existente",
-  "extol": "ensalzar",
-  "fallacious": "falaz",
-  "fastidious": "fastidioso",
-  "fatuous": "fatuo",
-  "fecund": "fecundo",
-  "feral": "feral",
-  "fetid": "fétido",
-  "florid": "florido",
-  "fractious": "rebelde",
-  "garrulous": "gárrulo",
-  "grandiloquence": "grandilocuencia",
-  "gratuitous": "gratuito",
-  "hapless": "desafortunado",
-  "hegemony": "hegemonía",
-  "heterogeneous": "heterogéneo",
-  "iconoclast": "iconoclasta",
-  "idiosyncratic": "idiosincrásico",
-  "impassive": "impasible",
-  "imperious": "imperioso",
-  "imperturbable": "imperturbable",
-  "impervious": "impermeable",
-  "impetuous": "impetuoso",
-  "impingement": "incidencia",
-  "implacable": "implacable",
-  "impudent": "impudente",
-  "inchoate": "incipiente",
-  "incontrovertible": "incontrovertible",
-  "indefatigable": "indatigable",
-  "ineffable": "inefable",
-  "inexorable": "inexorable",
-  "ingenuous": "ingenuo",
-  "inimical": "inimical",
-  "iniquity": "iniquidad",
-  "insidious": "insidioso",
-  "intransigent": "intransigente",
-  "inure": "habituar",
-  "invective": "invectiva",
-  "inveterate": "inveterado",
-  "jubilant": "jubiloso",
-  "juxtaposition": "yuxtaposición",
-  "laconic": "lacónico",
-  "languid": "lánguido",
-  "largess": "liberalidad",
-  "latent": "latente",
-  "legerdemain": "prestidigitación",
-  "licentious": "licencioso",
-  "limpid": "límpido",
-  "maelstrom": "torbellino",
-  "magnanimous": "magnánimo",
-  "malediction": "maldición",
-  "malevolent": "malevolente",
-  "manifold": "múltiple",
-  "maudlin": "sentimental",
-  "mawkish": "meloso",
-  "mendacious": "mendaz",
-  "mercurial": "mercurial",
-  "modicum": "módico",
-  "multifarious": "multifacético",
-  "munificent": "munificente",
-  "myriad": "miríada",
-  "nadir": "nadir",
-  "nascent": "naciente",
-  "nefarious": "nefario",
-  "neophyte": "neófito",
-  "obdurate": "obdurado",
-  "obfuscate": "ofuscar",
-  "oblique": "oblicuo",
-  "obsequious": "obsequioso",
-  "obstreperous": "estrepitoso",
-  "obtuse": "obtuso",
-  "officious": "oficioso",
-  "onerous": "oneroso",
-  "ostensible": "ostensible",
-  "palliate": "paliar",
-  "panacea": "panacea",
-  "paradigm": "paradigma",
-  "pariah": "paria",
-  "paucity": "escasez",
-  "pejorative": "peyorativo",
-  "pellucid": "translúcido",
-  "penurious": "penurioso",
-  "perfidious": "pérfido",
-  "perfunctory": "perfunctorio",
-  "pernicious": "pernicioso",
-  "perspicacity": "perspicacia",
-  "pertinacious": "pertinaz",
-  "phlegmatic": "flemático",
-  "philanthropic": "filantrópico",
-  "pithy": "sucinto",
-  "platitude": "platitud",
-  "plethora": "plétora",
-  "portent": "portento",
-  "precarious": "precario",
-  "preclude": "excluir",
-  "predilection": "predilección",
-  "preponderance": "preponderancia",
-  "prescient": "presciente",
-  "probity": "probidad",
-  "proclivity": "proclividad",
-  "profligate": "pródigo",
-  "promulgate": "promulgar",
-  "propensity": "propensión",
-  "propitious": "propicio",
-  "prosaic": "prosaico",
-  "proscribe": "proscribir",
-  "puerile": "pueril",
-  "pugnacious": "pugnaz",
-  "punctilious": "puntilloso",
-  "quagmire": "atolladero",
-  "querulous": "querulante",
-  "quixotic": "quijotesco",
-  "rancor": "rencor",
-  "recalcitrant": "recalcitrante",
-  "rectitude": "rectitud",
-  "reify": "reificar",
-  "remiss": "remiso",
-  "reprobate": "réprobo",
-  "rescind": "rescindir",
-  "ribald": "obsceno",
-  "rife": "plagado",
-  "sanctimonious": "santurrón",
-  "sanguine": "optimista",
-  "scurrilous": "escurriloso",
-  "serendipity": "serendipia",
-  "solicitous": "solícito",
-  "spurious": "espurio",
-  "staid": "serio",
-  "stolid": "estólido",
-  "surfeit": "exceso",
-  "surreptitious": "subrepticio",
-  "sycophant": "sicofante",
-  "tacit": "tácito",
-  "taciturn": "taciturno",
-  "tantamount": "equivalente",
-  "temerity": "temeridad",
-  "tenuous": "tenue",
-  "timorous": "temeroso",
-  "torpid": "tórpido",
-  "tractable": "dócil",
-  "transient": "transitorio",
-  "turgid": "túrgido",
-  "turpitude": "turpitud",
-  "ubiquitous": "ubicuo",
-  "umbrage": "resentimiento",
-  "unctuous": "untuoso",
-  "untenable": "insostenible",
-  "upbraid": "reprender",
-  "utilitarian": "utilitario",
-  "vacillate": "vacilar",
-  "variegated": "veteado",
-  "venerable": "venerable",
-  "veracity": "veracidad",
-  "vicissitude": "vicisitud",
-  "vilify": "vilipendiar",
-  "viscous": "viscoso",
-  "vitriolic": "vitriólico",
-  "vituperate": "vituperar",
-  "vociferous": "vociferante",
-  "wanton": "desenfrenado",
-  "winsome": "atractivo",
-  "yoke": "yugo",
-  "zephyr": "cefiro",
-  "complexWord0": "palabraCompleja0",
-  "complexWord1": "palabraCompleja1",
-  "complexWord2": "palabraCompleja2",
-  "complexWord3": "palabraCompleja3",
-  "complexWord4": "palabraCompleja4",
-  "complexWord5": "palabraCompleja5",
-  "complexWord6": "palabraCompleja6",
-  "complexWord7": "palabraCompleja7",
-  "complexWord8": "palabraCompleja8",
-  "complexWord9": "palabraCompleja9",
-  "complexWord10": "palabraCompleja10",
-  "complexWord11": "palabraCompleja11",
-  "complexWord12": "palabraCompleja12",
-  "complexWord13": "palabraCompleja13",
-  "complexWord14": "palabraCompleja14",
-  "complexWord15": "palabraCompleja15",
-  "complexWord16": "palabraCompleja16",
-  "complexWord17": "palabraCompleja17",
-  "complexWord18": "palabraCompleja18",
-  "complexWord19": "palabraCompleja19",
-  "complexWord20": "palabraCompleja20",
-  "complexWord21": "palabraCompleja21",
-  "complexWord22": "palabraCompleja22",
-  "complexWord23": "palabraCompleja23",
-  "complexWord24": "palabraCompleja24",
-  "complexWord25": "palabraCompleja25",
-  "complexWord26": "palabraCompleja26",
-  "complexWord27": "palabraCompleja27",
-  "complexWord28": "palabraCompleja28",
-  "complexWord29": "palabraCompleja29",
-  "complexWord30": "palabraCompleja30",
-  "complexWord31": "palabraCompleja31",
-  "complexWord32": "palabraCompleja32",
-  "complexWord33": "palabraCompleja33",
-  "complexWord34": "palabraCompleja34",
-  "complexWord35": "palabraCompleja35",
-  "complexWord36": "palabraCompleja36",
-  "complexWord37": "palabraCompleja37",
-  "complexWord38": "palabraCompleja38",
-  "complexWord39": "palabraCompleja39",
-  "complexWord40": "palabraCompleja40",
-  "complexWord41": "palabraCompleja41",
-  "complexWord42": "palabraCompleja42",
-  "complexWord43": "palabraCompleja43",
-  "complexWord44": "palabraCompleja44",
-  "complexWord45": "palabraCompleja45",
-  "complexWord46": "palabraCompleja46",
-  "complexWord47": "palabraCompleja47",
-  "complexWord48": "palabraCompleja48",
-  "complexWord49": "palabraCompleja49",
-  "complexWord50": "palabraCompleja50",
-  "complexWord51": "palabraCompleja51",
-  "complexWord52": "palabraCompleja52",
-  "complexWord53": "palabraCompleja53",
-  "complexWord54": "palabraCompleja54",
-  "complexWord55": "palabraCompleja55",
-  "complexWord56": "palabraCompleja56",
-  "complexWord57": "palabraCompleja57",
-  "complexWord58": "palabraCompleja58",
-  "complexWord59": "palabraCompleja59",
-  "complexWord60": "palabraCompleja60",
-  "complexWord61": "palabraCompleja61",
-  "complexWord62": "palabraCompleja62",
-  "complexWord63": "palabraCompleja63",
-  "complexWord64": "palabraCompleja64",
-  "complexWord65": "palabraCompleja65",
-  "complexWord66": "palabraCompleja66",
-  "complexWord67": "palabraCompleja67",
-  "complexWord68": "palabraCompleja68",
-  "complexWord69": "palabraCompleja69",
-  "complexWord70": "palabraCompleja70",
-  "complexWord71": "palabraCompleja71",
-  "complexWord72": "palabraCompleja72",
-  "complexWord73": "palabraCompleja73",
-  "complexWord74": "palabraCompleja74",
-  "complexWord75": "palabraCompleja75",
-  "complexWord76": "palabraCompleja76",
-  "complexWord77": "palabraCompleja77",
-  "complexWord78": "palabraCompleja78",
-  "complexWord79": "palabraCompleja79",
-  "complexWord80": "palabraCompleja80",
-  "complexWord81": "palabraCompleja81",
-  "complexWord82": "palabraCompleja82",
-  "complexWord83": "palabraCompleja83",
-  "complexWord84": "palabraCompleja84",
-  "complexWord85": "palabraCompleja85",
-  "complexWord86": "palabraCompleja86",
-  "complexWord87": "palabraCompleja87",
-  "complexWord88": "palabraCompleja88",
-  "complexWord89": "palabraCompleja89",
-  "complexWord90": "palabraCompleja90",
-  "complexWord91": "palabraCompleja91",
-  "complexWord92": "palabraCompleja92",
-  "complexWord93": "palabraCompleja93",
-  "complexWord94": "palabraCompleja94",
-  "complexWord95": "palabraCompleja95",
-  "complexWord96": "palabraCompleja96",
-  "complexWord97": "palabraCompleja97",
-  "complexWord98": "palabraCompleja98",
-  "complexWord99": "palabraCompleja99",
-  "complexWord100": "palabraCompleja100",
-  "complexWord101": "palabraCompleja101",
-  "complexWord102": "palabraCompleja102",
-  "complexWord103": "palabraCompleja103",
-  "complexWord104": "palabraCompleja104",
-  "complexWord105": "palabraCompleja105",
-  "complexWord106": "palabraCompleja106",
-  "complexWord107": "palabraCompleja107",
-  "complexWord108": "palabraCompleja108",
-  "complexWord109": "palabraCompleja109",
-  "complexWord110": "palabraCompleja110",
-  "complexWord111": "palabraCompleja111",
-  "complexWord112": "palabraCompleja112",
-  "complexWord113": "palabraCompleja113",
-  "complexWord114": "palabraCompleja114",
-  "complexWord115": "palabraCompleja115",
-  "complexWord116": "palabraCompleja116",
-  "complexWord117": "palabraCompleja117",
-  "complexWord118": "palabraCompleja118",
-  "complexWord119": "palabraCompleja119",
-  "complexWord120": "palabraCompleja120",
-  "complexWord121": "palabraCompleja121",
-  "complexWord122": "palabraCompleja122",
-  "complexWord123": "palabraCompleja123",
-  "complexWord124": "palabraCompleja124",
-  "complexWord125": "palabraCompleja125",
-  "complexWord126": "palabraCompleja126",
-  "complexWord127": "palabraCompleja127",
-  "complexWord128": "palabraCompleja128",
-  "complexWord129": "palabraCompleja129",
-  "complexWord130": "palabraCompleja130",
-  "complexWord131": "palabraCompleja131",
-  "complexWord132": "palabraCompleja132",
-  "complexWord133": "palabraCompleja133",
-  "complexWord134": "palabraCompleja134",
-  "complexWord135": "palabraCompleja135",
-  "complexWord136": "palabraCompleja136",
-  "complexWord137": "palabraCompleja137",
-  "complexWord138": "palabraCompleja138",
-  "complexWord139": "palabraCompleja139",
-  "complexWord140": "palabraCompleja140",
-  "complexWord141": "palabraCompleja141",
-  "complexWord142": "palabraCompleja142",
-  "complexWord143": "palabraCompleja143",
-  "complexWord144": "palabraCompleja144",
-  "complexWord145": "palabraCompleja145",
-  "complexWord146": "palabraCompleja146",
-  "complexWord147": "palabraCompleja147",
-  "complexWord148": "palabraCompleja148",
-  "complexWord149": "palabraCompleja149",
-  "complexWord150": "palabraCompleja150",
-  "complexWord151": "palabraCompleja151",
-  "complexWord152": "palabraCompleja152",
-  "complexWord153": "palabraCompleja153",
-  "complexWord154": "palabraCompleja154",
-  "complexWord155": "palabraCompleja155",
-  "complexWord156": "palabraCompleja156",
-  "complexWord157": "palabraCompleja157",
-  "complexWord158": "palabraCompleja158",
-  "complexWord159": "palabraCompleja159",
-  "complexWord160": "palabraCompleja160",
-  "complexWord161": "palabraCompleja161",
-  "complexWord162": "palabraCompleja162",
-  "complexWord163": "palabraCompleja163",
-  "complexWord164": "palabraCompleja164",
-  "complexWord165": "palabraCompleja165",
-  "complexWord166": "palabraCompleja166",
-  "complexWord167": "palabraCompleja167",
-  "complexWord168": "palabraCompleja168",
-  "complexWord169": "palabraCompleja169",
-  "complexWord170": "palabraCompleja170",
-  "complexWord171": "palabraCompleja171",
-  "complexWord172": "palabraCompleja172",
-  "complexWord173": "palabraCompleja173",
-  "complexWord174": "palabraCompleja174",
-  "complexWord175": "palabraCompleja175",
-  "complexWord176": "palabraCompleja176",
-  "complexWord177": "palabraCompleja177",
-  "complexWord178": "palabraCompleja178",
-  "complexWord179": "palabraCompleja179",
-  "complexWord180": "palabraCompleja180",
-  "complexWord181": "palabraCompleja181",
-  "complexWord182": "palabraCompleja182",
-  "complexWord183": "palabraCompleja183",
-  "complexWord184": "palabraCompleja184",
-  "complexWord185": "palabraCompleja185",
-  "complexWord186": "palabraCompleja186",
-  "complexWord187": "palabraCompleja187",
-  "complexWord188": "palabraCompleja188",
-  "complexWord189": "palabraCompleja189",
-  "complexWord190": "palabraCompleja190",
-  "complexWord191": "palabraCompleja191",
-  "complexWord192": "palabraCompleja192",
-  "complexWord193": "palabraCompleja193",
-  "complexWord194": "palabraCompleja194",
-  "complexWord195": "palabraCompleja195",
-  "complexWord196": "palabraCompleja196",
-  "complexWord197": "palabraCompleja197",
-  "complexWord198": "palabraCompleja198",
-  "complexWord199": "palabraCompleja199",
-  "complexWord200": "palabraCompleja200",
-  "complexWord201": "palabraCompleja201",
-  "complexWord202": "palabraCompleja202",
-  "complexWord203": "palabraCompleja203",
-  "complexWord204": "palabraCompleja204",
-  "complexWord205": "palabraCompleja205",
-  "complexWord206": "palabraCompleja206",
-  "complexWord207": "palabraCompleja207",
-  "complexWord208": "palabraCompleja208",
-  "complexWord209": "palabraCompleja209",
-  "complexWord210": "palabraCompleja210",
-  "complexWord211": "palabraCompleja211",
-  "complexWord212": "palabraCompleja212",
-  "complexWord213": "palabraCompleja213",
-  "complexWord214": "palabraCompleja214",
-  "complexWord215": "palabraCompleja215",
-  "complexWord216": "palabraCompleja216",
-  "complexWord217": "palabraCompleja217",
-  "complexWord218": "palabraCompleja218",
-  "complexWord219": "palabraCompleja219",
-  "complexWord220": "palabraCompleja220",
-  "complexWord221": "palabraCompleja221",
-  "complexWord222": "palabraCompleja222",
-  "complexWord223": "palabraCompleja223",
-  "complexWord224": "palabraCompleja224",
-  "complexWord225": "palabraCompleja225",
-  "complexWord226": "palabraCompleja226",
-  "complexWord227": "palabraCompleja227",
-  "complexWord228": "palabraCompleja228",
-  "complexWord229": "palabraCompleja229",
-  "complexWord230": "palabraCompleja230",
-  "complexWord231": "palabraCompleja231",
-  "complexWord232": "palabraCompleja232",
-  "complexWord233": "palabraCompleja233",
-  "complexWord234": "palabraCompleja234",
-  "complexWord235": "palabraCompleja235",
-  "complexWord236": "palabraCompleja236",
-  "complexWord237": "palabraCompleja237",
-  "complexWord238": "palabraCompleja238",
-  "complexWord239": "palabraCompleja239",
-  "complexWord240": "palabraCompleja240",
-  "complexWord241": "palabraCompleja241",
-  "complexWord242": "palabraCompleja242",
-  "complexWord243": "palabraCompleja243",
-  "complexWord244": "palabraCompleja244",
-  "complexWord245": "palabraCompleja245",
-  "complexWord246": "palabraCompleja246",
-  "complexWord247": "palabraCompleja247",
-  "complexWord248": "palabraCompleja248",
-  "complexWord249": "palabraCompleja249",
-  "complexWord250": "palabraCompleja250",
-  "complexWord251": "palabraCompleja251",
-  "complexWord252": "palabraCompleja252",
-  "complexWord253": "palabraCompleja253",
-  "complexWord254": "palabraCompleja254",
-  "complexWord255": "palabraCompleja255",
-  "complexWord256": "palabraCompleja256",
-  "complexWord257": "palabraCompleja257",
-  "complexWord258": "palabraCompleja258",
-  "complexWord259": "palabraCompleja259",
-  "complexWord260": "palabraCompleja260",
-  "complexWord261": "palabraCompleja261",
-  "complexWord262": "palabraCompleja262",
-  "complexWord263": "palabraCompleja263",
-  "complexWord264": "palabraCompleja264",
-  "complexWord265": "palabraCompleja265",
-  "complexWord266": "palabraCompleja266",
-  "complexWord267": "palabraCompleja267",
-  "complexWord268": "palabraCompleja268",
-  "complexWord269": "palabraCompleja269",
-  "complexWord270": "palabraCompleja270",
-  "complexWord271": "palabraCompleja271",
-  "complexWord272": "palabraCompleja272",
-  "complexWord273": "palabraCompleja273",
-  "complexWord274": "palabraCompleja274",
-  "complexWord275": "palabraCompleja275",
-  "complexWord276": "palabraCompleja276",
-  "complexWord277": "palabraCompleja277",
-  "complexWord278": "palabraCompleja278",
-  "complexWord279": "palabraCompleja279",
-  "complexWord280": "palabraCompleja280",
-  "complexWord281": "palabraCompleja281",
-  "complexWord282": "palabraCompleja282",
-  "complexWord283": "palabraCompleja283",
-  "complexWord284": "palabraCompleja284",
-  "complexWord285": "palabraCompleja285",
-  "complexWord286": "palabraCompleja286",
-  "complexWord287": "palabraCompleja287",
-  "complexWord288": "palabraCompleja288",
-  "complexWord289": "palabraCompleja289",
-  "complexWord290": "palabraCompleja290",
-  "complexWord291": "palabraCompleja291",
-  "complexWord292": "palabraCompleja292",
-  "complexWord293": "palabraCompleja293",
-  "complexWord294": "palabraCompleja294",
-  "complexWord295": "palabraCompleja295",
-  "complexWord296": "palabraCompleja296",
-  "complexWord297": "palabraCompleja297",
-  "complexWord298": "palabraCompleja298",
-  "complexWord299": "palabraCompleja299",
-  "complexWord300": "palabraCompleja300",
-  "complexWord301": "palabraCompleja301",
-  "complexWord302": "palabraCompleja302",
-  "complexWord303": "palabraCompleja303",
-  "complexWord304": "palabraCompleja304",
-  "complexWord305": "palabraCompleja305",
-  "complexWord306": "palabraCompleja306",
-  "complexWord307": "palabraCompleja307",
-  "complexWord308": "palabraCompleja308",
-  "complexWord309": "palabraCompleja309",
-  "complexWord310": "palabraCompleja310",
-  "complexWord311": "palabraCompleja311",
-  "complexWord312": "palabraCompleja312",
-  "complexWord313": "palabraCompleja313",
-  "complexWord314": "palabraCompleja314",
-  "complexWord315": "palabraCompleja315",
-  "complexWord316": "palabraCompleja316",
-  "complexWord317": "palabraCompleja317",
-  "complexWord318": "palabraCompleja318",
-  "complexWord319": "palabraCompleja319",
-  "complexWord320": "palabraCompleja320",
-  "complexWord321": "palabraCompleja321",
-  "complexWord322": "palabraCompleja322",
-  "complexWord323": "palabraCompleja323",
-  "complexWord324": "palabraCompleja324",
-  "complexWord325": "palabraCompleja325",
-  "complexWord326": "palabraCompleja326",
-  "complexWord327": "palabraCompleja327",
-  "complexWord328": "palabraCompleja328",
-  "complexWord329": "palabraCompleja329",
-  "complexWord330": "palabraCompleja330",
-  "complexWord331": "palabraCompleja331",
-  "complexWord332": "palabraCompleja332",
-  "complexWord333": "palabraCompleja333",
-  "complexWord334": "palabraCompleja334",
-  "complexWord335": "palabraCompleja335",
-  "complexWord336": "palabraCompleja336",
-  "complexWord337": "palabraCompleja337",
-  "complexWord338": "palabraCompleja338",
-  "complexWord339": "palabraCompleja339",
-  "complexWord340": "palabraCompleja340",
-  "complexWord341": "palabraCompleja341",
-  "complexWord342": "palabraCompleja342",
-  "complexWord343": "palabraCompleja343",
-  "complexWord344": "palabraCompleja344",
-  "complexWord345": "palabraCompleja345",
-  "complexWord346": "palabraCompleja346",
-  "complexWord347": "palabraCompleja347",
-  "complexWord348": "palabraCompleja348",
-  "complexWord349": "palabraCompleja349",
-  "complexWord350": "palabraCompleja350",
-  "complexWord351": "palabraCompleja351",
-  "complexWord352": "palabraCompleja352",
-  "complexWord353": "palabraCompleja353",
-  "complexWord354": "palabraCompleja354",
-  "complexWord355": "palabraCompleja355",
-  "complexWord356": "palabraCompleja356",
-  "complexWord357": "palabraCompleja357",
-  "complexWord358": "palabraCompleja358",
-  "complexWord359": "palabraCompleja359",
-  "complexWord360": "palabraCompleja360",
-  "complexWord361": "palabraCompleja361",
-  "complexWord362": "palabraCompleja362",
-  "complexWord363": "palabraCompleja363",
-  "complexWord364": "palabraCompleja364",
-  "complexWord365": "palabraCompleja365",
-  "complexWord366": "palabraCompleja366",
-  "complexWord367": "palabraCompleja367",
-  "complexWord368": "palabraCompleja368",
-  "complexWord369": "palabraCompleja369",
-  "complexWord370": "palabraCompleja370",
-  "complexWord371": "palabraCompleja371",
-  "complexWord372": "palabraCompleja372",
-  "complexWord373": "palabraCompleja373",
-  "complexWord374": "palabraCompleja374",
-  "complexWord375": "palabraCompleja375",
-  "complexWord376": "palabraCompleja376",
-  "complexWord377": "palabraCompleja377",
-  "complexWord378": "palabraCompleja378",
-  "complexWord379": "palabraCompleja379",
-  "complexWord380": "palabraCompleja380",
-  "complexWord381": "palabraCompleja381",
-  "complexWord382": "palabraCompleja382",
-  "complexWord383": "palabraCompleja383",
-  "complexWord384": "palabraCompleja384",
-  "complexWord385": "palabraCompleja385",
-  "complexWord386": "palabraCompleja386",
-  "complexWord387": "palabraCompleja387",
-  "complexWord388": "palabraCompleja388",
-  "complexWord389": "palabraCompleja389",
-  "complexWord390": "palabraCompleja390",
-  "complexWord391": "palabraCompleja391",
-  "complexWord392": "palabraCompleja392",
-  "complexWord393": "palabraCompleja393",
-  "complexWord394": "palabraCompleja394",
-  "complexWord395": "palabraCompleja395",
-  "complexWord396": "palabraCompleja396",
-  "complexWord397": "palabraCompleja397",
-  "complexWord398": "palabraCompleja398",
-  "complexWord399": "palabraCompleja399",
-  "complexWord400": "palabraCompleja400",
-  "complexWord401": "palabraCompleja401",
-  "complexWord402": "palabraCompleja402",
-  "complexWord403": "palabraCompleja403",
-  "complexWord404": "palabraCompleja404",
-  "complexWord405": "palabraCompleja405",
-  "complexWord406": "palabraCompleja406",
-  "complexWord407": "palabraCompleja407",
-  "complexWord408": "palabraCompleja408",
-  "complexWord409": "palabraCompleja409",
-  "complexWord410": "palabraCompleja410",
-  "complexWord411": "palabraCompleja411",
-  "complexWord412": "palabraCompleja412",
-  "complexWord413": "palabraCompleja413",
-  "complexWord414": "palabraCompleja414",
-  "complexWord415": "palabraCompleja415",
-  "complexWord416": "palabraCompleja416",
-  "complexWord417": "palabraCompleja417",
-  "complexWord418": "palabraCompleja418",
-  "complexWord419": "palabraCompleja419",
-  "complexWord420": "palabraCompleja420",
-  "complexWord421": "palabraCompleja421",
-  "complexWord422": "palabraCompleja422",
-  "complexWord423": "palabraCompleja423",
-  "complexWord424": "palabraCompleja424",
-  "complexWord425": "palabraCompleja425",
-  "complexWord426": "palabraCompleja426",
-  "complexWord427": "palabraCompleja427",
-  "complexWord428": "palabraCompleja428",
-  "complexWord429": "palabraCompleja429",
-  "complexWord430": "palabraCompleja430",
-  "complexWord431": "palabraCompleja431",
-  "complexWord432": "palabraCompleja432",
-  "complexWord433": "palabraCompleja433",
-  "complexWord434": "palabraCompleja434",
-  "complexWord435": "palabraCompleja435",
-  "complexWord436": "palabraCompleja436",
-  "complexWord437": "palabraCompleja437",
-  "complexWord438": "palabraCompleja438",
-  "complexWord439": "palabraCompleja439",
-  "complexWord440": "palabraCompleja440",
-  "complexWord441": "palabraCompleja441",
-  "complexWord442": "palabraCompleja442",
-  "complexWord443": "palabraCompleja443",
-  "complexWord444": "palabraCompleja444",
-  "complexWord445": "palabraCompleja445",
-  "complexWord446": "palabraCompleja446",
-  "complexWord447": "palabraCompleja447",
-  "complexWord448": "palabraCompleja448",
-  "complexWord449": "palabraCompleja449",
-  "complexWord450": "palabraCompleja450",
-  "complexWord451": "palabraCompleja451",
-  "complexWord452": "palabraCompleja452",
-  "complexWord453": "palabraCompleja453",
-  "complexWord454": "palabraCompleja454",
-  "complexWord455": "palabraCompleja455",
-  "complexWord456": "palabraCompleja456",
-  "complexWord457": "palabraCompleja457",
-  "complexWord458": "palabraCompleja458",
-  "complexWord459": "palabraCompleja459",
-  "complexWord460": "palabraCompleja460",
-  "complexWord461": "palabraCompleja461",
-  "complexWord462": "palabraCompleja462",
-  "complexWord463": "palabraCompleja463",
-  "complexWord464": "palabraCompleja464",
-  "complexWord465": "palabraCompleja465",
-  "complexWord466": "palabraCompleja466",
-  "complexWord467": "palabraCompleja467",
-  "complexWord468": "palabraCompleja468",
-  "complexWord469": "palabraCompleja469",
-  "complexWord470": "palabraCompleja470",
-  "complexWord471": "palabraCompleja471",
-  "complexWord472": "palabraCompleja472",
-  "complexWord473": "palabraCompleja473",
-  "complexWord474": "palabraCompleja474",
-  "complexWord475": "palabraCompleja475",
-  "complexWord476": "palabraCompleja476",
-  "complexWord477": "palabraCompleja477",
-  "complexWord478": "palabraCompleja478",
-  "complexWord479": "palabraCompleja479",
-  "complexWord480": "palabraCompleja480",
-  "complexWord481": "palabraCompleja481",
-  "complexWord482": "palabraCompleja482",
-  "complexWord483": "palabraCompleja483",
-  "complexWord484": "palabraCompleja484",
-  "complexWord485": "palabraCompleja485",
-  "complexWord486": "palabraCompleja486",
-  "complexWord487": "palabraCompleja487",
-  "complexWord488": "palabraCompleja488",
-  "complexWord489": "palabraCompleja489",
-  "complexWord490": "palabraCompleja490",
-  "complexWord491": "palabraCompleja491",
-  "complexWord492": "palabraCompleja492",
-  "complexWord493": "palabraCompleja493",
-  "complexWord494": "palabraCompleja494",
-  "complexWord495": "palabraCompleja495",
-  "complexWord496": "palabraCompleja496",
-  "complexWord497": "palabraCompleja497",
-  "complexWord498": "palabraCompleja498",
-  "complexWord499": "palabraCompleja499",
-  "complexWord500": "palabraCompleja500",
-  "complexWord501": "palabraCompleja501",
-  "complexWord502": "palabraCompleja502",
-  "complexWord503": "palabraCompleja503",
-  "complexWord504": "palabraCompleja504",
-  "complexWord505": "palabraCompleja505",
-  "complexWord506": "palabraCompleja506",
-  "complexWord507": "palabraCompleja507",
-  "complexWord508": "palabraCompleja508",
-  "complexWord509": "palabraCompleja509",
-  "complexWord510": "palabraCompleja510",
-  "complexWord511": "palabraCompleja511",
-  "complexWord512": "palabraCompleja512",
-  "complexWord513": "palabraCompleja513",
-  "complexWord514": "palabraCompleja514",
-  "complexWord515": "palabraCompleja515",
-  "complexWord516": "palabraCompleja516",
-  "complexWord517": "palabraCompleja517",
-  "complexWord518": "palabraCompleja518",
-  "complexWord519": "palabraCompleja519",
-  "complexWord520": "palabraCompleja520",
-  "complexWord521": "palabraCompleja521",
-  "complexWord522": "palabraCompleja522",
-  "complexWord523": "palabraCompleja523",
-  "complexWord524": "palabraCompleja524",
-  "complexWord525": "palabraCompleja525",
-  "complexWord526": "palabraCompleja526",
-  "complexWord527": "palabraCompleja527",
-  "complexWord528": "palabraCompleja528",
-  "complexWord529": "palabraCompleja529",
-  "complexWord530": "palabraCompleja530",
-  "complexWord531": "palabraCompleja531",
-  "complexWord532": "palabraCompleja532",
-  "complexWord533": "palabraCompleja533",
-  "complexWord534": "palabraCompleja534",
-  "complexWord535": "palabraCompleja535",
-  "complexWord536": "palabraCompleja536",
-  "complexWord537": "palabraCompleja537",
-  "complexWord538": "palabraCompleja538",
-  "complexWord539": "palabraCompleja539",
-  "complexWord540": "palabraCompleja540",
-  "complexWord541": "palabraCompleja541",
-  "complexWord542": "palabraCompleja542",
-  "complexWord543": "palabraCompleja543",
-  "complexWord544": "palabraCompleja544",
-  "complexWord545": "palabraCompleja545",
-  "complexWord546": "palabraCompleja546",
-  "complexWord547": "palabraCompleja547",
-  "complexWord548": "palabraCompleja548",
-  "complexWord549": "palabraCompleja549",
-  "complexWord550": "palabraCompleja550",
-  "complexWord551": "palabraCompleja551",
-  "complexWord552": "palabraCompleja552",
-  "complexWord553": "palabraCompleja553",
-  "complexWord554": "palabraCompleja554",
-  "complexWord555": "palabraCompleja555",
-  "complexWord556": "palabraCompleja556",
-  "complexWord557": "palabraCompleja557",
-  "complexWord558": "palabraCompleja558",
-  "complexWord559": "palabraCompleja559",
-  "complexWord560": "palabraCompleja560",
-  "complexWord561": "palabraCompleja561",
-  "complexWord562": "palabraCompleja562",
-  "complexWord563": "palabraCompleja563",
-  "complexWord564": "palabraCompleja564",
-  "complexWord565": "palabraCompleja565",
-  "complexWord566": "palabraCompleja566",
-  "complexWord567": "palabraCompleja567",
-  "complexWord568": "palabraCompleja568",
-  "complexWord569": "palabraCompleja569",
-  "complexWord570": "palabraCompleja570",
-  "complexWord571": "palabraCompleja571",
-  "complexWord572": "palabraCompleja572",
-  "complexWord573": "palabraCompleja573",
-  "complexWord574": "palabraCompleja574",
-  "complexWord575": "palabraCompleja575",
-  "complexWord576": "palabraCompleja576",
-  "complexWord577": "palabraCompleja577",
-  "complexWord578": "palabraCompleja578",
-  "complexWord579": "palabraCompleja579",
-  "complexWord580": "palabraCompleja580",
-  "complexWord581": "palabraCompleja581",
-  "complexWord582": "palabraCompleja582",
-  "complexWord583": "palabraCompleja583",
-  "complexWord584": "palabraCompleja584",
-  "complexWord585": "palabraCompleja585",
-  "complexWord586": "palabraCompleja586",
-  "complexWord587": "palabraCompleja587",
-  "complexWord588": "palabraCompleja588",
-  "complexWord589": "palabraCompleja589",
-  "complexWord590": "palabraCompleja590",
-  "complexWord591": "palabraCompleja591",
-  "complexWord592": "palabraCompleja592",
-  "complexWord593": "palabraCompleja593",
-  "complexWord594": "palabraCompleja594",
-  "complexWord595": "palabraCompleja595",
-  "complexWord596": "palabraCompleja596",
-  "complexWord597": "palabraCompleja597",
-  "complexWord598": "palabraCompleja598",
-  "complexWord599": "palabraCompleja599",
-  "complexWord600": "palabraCompleja600",
-  "complexWord601": "palabraCompleja601",
-  "complexWord602": "palabraCompleja602",
-  "complexWord603": "palabraCompleja603",
-  "complexWord604": "palabraCompleja604",
-  "complexWord605": "palabraCompleja605",
-  "complexWord606": "palabraCompleja606",
-  "complexWord607": "palabraCompleja607",
-  "complexWord608": "palabraCompleja608",
-  "complexWord609": "palabraCompleja609",
-  "complexWord610": "palabraCompleja610",
-  "complexWord611": "palabraCompleja611",
-  "complexWord612": "palabraCompleja612",
-  "complexWord613": "palabraCompleja613",
-  "complexWord614": "palabraCompleja614",
-  "complexWord615": "palabraCompleja615",
-  "complexWord616": "palabraCompleja616",
-  "complexWord617": "palabraCompleja617",
-  "complexWord618": "palabraCompleja618",
-  "complexWord619": "palabraCompleja619",
-  "complexWord620": "palabraCompleja620",
-  "complexWord621": "palabraCompleja621",
-  "complexWord622": "palabraCompleja622",
-  "complexWord623": "palabraCompleja623",
-  "complexWord624": "palabraCompleja624",
-  "complexWord625": "palabraCompleja625",
-  "complexWord626": "palabraCompleja626",
-  "complexWord627": "palabraCompleja627",
-  "complexWord628": "palabraCompleja628",
-  "complexWord629": "palabraCompleja629",
-  "complexWord630": "palabraCompleja630",
-  "complexWord631": "palabraCompleja631",
-  "complexWord632": "palabraCompleja632",
-  "complexWord633": "palabraCompleja633",
-  "complexWord634": "palabraCompleja634",
-  "complexWord635": "palabraCompleja635",
-  "complexWord636": "palabraCompleja636",
-  "complexWord637": "palabraCompleja637",
-  "complexWord638": "palabraCompleja638",
-  "complexWord639": "palabraCompleja639",
-  "complexWord640": "palabraCompleja640",
-  "complexWord641": "palabraCompleja641",
-  "complexWord642": "palabraCompleja642",
-  "complexWord643": "palabraCompleja643",
-  "complexWord644": "palabraCompleja644",
-  "complexWord645": "palabraCompleja645",
-  "complexWord646": "palabraCompleja646",
-  "complexWord647": "palabraCompleja647",
-  "complexWord648": "palabraCompleja648",
-  "complexWord649": "palabraCompleja649",
-  "complexWord650": "palabraCompleja650",
-  "complexWord651": "palabraCompleja651",
-  "complexWord652": "palabraCompleja652",
-  "complexWord653": "palabraCompleja653",
-  "complexWord654": "palabraCompleja654",
-  "complexWord655": "palabraCompleja655",
-  "complexWord656": "palabraCompleja656",
-  "complexWord657": "palabraCompleja657",
-  "complexWord658": "palabraCompleja658",
-  "complexWord659": "palabraCompleja659",
-  "complexWord660": "palabraCompleja660",
-  "complexWord661": "palabraCompleja661",
-  "complexWord662": "palabraCompleja662",
-  "complexWord663": "palabraCompleja663",
-  "complexWord664": "palabraCompleja664",
-  "complexWord665": "palabraCompleja665",
-  "complexWord666": "palabraCompleja666",
-  "complexWord667": "palabraCompleja667",
-  "complexWord668": "palabraCompleja668",
-  "complexWord669": "palabraCompleja669",
-  "complexWord670": "palabraCompleja670",
-  "complexWord671": "palabraCompleja671",
-  "complexWord672": "palabraCompleja672",
-  "complexWord673": "palabraCompleja673",
-  "complexWord674": "palabraCompleja674",
-  "complexWord675": "palabraCompleja675",
-  "complexWord676": "palabraCompleja676",
-  "complexWord677": "palabraCompleja677",
-  "complexWord678": "palabraCompleja678",
-  "complexWord679": "palabraCompleja679",
-  "complexWord680": "palabraCompleja680",
-  "complexWord681": "palabraCompleja681",
-  "complexWord682": "palabraCompleja682",
-  "complexWord683": "palabraCompleja683",
-  "complexWord684": "palabraCompleja684",
-  "complexWord685": "palabraCompleja685",
-  "complexWord686": "palabraCompleja686",
-  "complexWord687": "palabraCompleja687",
-  "complexWord688": "palabraCompleja688",
-  "complexWord689": "palabraCompleja689",
-  "complexWord690": "palabraCompleja690",
-  "complexWord691": "palabraCompleja691",
-  "complexWord692": "palabraCompleja692",
-  "complexWord693": "palabraCompleja693",
-  "complexWord694": "palabraCompleja694",
-  "complexWord695": "palabraCompleja695",
-  "complexWord696": "palabraCompleja696",
-  "complexWord697": "palabraCompleja697",
-  "complexWord698": "palabraCompleja698",
-  "complexWord699": "palabraCompleja699",
-  "complexWord700": "palabraCompleja700",
-  "complexWord701": "palabraCompleja701",
-  "complexWord702": "palabraCompleja702",
-  "complexWord703": "palabraCompleja703",
-  "complexWord704": "palabraCompleja704",
-  "complexWord705": "palabraCompleja705",
-  "complexWord706": "palabraCompleja706",
-  "complexWord707": "palabraCompleja707",
-  "complexWord708": "palabraCompleja708",
-  "complexWord709": "palabraCompleja709",
-  "complexWord710": "palabraCompleja710",
-  "complexWord711": "palabraCompleja711",
-  "complexWord712": "palabraCompleja712",
-  "complexWord713": "palabraCompleja713",
-  "complexWord714": "palabraCompleja714",
-  "complexWord715": "palabraCompleja715",
-  "complexWord716": "palabraCompleja716",
-  "complexWord717": "palabraCompleja717",
-  "complexWord718": "palabraCompleja718",
-  "complexWord719": "palabraCompleja719",
-  "complexWord720": "palabraCompleja720",
-  "complexWord721": "palabraCompleja721",
-  "complexWord722": "palabraCompleja722",
-  "complexWord723": "palabraCompleja723",
-  "complexWord724": "palabraCompleja724",
-  "complexWord725": "palabraCompleja725",
-  "complexWord726": "palabraCompleja726",
-  "complexWord727": "palabraCompleja727",
-  "complexWord728": "palabraCompleja728",
-  "complexWord729": "palabraCompleja729",
-  "complexWord730": "palabraCompleja730",
-  "complexWord731": "palabraCompleja731",
-  "complexWord732": "palabraCompleja732",
-  "complexWord733": "palabraCompleja733",
-  "complexWord734": "palabraCompleja734",
-  "complexWord735": "palabraCompleja735",
-  "complexWord736": "palabraCompleja736",
-  "complexWord737": "palabraCompleja737",
-  "complexWord738": "palabraCompleja738",
-  "complexWord739": "palabraCompleja739",
-  "complexWord740": "palabraCompleja740",
-  "complexWord741": "palabraCompleja741",
-  "complexWord742": "palabraCompleja742",
-  "complexWord743": "palabraCompleja743",
-  "complexWord744": "palabraCompleja744",
-  "complexWord745": "palabraCompleja745",
-  "complexWord746": "palabraCompleja746",
-  "complexWord747": "palabraCompleja747",
-  "complexWord748": "palabraCompleja748",
-  "complexWord749": "palabraCompleja749",
-  "complexWord750": "palabraCompleja750",
-  "complexWord751": "palabraCompleja751",
-  "complexWord752": "palabraCompleja752",
-  "complexWord753": "palabraCompleja753",
-  "complexWord754": "palabraCompleja754",
-  "complexWord755": "palabraCompleja755",
-  "complexWord756": "palabraCompleja756",
-  "complexWord757": "palabraCompleja757",
-  "complexWord758": "palabraCompleja758",
-  "complexWord759": "palabraCompleja759",
-  "complexWord760": "palabraCompleja760",
-  "complexWord761": "palabraCompleja761",
-  "complexWord762": "palabraCompleja762",
-  "complexWord763": "palabraCompleja763",
-  "complexWord764": "palabraCompleja764",
-  "complexWord765": "palabraCompleja765",
-  "complexWord766": "palabraCompleja766",
-  "complexWord767": "palabraCompleja767",
-  "complexWord768": "palabraCompleja768",
-  "complexWord769": "palabraCompleja769",
-  "complexWord770": "palabraCompleja770",
-  "complexWord771": "palabraCompleja771",
-  "complexWord772": "palabraCompleja772",
-  "complexWord773": "palabraCompleja773",
-  "complexWord774": "palabraCompleja774",
-  "complexWord775": "palabraCompleja775",
-  "complexWord776": "palabraCompleja776",
-  "complexWord777": "palabraCompleja777",
-  "complexWord778": "palabraCompleja778",
-  "complexWord779": "palabraCompleja779",
-  "complexWord780": "palabraCompleja780",
-  "complexWord781": "palabraCompleja781",
-  "complexWord782": "palabraCompleja782",
-  "complexWord783": "palabraCompleja783",
-  "complexWord784": "palabraCompleja784",
-  "complexWord785": "palabraCompleja785",
-  "complexWord786": "palabraCompleja786",
-  "complexWord787": "palabraCompleja787",
-  "complexWord788": "palabraCompleja788",
-  "complexWord789": "palabraCompleja789",
-  "complexWord790": "palabraCompleja790",
-  "complexWord791": "palabraCompleja791",
-  "complexWord792": "palabraCompleja792",
-  "complexWord793": "palabraCompleja793",
-  "complexWord794": "palabraCompleja794",
-  "complexWord795": "palabraCompleja795",
-  "complexWord796": "palabraCompleja796",
-  "complexWord797": "palabraCompleja797",
-  "complexWord798": "palabraCompleja798",
-  "complexWord799": "palabraCompleja799",
-  "complexWord800": "palabraCompleja800",
-  "complexWord801": "palabraCompleja801",
-  "complexWord802": "palabraCompleja802",
-  "complexWord803": "palabraCompleja803",
-  "complexWord804": "palabraCompleja804",
-  "complexWord805": "palabraCompleja805",
-  "complexWord806": "palabraCompleja806",
-  "complexWord807": "palabraCompleja807",
-  "complexWord808": "palabraCompleja808",
-  "complexWord809": "palabraCompleja809",
-  "complexWord810": "palabraCompleja810",
-  "complexWord811": "palabraCompleja811",
-  "complexWord812": "palabraCompleja812",
-  "complexWord813": "palabraCompleja813",
-  "complexWord814": "palabraCompleja814",
-  "complexWord815": "palabraCompleja815",
-  "complexWord816": "palabraCompleja816",
-  "complexWord817": "palabraCompleja817",
-  "complexWord818": "palabraCompleja818",
-  "complexWord819": "palabraCompleja819",
-  "complexWord820": "palabraCompleja820",
-  "complexWord821": "palabraCompleja821",
-  "complexWord822": "palabraCompleja822",
-  "complexWord823": "palabraCompleja823",
-  "complexWord824": "palabraCompleja824",
-  "complexWord825": "palabraCompleja825",
-  "complexWord826": "palabraCompleja826",
-  "complexWord827": "palabraCompleja827",
-  "complexWord828": "palabraCompleja828",
-  "complexWord829": "palabraCompleja829",
-  "complexWord830": "palabraCompleja830",
-  "complexWord831": "palabraCompleja831",
-  "complexWord832": "palabraCompleja832",
-  "complexWord833": "palabraCompleja833",
-  "complexWord834": "palabraCompleja834",
-  "complexWord835": "palabraCompleja835",
-  "complexWord836": "palabraCompleja836",
-  "complexWord837": "palabraCompleja837",
-  "complexWord838": "palabraCompleja838",
-  "complexWord839": "palabraCompleja839",
-  "complexWord840": "palabraCompleja840",
-  "complexWord841": "palabraCompleja841",
-  "complexWord842": "palabraCompleja842",
-  "complexWord843": "palabraCompleja843",
-  "complexWord844": "palabraCompleja844",
-  "complexWord845": "palabraCompleja845",
-  "complexWord846": "palabraCompleja846",
-  "complexWord847": "palabraCompleja847",
-  "complexWord848": "palabraCompleja848",
-  "complexWord849": "palabraCompleja849",
-  "complexWord850": "palabraCompleja850",
-  "complexWord851": "palabraCompleja851",
-  "complexWord852": "palabraCompleja852",
-  "complexWord853": "palabraCompleja853",
-  "complexWord854": "palabraCompleja854",
-  "complexWord855": "palabraCompleja855",
-  "complexWord856": "palabraCompleja856",
-  "complexWord857": "palabraCompleja857",
-  "complexWord858": "palabraCompleja858",
-  "complexWord859": "palabraCompleja859",
-  "complexWord860": "palabraCompleja860",
-  "complexWord861": "palabraCompleja861",
-  "complexWord862": "palabraCompleja862",
-  "complexWord863": "palabraCompleja863",
-  "complexWord864": "palabraCompleja864",
-  "complexWord865": "palabraCompleja865",
-  "complexWord866": "palabraCompleja866",
-  "complexWord867": "palabraCompleja867",
-  "complexWord868": "palabraCompleja868",
-  "complexWord869": "palabraCompleja869",
-  "complexWord870": "palabraCompleja870",
-  "complexWord871": "palabraCompleja871",
-  "complexWord872": "palabraCompleja872",
-  "complexWord873": "palabraCompleja873",
-  "complexWord874": "palabraCompleja874",
-  "complexWord875": "palabraCompleja875",
-  "complexWord876": "palabraCompleja876",
-  "complexWord877": "palabraCompleja877",
-  "complexWord878": "palabraCompleja878",
-  "complexWord879": "palabraCompleja879",
-  "complexWord880": "palabraCompleja880",
-  "complexWord881": "palabraCompleja881",
-  "complexWord882": "palabraCompleja882",
-  "complexWord883": "palabraCompleja883",
-  "complexWord884": "palabraCompleja884",
-  "complexWord885": "palabraCompleja885",
-  "complexWord886": "palabraCompleja886",
-  "complexWord887": "palabraCompleja887",
-  "complexWord888": "palabraCompleja888",
-  "complexWord889": "palabraCompleja889",
-  "complexWord890": "palabraCompleja890",
-  "complexWord891": "palabraCompleja891",
-  "complexWord892": "palabraCompleja892",
-  "complexWord893": "palabraCompleja893",
-  "complexWord894": "palabraCompleja894",
-  "complexWord895": "palabraCompleja895",
-  "complexWord896": "palabraCompleja896",
-  "complexWord897": "palabraCompleja897",
-  "complexWord898": "palabraCompleja898",
-  "complexWord899": "palabraCompleja899",
-  "complexWord900": "palabraCompleja900",
-  "complexWord901": "palabraCompleja901",
-  "complexWord902": "palabraCompleja902",
-  "complexWord903": "palabraCompleja903",
-  "complexWord904": "palabraCompleja904",
-  "complexWord905": "palabraCompleja905",
-  "complexWord906": "palabraCompleja906",
-  "complexWord907": "palabraCompleja907",
-  "complexWord908": "palabraCompleja908",
-  "complexWord909": "palabraCompleja909",
-  "complexWord910": "palabraCompleja910",
-  "complexWord911": "palabraCompleja911",
-  "complexWord912": "palabraCompleja912",
-  "complexWord913": "palabraCompleja913",
-  "complexWord914": "palabraCompleja914",
-  "complexWord915": "palabraCompleja915",
-  "complexWord916": "palabraCompleja916",
-  "complexWord917": "palabraCompleja917",
-  "complexWord918": "palabraCompleja918",
-  "complexWord919": "palabraCompleja919",
-  "complexWord920": "palabraCompleja920",
-  "complexWord921": "palabraCompleja921",
-  "complexWord922": "palabraCompleja922",
-  "complexWord923": "palabraCompleja923",
-  "complexWord924": "palabraCompleja924",
-  "complexWord925": "palabraCompleja925",
-  "complexWord926": "palabraCompleja926",
-  "complexWord927": "palabraCompleja927",
-  "complexWord928": "palabraCompleja928",
-  "complexWord929": "palabraCompleja929",
-  "complexWord930": "palabraCompleja930",
-  "complexWord931": "palabraCompleja931",
-  "complexWord932": "palabraCompleja932",
-  "complexWord933": "palabraCompleja933",
-  "complexWord934": "palabraCompleja934",
-  "complexWord935": "palabraCompleja935",
-  "complexWord936": "palabraCompleja936",
-  "complexWord937": "palabraCompleja937",
-  "complexWord938": "palabraCompleja938",
-  "complexWord939": "palabraCompleja939",
-  "complexWord940": "palabraCompleja940",
-  "complexWord941": "palabraCompleja941",
-  "complexWord942": "palabraCompleja942",
-  "complexWord943": "palabraCompleja943",
-  "complexWord944": "palabraCompleja944",
-  "complexWord945": "palabraCompleja945",
-  "complexWord946": "palabraCompleja946",
-  "complexWord947": "palabraCompleja947",
-  "complexWord948": "palabraCompleja948",
-  "complexWord949": "palabraCompleja949",
-  "complexWord950": "palabraCompleja950",
-  "complexWord951": "palabraCompleja951",
-  "complexWord952": "palabraCompleja952",
-  "complexWord953": "palabraCompleja953",
-  "complexWord954": "palabraCompleja954",
-  "complexWord955": "palabraCompleja955",
-  "complexWord956": "palabraCompleja956",
-  "complexWord957": "palabraCompleja957",
-  "complexWord958": "palabraCompleja958",
-  "complexWord959": "palabraCompleja959",
-  "complexWord960": "palabraCompleja960",
-  "complexWord961": "palabraCompleja961",
-  "complexWord962": "palabraCompleja962",
-  "complexWord963": "palabraCompleja963",
-  "complexWord964": "palabraCompleja964",
-  "complexWord965": "palabraCompleja965",
-  "complexWord966": "palabraCompleja966",
-  "complexWord967": "palabraCompleja967",
-  "complexWord968": "palabraCompleja968",
-  "complexWord969": "palabraCompleja969",
-  "complexWord970": "palabraCompleja970",
-  "complexWord971": "palabraCompleja971",
-  "complexWord972": "palabraCompleja972",
-  "complexWord973": "palabraCompleja973",
-  "complexWord974": "palabraCompleja974",
-  "complexWord975": "palabraCompleja975",
-  "complexWord976": "palabraCompleja976",
-  "complexWord977": "palabraCompleja977",
-  "complexWord978": "palabraCompleja978",
-  "complexWord979": "palabraCompleja979",
-  "complexWord980": "palabraCompleja980",
-  "complexWord981": "palabraCompleja981",
-  "complexWord982": "palabraCompleja982",
-  "complexWord983": "palabraCompleja983",
-  "complexWord984": "palabraCompleja984",
-  "complexWord985": "palabraCompleja985",
-  "complexWord986": "palabraCompleja986",
-  "complexWord987": "palabraCompleja987",
-  "complexWord988": "palabraCompleja988",
-  "complexWord989": "palabraCompleja989",
-  "complexWord990": "palabraCompleja990",
-  "complexWord991": "palabraCompleja991",
-  "complexWord992": "palabraCompleja992",
-  "complexWord993": "palabraCompleja993",
-  "complexWord994": "palabraCompleja994",
-  "complexWord995": "palabraCompleja995",
-  "complexWord996": "palabraCompleja996",
-  "complexWord997": "palabraCompleja997",
-  "complexWord998": "palabraCompleja998",
-  "complexWord999": "palabraCompleja999",
-  "complexWord1000": "palabraCompleja1000",
-  "complexWord1001": "palabraCompleja1001",
-  "complexWord1002": "palabraCompleja1002",
-  "complexWord1003": "palabraCompleja1003",
-  "complexWord1004": "palabraCompleja1004",
-  "complexWord1005": "palabraCompleja1005",
-  "complexWord1006": "palabraCompleja1006",
-  "complexWord1007": "palabraCompleja1007",
-  "complexWord1008": "palabraCompleja1008",
-  "complexWord1009": "palabraCompleja1009",
-  "complexWord1010": "palabraCompleja1010",
-  "complexWord1011": "palabraCompleja1011",
-  "complexWord1012": "palabraCompleja1012",
-  "complexWord1013": "palabraCompleja1013",
-  "complexWord1014": "palabraCompleja1014",
-  "complexWord1015": "palabraCompleja1015",
-  "complexWord1016": "palabraCompleja1016",
-  "complexWord1017": "palabraCompleja1017",
-  "complexWord1018": "palabraCompleja1018",
-  "complexWord1019": "palabraCompleja1019",
-  "complexWord1020": "palabraCompleja1020",
-  "complexWord1021": "palabraCompleja1021",
-  "complexWord1022": "palabraCompleja1022",
-  "complexWord1023": "palabraCompleja1023",
-  "complexWord1024": "palabraCompleja1024",
-  "complexWord1025": "palabraCompleja1025",
-  "complexWord1026": "palabraCompleja1026",
-  "complexWord1027": "palabraCompleja1027",
-  "complexWord1028": "palabraCompleja1028",
-  "complexWord1029": "palabraCompleja1029",
-  "complexWord1030": "palabraCompleja1030",
-  "complexWord1031": "palabraCompleja1031",
-  "complexWord1032": "palabraCompleja1032",
-  "complexWord1033": "palabraCompleja1033",
-  "complexWord1034": "palabraCompleja1034",
-  "complexWord1035": "palabraCompleja1035",
-  "complexWord1036": "palabraCompleja1036",
-  "complexWord1037": "palabraCompleja1037",
-  "complexWord1038": "palabraCompleja1038",
-  "complexWord1039": "palabraCompleja1039",
-  "complexWord1040": "palabraCompleja1040",
-  "complexWord1041": "palabraCompleja1041",
-  "complexWord1042": "palabraCompleja1042",
-  "complexWord1043": "palabraCompleja1043",
-  "complexWord1044": "palabraCompleja1044",
-  "complexWord1045": "palabraCompleja1045",
-  "complexWord1046": "palabraCompleja1046",
-  "complexWord1047": "palabraCompleja1047",
-  "complexWord1048": "palabraCompleja1048",
-  "complexWord1049": "palabraCompleja1049",
-  "complexWord1050": "palabraCompleja1050",
-  "complexWord1051": "palabraCompleja1051",
-  "complexWord1052": "palabraCompleja1052",
-  "complexWord1053": "palabraCompleja1053",
-  "complexWord1054": "palabraCompleja1054",
-  "complexWord1055": "palabraCompleja1055",
-  "complexWord1056": "palabraCompleja1056",
-  "complexWord1057": "palabraCompleja1057",
-  "complexWord1058": "palabraCompleja1058",
-  "complexWord1059": "palabraCompleja1059",
-  "complexWord1060": "palabraCompleja1060",
-  "complexWord1061": "palabraCompleja1061",
-  "complexWord1062": "palabraCompleja1062",
-  "complexWord1063": "palabraCompleja1063",
-  "complexWord1064": "palabraCompleja1064",
-  "complexWord1065": "palabraCompleja1065",
-  "complexWord1066": "palabraCompleja1066",
-  "complexWord1067": "palabraCompleja1067",
-  "complexWord1068": "palabraCompleja1068",
-  "complexWord1069": "palabraCompleja1069",
-  "complexWord1070": "palabraCompleja1070",
-  "complexWord1071": "palabraCompleja1071",
-  "complexWord1072": "palabraCompleja1072",
-  "complexWord1073": "palabraCompleja1073",
-  "complexWord1074": "palabraCompleja1074",
-  "complexWord1075": "palabraCompleja1075",
-  "complexWord1076": "palabraCompleja1076",
-  "complexWord1077": "palabraCompleja1077",
-  "complexWord1078": "palabraCompleja1078",
-  "complexWord1079": "palabraCompleja1079",
-  "complexWord1080": "palabraCompleja1080",
-  "complexWord1081": "palabraCompleja1081",
-  "complexWord1082": "palabraCompleja1082",
-  "complexWord1083": "palabraCompleja1083",
-  "complexWord1084": "palabraCompleja1084",
-  "complexWord1085": "palabraCompleja1085",
-  "complexWord1086": "palabraCompleja1086",
-  "complexWord1087": "palabraCompleja1087",
-  "complexWord1088": "palabraCompleja1088",
-  "complexWord1089": "palabraCompleja1089",
-  "complexWord1090": "palabraCompleja1090",
-  "complexWord1091": "palabraCompleja1091",
-  "complexWord1092": "palabraCompleja1092",
-  "complexWord1093": "palabraCompleja1093",
-  "complexWord1094": "palabraCompleja1094",
-  "complexWord1095": "palabraCompleja1095",
-  "complexWord1096": "palabraCompleja1096",
-  "complexWord1097": "palabraCompleja1097",
-  "complexWord1098": "palabraCompleja1098",
-  "complexWord1099": "palabraCompleja1099",
-  "complexWord1100": "palabraCompleja1100",
-  "complexWord1101": "palabraCompleja1101",
-  "complexWord1102": "palabraCompleja1102",
-  "complexWord1103": "palabraCompleja1103",
-  "complexWord1104": "palabraCompleja1104",
-  "complexWord1105": "palabraCompleja1105",
-  "complexWord1106": "palabraCompleja1106",
-  "complexWord1107": "palabraCompleja1107",
-  "complexWord1108": "palabraCompleja1108",
-  "complexWord1109": "palabraCompleja1109",
-  "complexWord1110": "palabraCompleja1110",
-  "complexWord1111": "palabraCompleja1111",
-  "complexWord1112": "palabraCompleja1112",
-  "complexWord1113": "palabraCompleja1113",
-  "complexWord1114": "palabraCompleja1114",
-  "complexWord1115": "palabraCompleja1115",
-  "complexWord1116": "palabraCompleja1116",
-  "complexWord1117": "palabraCompleja1117",
-  "complexWord1118": "palabraCompleja1118",
-  "complexWord1119": "palabraCompleja1119",
-  "complexWord1120": "palabraCompleja1120",
-  "complexWord1121": "palabraCompleja1121",
-  "complexWord1122": "palabraCompleja1122",
-  "complexWord1123": "palabraCompleja1123",
-  "complexWord1124": "palabraCompleja1124",
-  "complexWord1125": "palabraCompleja1125",
-  "complexWord1126": "palabraCompleja1126",
-  "complexWord1127": "palabraCompleja1127",
-  "complexWord1128": "palabraCompleja1128",
-  "complexWord1129": "palabraCompleja1129",
-  "complexWord1130": "palabraCompleja1130",
-  "complexWord1131": "palabraCompleja1131",
-  "complexWord1132": "palabraCompleja1132",
-  "complexWord1133": "palabraCompleja1133",
-  "complexWord1134": "palabraCompleja1134",
-  "complexWord1135": "palabraCompleja1135",
-  "complexWord1136": "palabraCompleja1136",
-  "complexWord1137": "palabraCompleja1137",
-  "complexWord1138": "palabraCompleja1138",
-  "complexWord1139": "palabraCompleja1139",
-  "complexWord1140": "palabraCompleja1140",
-  "complexWord1141": "palabraCompleja1141",
-  "complexWord1142": "palabraCompleja1142",
-  "complexWord1143": "palabraCompleja1143",
-  "complexWord1144": "palabraCompleja1144",
-  "complexWord1145": "palabraCompleja1145",
-  "complexWord1146": "palabraCompleja1146",
-  "complexWord1147": "palabraCompleja1147",
-  "complexWord1148": "palabraCompleja1148",
-  "complexWord1149": "palabraCompleja1149",
-  "complexWord1150": "palabraCompleja1150",
-  "complexWord1151": "palabraCompleja1151",
-  "complexWord1152": "palabraCompleja1152",
-  "complexWord1153": "palabraCompleja1153",
-  "complexWord1154": "palabraCompleja1154",
-  "complexWord1155": "palabraCompleja1155",
-  "complexWord1156": "palabraCompleja1156",
-  "complexWord1157": "palabraCompleja1157",
-  "complexWord1158": "palabraCompleja1158",
-  "complexWord1159": "palabraCompleja1159",
-  "complexWord1160": "palabraCompleja1160",
-  "complexWord1161": "palabraCompleja1161",
-  "complexWord1162": "palabraCompleja1162",
-  "complexWord1163": "palabraCompleja1163",
-  "complexWord1164": "palabraCompleja1164",
-  "complexWord1165": "palabraCompleja1165",
-  "complexWord1166": "palabraCompleja1166",
-  "complexWord1167": "palabraCompleja1167",
-  "complexWord1168": "palabraCompleja1168",
-  "complexWord1169": "palabraCompleja1169",
-  "complexWord1170": "palabraCompleja1170",
-  "complexWord1171": "palabraCompleja1171",
-  "complexWord1172": "palabraCompleja1172",
-  "complexWord1173": "palabraCompleja1173",
-  "complexWord1174": "palabraCompleja1174",
-  "complexWord1175": "palabraCompleja1175",
-  "complexWord1176": "palabraCompleja1176",
-  "complexWord1177": "palabraCompleja1177",
-  "complexWord1178": "palabraCompleja1178",
-  "complexWord1179": "palabraCompleja1179",
-  "complexWord1180": "palabraCompleja1180",
-  "complexWord1181": "palabraCompleja1181",
-  "complexWord1182": "palabraCompleja1182",
-  "complexWord1183": "palabraCompleja1183",
-  "complexWord1184": "palabraCompleja1184",
-  "complexWord1185": "palabraCompleja1185",
-  "complexWord1186": "palabraCompleja1186",
-  "complexWord1187": "palabraCompleja1187",
-  "complexWord1188": "palabraCompleja1188",
-  "complexWord1189": "palabraCompleja1189",
-  "complexWord1190": "palabraCompleja1190",
-  "complexWord1191": "palabraCompleja1191",
-  "complexWord1192": "palabraCompleja1192",
-  "complexWord1193": "palabraCompleja1193",
-  "complexWord1194": "palabraCompleja1194",
-  "complexWord1195": "palabraCompleja1195",
-  "complexWord1196": "palabraCompleja1196",
-  "complexWord1197": "palabraCompleja1197",
-  "complexWord1198": "palabraCompleja1198",
-  "complexWord1199": "palabraCompleja1199",
-  "complexWord1200": "palabraCompleja1200",
-  "complexWord1201": "palabraCompleja1201",
-  "complexWord1202": "palabraCompleja1202",
-  "complexWord1203": "palabraCompleja1203",
-  "complexWord1204": "palabraCompleja1204",
-  "complexWord1205": "palabraCompleja1205",
-  "complexWord1206": "palabraCompleja1206",
-  "complexWord1207": "palabraCompleja1207",
-  "complexWord1208": "palabraCompleja1208",
-  "complexWord1209": "palabraCompleja1209",
-  "complexWord1210": "palabraCompleja1210",
-  "complexWord1211": "palabraCompleja1211",
-  "complexWord1212": "palabraCompleja1212",
-  "complexWord1213": "palabraCompleja1213",
-  "complexWord1214": "palabraCompleja1214",
-  "complexWord1215": "palabraCompleja1215",
-  "complexWord1216": "palabraCompleja1216",
-  "complexWord1217": "palabraCompleja1217",
-  "complexWord1218": "palabraCompleja1218",
-  "complexWord1219": "palabraCompleja1219",
-  "complexWord1220": "palabraCompleja1220",
-  "complexWord1221": "palabraCompleja1221",
-  "complexWord1222": "palabraCompleja1222",
-  "complexWord1223": "palabraCompleja1223",
-  "complexWord1224": "palabraCompleja1224",
-  "complexWord1225": "palabraCompleja1225",
-  "complexWord1226": "palabraCompleja1226",
-  "complexWord1227": "palabraCompleja1227",
-  "complexWord1228": "palabraCompleja1228",
-  "complexWord1229": "palabraCompleja1229",
-  "complexWord1230": "palabraCompleja1230",
-  "complexWord1231": "palabraCompleja1231",
-  "complexWord1232": "palabraCompleja1232",
-  "complexWord1233": "palabraCompleja1233",
-  "complexWord1234": "palabraCompleja1234",
-  "complexWord1235": "palabraCompleja1235",
-  "complexWord1236": "palabraCompleja1236",
-  "complexWord1237": "palabraCompleja1237",
-  "complexWord1238": "palabraCompleja1238",
-  "complexWord1239": "palabraCompleja1239",
-  "complexWord1240": "palabraCompleja1240",
-  "complexWord1241": "palabraCompleja1241",
-  "complexWord1242": "palabraCompleja1242",
-  "complexWord1243": "palabraCompleja1243",
-  "complexWord1244": "palabraCompleja1244",
-  "complexWord1245": "palabraCompleja1245",
-  "complexWord1246": "palabraCompleja1246",
-  "complexWord1247": "palabraCompleja1247",
-  "complexWord1248": "palabraCompleja1248",
-  "complexWord1249": "palabraCompleja1249",
-  "complexWord1250": "palabraCompleja1250",
-  "complexWord1251": "palabraCompleja1251",
-  "complexWord1252": "palabraCompleja1252",
-  "complexWord1253": "palabraCompleja1253",
-  "complexWord1254": "palabraCompleja1254",
-  "complexWord1255": "palabraCompleja1255",
-  "complexWord1256": "palabraCompleja1256",
-  "complexWord1257": "palabraCompleja1257",
-  "complexWord1258": "palabraCompleja1258",
-  "complexWord1259": "palabraCompleja1259",
-  "complexWord1260": "palabraCompleja1260",
-  "complexWord1261": "palabraCompleja1261",
-  "complexWord1262": "palabraCompleja1262",
-  "complexWord1263": "palabraCompleja1263",
-  "complexWord1264": "palabraCompleja1264",
-  "complexWord1265": "palabraCompleja1265",
-  "complexWord1266": "palabraCompleja1266",
-  "complexWord1267": "palabraCompleja1267",
-  "complexWord1268": "palabraCompleja1268",
-  "complexWord1269": "palabraCompleja1269",
-  "complexWord1270": "palabraCompleja1270",
-  "complexWord1271": "palabraCompleja1271",
-  "complexWord1272": "palabraCompleja1272",
-  "complexWord1273": "palabraCompleja1273",
-  "complexWord1274": "palabraCompleja1274",
-  "complexWord1275": "palabraCompleja1275",
-  "complexWord1276": "palabraCompleja1276",
-  "complexWord1277": "palabraCompleja1277",
-  "complexWord1278": "palabraCompleja1278",
-  "complexWord1279": "palabraCompleja1279",
-  "complexWord1280": "palabraCompleja1280",
-  "complexWord1281": "palabraCompleja1281",
-  "complexWord1282": "palabraCompleja1282",
-  "complexWord1283": "palabraCompleja1283",
-  "complexWord1284": "palabraCompleja1284",
-  "complexWord1285": "palabraCompleja1285",
-  "complexWord1286": "palabraCompleja1286",
-  "complexWord1287": "palabraCompleja1287",
-  "complexWord1288": "palabraCompleja1288",
-  "complexWord1289": "palabraCompleja1289",
-  "complexWord1290": "palabraCompleja1290",
-  "complexWord1291": "palabraCompleja1291",
-  "complexWord1292": "palabraCompleja1292",
-  "complexWord1293": "palabraCompleja1293",
-  "complexWord1294": "palabraCompleja1294",
-  "complexWord1295": "palabraCompleja1295",
-  "complexWord1296": "palabraCompleja1296",
-  "complexWord1297": "palabraCompleja1297",
-  "complexWord1298": "palabraCompleja1298",
-  "complexWord1299": "palabraCompleja1299",
-  "complexWord1300": "palabraCompleja1300",
-  "complexWord1301": "palabraCompleja1301",
-  "complexWord1302": "palabraCompleja1302",
-  "complexWord1303": "palabraCompleja1303",
-  "complexWord1304": "palabraCompleja1304",
-  "complexWord1305": "palabraCompleja1305",
-  "complexWord1306": "palabraCompleja1306",
-  "complexWord1307": "palabraCompleja1307",
-  "complexWord1308": "palabraCompleja1308",
-  "complexWord1309": "palabraCompleja1309",
-  "complexWord1310": "palabraCompleja1310",
-  "complexWord1311": "palabraCompleja1311",
-  "complexWord1312": "palabraCompleja1312",
-  "complexWord1313": "palabraCompleja1313",
-  "complexWord1314": "palabraCompleja1314",
-  "complexWord1315": "palabraCompleja1315",
-  "complexWord1316": "palabraCompleja1316",
-  "complexWord1317": "palabraCompleja1317",
-  "complexWord1318": "palabraCompleja1318",
-  "complexWord1319": "palabraCompleja1319",
-  "complexWord1320": "palabraCompleja1320",
-  "complexWord1321": "palabraCompleja1321",
-  "complexWord1322": "palabraCompleja1322",
-  "complexWord1323": "palabraCompleja1323",
-  "complexWord1324": "palabraCompleja1324",
-  "complexWord1325": "palabraCompleja1325",
-  "complexWord1326": "palabraCompleja1326",
-  "complexWord1327": "palabraCompleja1327",
-  "complexWord1328": "palabraCompleja1328",
-  "complexWord1329": "palabraCompleja1329",
-  "complexWord1330": "palabraCompleja1330",
-  "complexWord1331": "palabraCompleja1331",
-  "complexWord1332": "palabraCompleja1332",
-  "complexWord1333": "palabraCompleja1333",
-  "complexWord1334": "palabraCompleja1334",
-  "complexWord1335": "palabraCompleja1335",
-  "complexWord1336": "palabraCompleja1336",
-  "complexWord1337": "palabraCompleja1337",
-  "complexWord1338": "palabraCompleja1338",
-  "complexWord1339": "palabraCompleja1339",
-  "complexWord1340": "palabraCompleja1340",
-  "complexWord1341": "palabraCompleja1341",
-  "complexWord1342": "palabraCompleja1342",
-  "complexWord1343": "palabraCompleja1343",
-  "complexWord1344": "palabraCompleja1344",
-  "complexWord1345": "palabraCompleja1345",
-  "complexWord1346": "palabraCompleja1346",
-  "complexWord1347": "palabraCompleja1347",
-  "complexWord1348": "palabraCompleja1348",
-  "complexWord1349": "palabraCompleja1349",
-  "complexWord1350": "palabraCompleja1350",
-  "complexWord1351": "palabraCompleja1351",
-  "complexWord1352": "palabraCompleja1352",
-  "complexWord1353": "palabraCompleja1353",
-  "complexWord1354": "palabraCompleja1354",
-  "complexWord1355": "palabraCompleja1355",
-  "complexWord1356": "palabraCompleja1356",
-  "complexWord1357": "palabraCompleja1357",
-  "complexWord1358": "palabraCompleja1358",
-  "complexWord1359": "palabraCompleja1359",
-  "complexWord1360": "palabraCompleja1360",
-  "complexWord1361": "palabraCompleja1361",
-  "complexWord1362": "palabraCompleja1362",
-  "complexWord1363": "palabraCompleja1363",
-  "complexWord1364": "palabraCompleja1364",
-  "complexWord1365": "palabraCompleja1365",
-  "complexWord1366": "palabraCompleja1366",
-  "complexWord1367": "palabraCompleja1367",
-  "complexWord1368": "palabraCompleja1368",
-  "complexWord1369": "palabraCompleja1369",
-  "complexWord1370": "palabraCompleja1370",
-  "complexWord1371": "palabraCompleja1371",
-  "complexWord1372": "palabraCompleja1372",
-  "complexWord1373": "palabraCompleja1373",
-  "complexWord1374": "palabraCompleja1374",
-  "complexWord1375": "palabraCompleja1375",
-  "complexWord1376": "palabraCompleja1376",
-  "complexWord1377": "palabraCompleja1377",
-  "complexWord1378": "palabraCompleja1378",
-  "complexWord1379": "palabraCompleja1379",
-  "complexWord1380": "palabraCompleja1380",
-  "complexWord1381": "palabraCompleja1381",
-  "complexWord1382": "palabraCompleja1382",
-  "complexWord1383": "palabraCompleja1383",
-  "complexWord1384": "palabraCompleja1384",
-  "complexWord1385": "palabraCompleja1385",
-  "complexWord1386": "palabraCompleja1386",
-  "complexWord1387": "palabraCompleja1387",
-  "complexWord1388": "palabraCompleja1388",
-  "complexWord1389": "palabraCompleja1389",
-  "complexWord1390": "palabraCompleja1390",
-  "complexWord1391": "palabraCompleja1391",
-  "complexWord1392": "palabraCompleja1392",
-  "complexWord1393": "palabraCompleja1393",
-  "complexWord1394": "palabraCompleja1394",
-  "complexWord1395": "palabraCompleja1395",
-  "complexWord1396": "palabraCompleja1396",
-  "complexWord1397": "palabraCompleja1397",
-  "complexWord1398": "palabraCompleja1398",
-  "complexWord1399": "palabraCompleja1399",
-  "complexWord1400": "palabraCompleja1400",
-  "complexWord1401": "palabraCompleja1401",
-  "complexWord1402": "palabraCompleja1402",
-  "complexWord1403": "palabraCompleja1403",
-  "complexWord1404": "palabraCompleja1404",
-  "complexWord1405": "palabraCompleja1405",
-  "complexWord1406": "palabraCompleja1406",
-  "complexWord1407": "palabraCompleja1407",
-  "complexWord1408": "palabraCompleja1408",
-  "complexWord1409": "palabraCompleja1409",
-  "complexWord1410": "palabraCompleja1410",
-  "complexWord1411": "palabraCompleja1411",
-  "complexWord1412": "palabraCompleja1412",
-  "complexWord1413": "palabraCompleja1413",
-  "complexWord1414": "palabraCompleja1414",
-  "complexWord1415": "palabraCompleja1415",
-  "complexWord1416": "palabraCompleja1416",
-  "complexWord1417": "palabraCompleja1417",
-  "complexWord1418": "palabraCompleja1418",
-  "complexWord1419": "palabraCompleja1419",
-  "complexWord1420": "palabraCompleja1420",
-  "complexWord1421": "palabraCompleja1421",
-  "complexWord1422": "palabraCompleja1422",
-  "complexWord1423": "palabraCompleja1423",
-  "complexWord1424": "palabraCompleja1424",
-  "complexWord1425": "palabraCompleja1425",
-  "complexWord1426": "palabraCompleja1426",
-  "complexWord1427": "palabraCompleja1427",
-  "complexWord1428": "palabraCompleja1428",
-  "complexWord1429": "palabraCompleja1429",
-  "complexWord1430": "palabraCompleja1430",
-  "complexWord1431": "palabraCompleja1431",
-  "complexWord1432": "palabraCompleja1432",
-  "complexWord1433": "palabraCompleja1433",
-  "complexWord1434": "palabraCompleja1434",
-  "complexWord1435": "palabraCompleja1435",
-  "complexWord1436": "palabraCompleja1436",
-  "complexWord1437": "palabraCompleja1437",
-  "complexWord1438": "palabraCompleja1438",
-  "complexWord1439": "palabraCompleja1439",
-  "complexWord1440": "palabraCompleja1440",
-  "complexWord1441": "palabraCompleja1441",
-  "complexWord1442": "palabraCompleja1442",
-  "complexWord1443": "palabraCompleja1443",
-  "complexWord1444": "palabraCompleja1444",
-  "complexWord1445": "palabraCompleja1445",
-  "complexWord1446": "palabraCompleja1446",
-  "complexWord1447": "palabraCompleja1447",
-  "complexWord1448": "palabraCompleja1448",
-  "complexWord1449": "palabraCompleja1449",
-  "complexWord1450": "palabraCompleja1450",
-  "complexWord1451": "palabraCompleja1451",
-  "complexWord1452": "palabraCompleja1452",
-  "complexWord1453": "palabraCompleja1453",
-  "complexWord1454": "palabraCompleja1454",
-  "complexWord1455": "palabraCompleja1455",
-  "complexWord1456": "palabraCompleja1456",
-  "complexWord1457": "palabraCompleja1457",
-  "complexWord1458": "palabraCompleja1458",
-  "complexWord1459": "palabraCompleja1459",
-  "complexWord1460": "palabraCompleja1460",
-  "complexWord1461": "palabraCompleja1461",
-  "complexWord1462": "palabraCompleja1462",
-  "complexWord1463": "palabraCompleja1463",
-  "complexWord1464": "palabraCompleja1464",
-  "complexWord1465": "palabraCompleja1465",
-  "complexWord1466": "palabraCompleja1466",
-  "complexWord1467": "palabraCompleja1467",
-  "complexWord1468": "palabraCompleja1468",
-  "complexWord1469": "palabraCompleja1469",
-  "complexWord1470": "palabraCompleja1470",
-  "complexWord1471": "palabraCompleja1471",
-  "complexWord1472": "palabraCompleja1472",
-  "complexWord1473": "palabraCompleja1473",
-  "complexWord1474": "palabraCompleja1474",
-  "complexWord1475": "palabraCompleja1475",
-  "complexWord1476": "palabraCompleja1476",
-  "complexWord1477": "palabraCompleja1477",
-  "complexWord1478": "palabraCompleja1478",
-  "complexWord1479": "palabraCompleja1479",
-  "complexWord1480": "palabraCompleja1480",
-  "complexWord1481": "palabraCompleja1481",
-  "complexWord1482": "palabraCompleja1482",
-  "complexWord1483": "palabraCompleja1483",
-  "complexWord1484": "palabraCompleja1484",
-  "complexWord1485": "palabraCompleja1485",
-  "complexWord1486": "palabraCompleja1486",
-  "complexWord1487": "palabraCompleja1487",
-  "complexWord1488": "palabraCompleja1488",
-  "complexWord1489": "palabraCompleja1489",
-  "complexWord1490": "palabraCompleja1490",
-  "complexWord1491": "palabraCompleja1491",
-  "complexWord1492": "palabraCompleja1492",
-  "complexWord1493": "palabraCompleja1493",
-  "complexWord1494": "palabraCompleja1494",
-  "complexWord1495": "palabraCompleja1495",
-  "complexWord1496": "palabraCompleja1496",
-  "complexWord1497": "palabraCompleja1497",
-  "complexWord1498": "palabraCompleja1498",
-  "complexWord1499": "palabraCompleja1499",
-  "complexWord1500": "palabraCompleja1500",
-  "complexWord1501": "palabraCompleja1501",
-  "complexWord1502": "palabraCompleja1502",
-  "complexWord1503": "palabraCompleja1503",
-  "complexWord1504": "palabraCompleja1504",
-  "complexWord1505": "palabraCompleja1505",
-  "complexWord1506": "palabraCompleja1506",
-  "complexWord1507": "palabraCompleja1507",
-  "complexWord1508": "palabraCompleja1508",
-  "complexWord1509": "palabraCompleja1509",
-  "complexWord1510": "palabraCompleja1510",
-  "complexWord1511": "palabraCompleja1511",
-  "complexWord1512": "palabraCompleja1512",
-  "complexWord1513": "palabraCompleja1513",
-  "complexWord1514": "palabraCompleja1514",
-  "complexWord1515": "palabraCompleja1515",
-  "complexWord1516": "palabraCompleja1516",
-  "complexWord1517": "palabraCompleja1517",
-  "complexWord1518": "palabraCompleja1518",
-  "complexWord1519": "palabraCompleja1519",
-  "complexWord1520": "palabraCompleja1520",
-  "complexWord1521": "palabraCompleja1521",
-  "complexWord1522": "palabraCompleja1522",
-  "complexWord1523": "palabraCompleja1523",
-  "complexWord1524": "palabraCompleja1524",
-  "complexWord1525": "palabraCompleja1525",
-  "complexWord1526": "palabraCompleja1526",
-  "complexWord1527": "palabraCompleja1527",
-  "complexWord1528": "palabraCompleja1528",
-  "complexWord1529": "palabraCompleja1529",
-  "complexWord1530": "palabraCompleja1530",
-  "complexWord1531": "palabraCompleja1531",
-  "complexWord1532": "palabraCompleja1532",
-  "complexWord1533": "palabraCompleja1533",
-  "complexWord1534": "palabraCompleja1534",
-  "complexWord1535": "palabraCompleja1535",
-  "complexWord1536": "palabraCompleja1536",
-  "complexWord1537": "palabraCompleja1537",
-  "complexWord1538": "palabraCompleja1538",
-  "complexWord1539": "palabraCompleja1539",
-  "complexWord1540": "palabraCompleja1540",
-  "complexWord1541": "palabraCompleja1541",
-  "complexWord1542": "palabraCompleja1542",
-  "complexWord1543": "palabraCompleja1543",
-  "complexWord1544": "palabraCompleja1544",
-  "complexWord1545": "palabraCompleja1545",
-  "complexWord1546": "palabraCompleja1546",
-  "complexWord1547": "palabraCompleja1547",
-  "complexWord1548": "palabraCompleja1548",
-  "complexWord1549": "palabraCompleja1549",
-  "complexWord1550": "palabraCompleja1550",
-  "complexWord1551": "palabraCompleja1551",
-  "complexWord1552": "palabraCompleja1552",
-  "complexWord1553": "palabraCompleja1553",
-  "complexWord1554": "palabraCompleja1554",
-  "complexWord1555": "palabraCompleja1555",
-  "complexWord1556": "palabraCompleja1556",
-  "complexWord1557": "palabraCompleja1557",
-  "complexWord1558": "palabraCompleja1558",
-  "complexWord1559": "palabraCompleja1559",
-  "complexWord1560": "palabraCompleja1560",
-  "complexWord1561": "palabraCompleja1561",
-  "complexWord1562": "palabraCompleja1562",
-  "complexWord1563": "palabraCompleja1563",
-  "complexWord1564": "palabraCompleja1564",
-  "complexWord1565": "palabraCompleja1565",
-  "complexWord1566": "palabraCompleja1566",
-  "complexWord1567": "palabraCompleja1567",
-  "complexWord1568": "palabraCompleja1568",
-  "complexWord1569": "palabraCompleja1569",
-  "complexWord1570": "palabraCompleja1570",
-  "complexWord1571": "palabraCompleja1571",
-  "complexWord1572": "palabraCompleja1572",
-  "complexWord1573": "palabraCompleja1573",
-  "complexWord1574": "palabraCompleja1574",
-  "complexWord1575": "palabraCompleja1575",
-  "complexWord1576": "palabraCompleja1576",
-  "complexWord1577": "palabraCompleja1577",
-  "complexWord1578": "palabraCompleja1578",
-  "complexWord1579": "palabraCompleja1579",
-  "complexWord1580": "palabraCompleja1580",
-  "complexWord1581": "palabraCompleja1581",
-  "complexWord1582": "palabraCompleja1582",
-  "complexWord1583": "palabraCompleja1583",
-  "complexWord1584": "palabraCompleja1584",
-  "complexWord1585": "palabraCompleja1585",
-  "complexWord1586": "palabraCompleja1586",
-  "complexWord1587": "palabraCompleja1587",
-  "complexWord1588": "palabraCompleja1588",
-  "complexWord1589": "palabraCompleja1589",
-  "complexWord1590": "palabraCompleja1590",
-  "complexWord1591": "palabraCompleja1591",
-  "complexWord1592": "palabraCompleja1592",
-  "complexWord1593": "palabraCompleja1593",
-  "complexWord1594": "palabraCompleja1594",
-  "complexWord1595": "palabraCompleja1595",
-  "complexWord1596": "palabraCompleja1596",
-  "complexWord1597": "palabraCompleja1597",
-  "complexWord1598": "palabraCompleja1598",
-  "complexWord1599": "palabraCompleja1599",
-  "complexWord1600": "palabraCompleja1600",
-  "complexWord1601": "palabraCompleja1601",
-  "complexWord1602": "palabraCompleja1602",
-  "complexWord1603": "palabraCompleja1603",
-  "complexWord1604": "palabraCompleja1604",
-  "complexWord1605": "palabraCompleja1605",
-  "complexWord1606": "palabraCompleja1606",
-  "complexWord1607": "palabraCompleja1607",
-  "complexWord1608": "palabraCompleja1608",
-  "complexWord1609": "palabraCompleja1609",
-  "complexWord1610": "palabraCompleja1610",
-  "complexWord1611": "palabraCompleja1611",
-  "complexWord1612": "palabraCompleja1612",
-  "complexWord1613": "palabraCompleja1613",
-  "complexWord1614": "palabraCompleja1614",
-  "complexWord1615": "palabraCompleja1615",
-  "complexWord1616": "palabraCompleja1616",
-  "complexWord1617": "palabraCompleja1617",
-  "complexWord1618": "palabraCompleja1618",
-  "complexWord1619": "palabraCompleja1619",
-  "complexWord1620": "palabraCompleja1620",
-  "complexWord1621": "palabraCompleja1621",
-  "complexWord1622": "palabraCompleja1622",
-  "complexWord1623": "palabraCompleja1623",
-  "complexWord1624": "palabraCompleja1624",
-  "complexWord1625": "palabraCompleja1625",
-  "complexWord1626": "palabraCompleja1626",
-  "complexWord1627": "palabraCompleja1627",
-  "complexWord1628": "palabraCompleja1628",
-  "complexWord1629": "palabraCompleja1629",
-  "complexWord1630": "palabraCompleja1630",
-  "complexWord1631": "palabraCompleja1631",
-  "complexWord1632": "palabraCompleja1632",
-  "complexWord1633": "palabraCompleja1633",
-  "complexWord1634": "palabraCompleja1634",
-  "complexWord1635": "palabraCompleja1635",
-  "complexWord1636": "palabraCompleja1636",
-  "complexWord1637": "palabraCompleja1637",
-  "complexWord1638": "palabraCompleja1638",
-  "complexWord1639": "palabraCompleja1639",
-  "complexWord1640": "palabraCompleja1640",
-  "complexWord1641": "palabraCompleja1641",
-  "complexWord1642": "palabraCompleja1642",
-  "complexWord1643": "palabraCompleja1643",
-  "complexWord1644": "palabraCompleja1644",
-  "complexWord1645": "palabraCompleja1645",
-  "complexWord1646": "palabraCompleja1646",
-  "complexWord1647": "palabraCompleja1647",
-  "complexWord1648": "palabraCompleja1648",
-  "complexWord1649": "palabraCompleja1649",
-  "complexWord1650": "palabraCompleja1650",
-  "complexWord1651": "palabraCompleja1651",
-  "complexWord1652": "palabraCompleja1652",
-  "complexWord1653": "palabraCompleja1653",
-  "complexWord1654": "palabraCompleja1654",
-  "complexWord1655": "palabraCompleja1655",
-  "complexWord1656": "palabraCompleja1656",
-  "complexWord1657": "palabraCompleja1657",
-  "complexWord1658": "palabraCompleja1658",
-  "complexWord1659": "palabraCompleja1659",
-  "complexWord1660": "palabraCompleja1660",
-  "complexWord1661": "palabraCompleja1661",
-  "complexWord1662": "palabraCompleja1662",
-  "complexWord1663": "palabraCompleja1663",
-  "complexWord1664": "palabraCompleja1664",
-  "complexWord1665": "palabraCompleja1665",
-  "complexWord1666": "palabraCompleja1666",
-  "complexWord1667": "palabraCompleja1667",
-  "complexWord1668": "palabraCompleja1668",
-  "complexWord1669": "palabraCompleja1669",
-  "complexWord1670": "palabraCompleja1670",
-  "complexWord1671": "palabraCompleja1671",
-  "complexWord1672": "palabraCompleja1672",
-  "complexWord1673": "palabraCompleja1673",
-  "complexWord1674": "palabraCompleja1674",
-  "complexWord1675": "palabraCompleja1675",
-  "complexWord1676": "palabraCompleja1676",
-  "complexWord1677": "palabraCompleja1677",
-  "complexWord1678": "palabraCompleja1678",
-  "complexWord1679": "palabraCompleja1679",
-  "complexWord1680": "palabraCompleja1680",
-  "complexWord1681": "palabraCompleja1681",
-  "complexWord1682": "palabraCompleja1682",
-  "complexWord1683": "palabraCompleja1683",
-  "complexWord1684": "palabraCompleja1684",
-  "complexWord1685": "palabraCompleja1685",
-  "complexWord1686": "palabraCompleja1686",
-  "complexWord1687": "palabraCompleja1687",
-  "complexWord1688": "palabraCompleja1688",
-  "complexWord1689": "palabraCompleja1689",
-  "complexWord1690": "palabraCompleja1690",
-  "complexWord1691": "palabraCompleja1691",
-  "complexWord1692": "palabraCompleja1692",
-  "complexWord1693": "palabraCompleja1693",
-  "complexWord1694": "palabraCompleja1694",
-  "complexWord1695": "palabraCompleja1695",
-  "complexWord1696": "palabraCompleja1696",
-  "complexWord1697": "palabraCompleja1697",
-  "complexWord1698": "palabraCompleja1698",
-  "complexWord1699": "palabraCompleja1699",
-  "complexWord1700": "palabraCompleja1700",
-  "complexWord1701": "palabraCompleja1701",
-  "complexWord1702": "palabraCompleja1702",
-  "complexWord1703": "palabraCompleja1703",
-  "complexWord1704": "palabraCompleja1704",
-  "complexWord1705": "palabraCompleja1705",
-  "complexWord1706": "palabraCompleja1706",
-  "complexWord1707": "palabraCompleja1707",
-  "complexWord1708": "palabraCompleja1708",
-  "complexWord1709": "palabraCompleja1709",
-  "complexWord1710": "palabraCompleja1710",
-  "complexWord1711": "palabraCompleja1711",
-  "complexWord1712": "palabraCompleja1712",
-  "complexWord1713": "palabraCompleja1713",
-  "complexWord1714": "palabraCompleja1714",
-  "complexWord1715": "palabraCompleja1715",
-  "complexWord1716": "palabraCompleja1716",
-  "complexWord1717": "palabraCompleja1717",
-  "complexWord1718": "palabraCompleja1718",
-  "complexWord1719": "palabraCompleja1719",
-  "complexWord1720": "palabraCompleja1720",
-  "complexWord1721": "palabraCompleja1721",
-  "complexWord1722": "palabraCompleja1722",
-  "complexWord1723": "palabraCompleja1723",
-  "complexWord1724": "palabraCompleja1724",
-  "complexWord1725": "palabraCompleja1725",
-  "complexWord1726": "palabraCompleja1726",
-  "complexWord1727": "palabraCompleja1727",
-  "complexWord1728": "palabraCompleja1728",
-  "complexWord1729": "palabraCompleja1729",
-  "complexWord1730": "palabraCompleja1730",
-  "complexWord1731": "palabraCompleja1731",
-  "complexWord1732": "palabraCompleja1732",
-  "complexWord1733": "palabraCompleja1733",
-  "complexWord1734": "palabraCompleja1734",
-  "complexWord1735": "palabraCompleja1735",
-  "complexWord1736": "palabraCompleja1736",
-  "complexWord1737": "palabraCompleja1737",
-  "complexWord1738": "palabraCompleja1738",
-  "complexWord1739": "palabraCompleja1739",
-  "complexWord1740": "palabraCompleja1740",
-  "complexWord1741": "palabraCompleja1741",
-  "complexWord1742": "palabraCompleja1742",
-  "complexWord1743": "palabraCompleja1743",
-  "complexWord1744": "palabraCompleja1744",
-  "complexWord1745": "palabraCompleja1745",
-  "complexWord1746": "palabraCompleja1746",
-  "complexWord1747": "palabraCompleja1747",
-  "complexWord1748": "palabraCompleja1748",
-  "complexWord1749": "palabraCompleja1749",
-  "complexWord1750": "palabraCompleja1750",
-  "complexWord1751": "palabraCompleja1751",
-  "complexWord1752": "palabraCompleja1752",
-  "complexWord1753": "palabraCompleja1753",
-  "complexWord1754": "palabraCompleja1754",
-  "complexWord1755": "palabraCompleja1755",
-  "complexWord1756": "palabraCompleja1756",
-  "complexWord1757": "palabraCompleja1757",
-  "complexWord1758": "palabraCompleja1758",
-  "complexWord1759": "palabraCompleja1759",
-  "complexWord1760": "palabraCompleja1760",
-  "complexWord1761": "palabraCompleja1761",
-  "complexWord1762": "palabraCompleja1762",
-  "complexWord1763": "palabraCompleja1763",
-  "complexWord1764": "palabraCompleja1764",
-  "complexWord1765": "palabraCompleja1765",
-  "complexWord1766": "palabraCompleja1766",
-  "complexWord1767": "palabraCompleja1767",
-  "complexWord1768": "palabraCompleja1768",
-  "complexWord1769": "palabraCompleja1769",
-  "complexWord1770": "palabraCompleja1770",
-  "complexWord1771": "palabraCompleja1771",
-  "complexWord1772": "palabraCompleja1772",
-  "complexWord1773": "palabraCompleja1773",
-  "complexWord1774": "palabraCompleja1774",
-  "complexWord1775": "palabraCompleja1775",
-  "complexWord1776": "palabraCompleja1776",
-  "complexWord1777": "palabraCompleja1777",
-  "complexWord1778": "palabraCompleja1778",
-  "complexWord1779": "palabraCompleja1779",
-  "complexWord1780": "palabraCompleja1780",
-  "complexWord1781": "palabraCompleja1781",
-  "complexWord1782": "palabraCompleja1782",
-  "complexWord1783": "palabraCompleja1783",
-  "complexWord1784": "palabraCompleja1784",
-  "complexWord1785": "palabraCompleja1785",
-  "complexWord1786": "palabraCompleja1786",
-  "complexWord1787": "palabraCompleja1787",
-  "complexWord1788": "palabraCompleja1788",
-  "complexWord1789": "palabraCompleja1789",
-  "complexWord1790": "palabraCompleja1790",
-  "complexWord1791": "palabraCompleja1791",
-  "complexWord1792": "palabraCompleja1792",
-  "complexWord1793": "palabraCompleja1793",
-  "complexWord1794": "palabraCompleja1794",
-  "complexWord1795": "palabraCompleja1795",
-  "complexWord1796": "palabraCompleja1796",
-  "complexWord1797": "palabraCompleja1797",
-  "complexWord1798": "palabraCompleja1798",
-  "complexWord1799": "palabraCompleja1799",
-  "satisfied": "satisfecho",
-  "never": "nunca",
-  "still": "todavía",
-  "right": "correcto",
-  "point": "punto / sentido"
+  "abandon": {
+    "translation": "abandonar",
+    "level": "A2"
+  },
+  "ability": {
+    "translation": "habilidad",
+    "level": "A2"
+  },
+  "abnegation": {
+    "translation": "abnegación",
+    "level": "B1"
+  },
+  "abolish": {
+    "translation": "abolir",
+    "level": "B2"
+  },
+  "abrupt": {
+    "translation": "abrupto",
+    "level": "B1"
+  },
+  "absence": {
+    "translation": "ausencia",
+    "level": "B1"
+  },
+  "absolute": {
+    "translation": "absoluto",
+    "level": "A2"
+  },
+  "abstain": {
+    "translation": "abstenerse",
+    "level": "C1"
+  },
+  "abstruse": {
+    "translation": "abstruso",
+    "level": "C2"
+  },
+  "absurd": {
+    "translation": "absurdo",
+    "level": "B1"
+  },
+  "abundant": {
+    "translation": "abundante",
+    "level": "B1"
+  },
+  "abuse": {
+    "translation": "abusar",
+    "level": "B1"
+  },
+  "accelerate": {
+    "translation": "acelerar",
+    "level": "B1"
+  },
+  "accept": {
+    "translation": "aceptar",
+    "level": "A2"
+  },
+  "acceptable": {
+    "translation": "aceptable",
+    "level": "B1"
+  },
+  "accident": {
+    "translation": "accidente",
+    "level": "A2"
+  },
+  "accomplish": {
+    "translation": "lograr",
+    "level": "B1"
+  },
+  "account": {
+    "translation": "relato",
+    "level": "B1"
+  },
+  "accountable": {
+    "translation": "responsable",
+    "level": "B2"
+  },
+  "accumulate": {
+    "translation": "acumular",
+    "level": "B2"
+  },
+  "accurate": {
+    "translation": "preciso",
+    "level": "B1"
+  },
+  "accusation": {
+    "translation": "acusación",
+    "level": "B1"
+  },
+  "accuse": {
+    "translation": "acusar",
+    "level": "B1"
+  },
+  "achieve": {
+    "translation": "lograr",
+    "level": "B1"
+  },
+  "achievement": {
+    "translation": "logro",
+    "level": "B1"
+  },
+  "acknowledge": {
+    "translation": "reconocer",
+    "level": "B1"
+  },
+  "acquire": {
+    "translation": "adquirir",
+    "level": "B2"
+  },
+  "acquisition": {
+    "translation": "adquisición",
+    "level": "B2"
+  },
+  "act": {
+    "translation": "actuar",
+    "level": "A2"
+  },
+  "action": {
+    "translation": "acción",
+    "level": "A2"
+  },
+  "activate": {
+    "translation": "activar",
+    "level": "B1"
+  },
+  "active": {
+    "translation": "activo",
+    "level": "A2"
+  },
+  "acumen": {
+    "translation": "perspicacia",
+    "level": "C2"
+  },
+  "adamant": {
+    "translation": "inflexible",
+    "level": "B2"
+  },
+  "adapt": {
+    "translation": "adaptar",
+    "level": "B1"
+  },
+  "adaptation": {
+    "translation": "adaptación",
+    "level": "B2"
+  },
+  "adaption": {
+    "translation": "adaptación",
+    "level": "B2"
+  },
+  "addicted": {
+    "translation": "adicto",
+    "level": "B1"
+  },
+  "addiction": {
+    "translation": "adicción",
+    "level": "B2"
+  },
+  "adequate": {
+    "translation": "adecuado",
+    "level": "B2"
+  },
+  "adhere": {
+    "translation": "adherirse",
+    "level": "B2"
+  },
+  "admiration": {
+    "translation": "admiración",
+    "level": "B1"
+  },
+  "admission": {
+    "translation": "admisión",
+    "level": "B2"
+  },
+  "admit": {
+    "translation": "admitir",
+    "level": "B1"
+  },
+  "adolescent": {
+    "translation": "adolescente",
+    "level": "B1"
+  },
+  "adopt": {
+    "translation": "adoptar",
+    "level": "A2"
+  },
+  "adoption": {
+    "translation": "adopción",
+    "level": "B2"
+  },
+  "adore": {
+    "translation": "adorar",
+    "level": "B1"
+  },
+  "adult": {
+    "translation": "adulto",
+    "level": "A2"
+  },
+  "adumbrate": {
+    "translation": "esbozar",
+    "level": "C1"
+  },
+  "advance": {
+    "translation": "avanzar",
+    "level": "B1"
+  },
+  "adversary": {
+    "translation": "adversario",
+    "level": "B2"
+  },
+  "adverse": {
+    "translation": "adverso",
+    "level": "B2"
+  },
+  "adversity": {
+    "translation": "adversidad",
+    "level": "B2"
+  },
+  "advise": {
+    "translation": "aconsejar",
+    "level": "B1"
+  },
+  "advocate": {
+    "translation": "defender",
+    "level": "B2"
+  },
+  "affair": {
+    "translation": "asunto",
+    "level": "B1"
+  },
+  "affect": {
+    "translation": "afectar",
+    "level": "A2"
+  },
+  "affection": {
+    "translation": "afecto",
+    "level": "B1"
+  },
+  "affirm": {
+    "translation": "afirmar",
+    "level": "B2"
+  },
+  "afflict": {
+    "translation": "afligir",
+    "level": "B2"
+  },
+  "affliction": {
+    "translation": "dolencia",
+    "level": "C1"
+  },
+  "aftermath": {
+    "translation": "secuelas",
+    "level": "B2"
+  },
+  "agenda": {
+    "translation": "agenda",
+    "level": "B1"
+  },
+  "agent": {
+    "translation": "agente",
+    "level": "B1"
+  },
+  "aggravate": {
+    "translation": "agravar",
+    "level": "B2"
+  },
+  "aggression": {
+    "translation": "agresión",
+    "level": "B2"
+  },
+  "aggressive": {
+    "translation": "agresivo",
+    "level": "B1"
+  },
+  "aggressor": {
+    "translation": "agresor",
+    "level": "B2"
+  },
+  "agitated": {
+    "translation": "agitado",
+    "level": "B2"
+  },
+  "agitation": {
+    "translation": "agitación",
+    "level": "B2"
+  },
+  "agreement": {
+    "translation": "acuerdo",
+    "level": "A2"
+  },
+  "aid": {
+    "translation": "ayuda",
+    "level": "B1"
+  },
+  "ailment": {
+    "translation": "dolencia",
+    "level": "B2"
+  },
+  "aim": {
+    "translation": "apuntar",
+    "level": "B1"
+  },
+  "alacrity": {
+    "translation": "alacridad",
+    "level": "A1"
+  },
+  "alarm": {
+    "translation": "alarma",
+    "level": "A2"
+  },
+  "alarmed": {
+    "translation": "alarmado",
+    "level": "B1"
+  },
+  "alert": {
+    "translation": "alertar",
+    "level": "A2"
+  },
+  "alien": {
+    "translation": "extranjero",
+    "level": "B1"
+  },
+  "alienate": {
+    "translation": "alienar",
+    "level": "B2"
+  },
+  "allegation": {
+    "translation": "alegación",
+    "level": "B2"
+  },
+  "allege": {
+    "translation": "alegar",
+    "level": "B2"
+  },
+  "alliance": {
+    "translation": "alianza",
+    "level": "B2"
+  },
+  "allocate": {
+    "translation": "asignar",
+    "level": "B2"
+  },
+  "allow": {
+    "translation": "permitir",
+    "level": "A2"
+  },
+  "allude": {
+    "translation": "aludir",
+    "level": "C1"
+  },
+  "ally": {
+    "translation": "aliado",
+    "level": "B2"
+  },
+  "alter": {
+    "translation": "alterar",
+    "level": "B1"
+  },
+  "alternative": {
+    "translation": "alternativa",
+    "level": "B1"
+  },
+  "ambassador": {
+    "translation": "embajador",
+    "level": "B2"
+  },
+  "ambiguity": {
+    "translation": "ambigüedad",
+    "level": "C1"
+  },
+  "ambition": {
+    "translation": "ambición",
+    "level": "B1"
+  },
+  "ambitious": {
+    "translation": "ambicioso",
+    "level": "B1"
+  },
+  "ambush": {
+    "translation": "emboscada",
+    "level": "B2"
+  },
+  "amnesty": {
+    "translation": "amnistía",
+    "level": "C1"
+  },
+  "anachronistic": {
+    "translation": "anacrónico",
+    "level": "B1"
+  },
+  "analyze": {
+    "translation": "analizar",
+    "level": "B1"
+  },
+  "anarchy": {
+    "translation": "anarquía",
+    "level": "C1"
+  },
+  "ancestor": {
+    "translation": "antepasado",
+    "level": "B2"
+  },
+  "anger": {
+    "translation": "cólera",
+    "level": "A2"
+  },
+  "anguish": {
+    "translation": "angustia",
+    "level": "B2"
+  },
+  "animosity": {
+    "translation": "animosidad",
+    "level": "B2"
+  },
+  "announce": {
+    "translation": "anunciar",
+    "level": "A2"
+  },
+  "antagonism": {
+    "translation": "antagonismo",
+    "level": "B2"
+  },
+  "antagonist": {
+    "translation": "antagonista",
+    "level": "B2"
+  },
+  "antediluvian": {
+    "translation": "antediluviano",
+    "level": "A2"
+  },
+  "anticipate": {
+    "translation": "anticipar",
+    "level": "B2"
+  },
+  "anxiety": {
+    "translation": "ansiedad",
+    "level": "A2"
+  },
+  "anxious": {
+    "translation": "ansioso",
+    "level": "B1"
+  },
+  "apathy": {
+    "translation": "apatía",
+    "level": "C1"
+  },
+  "apocryphal": {
+    "translation": "apócrifo",
+    "level": "B2"
+  },
+  "apologize": {
+    "translation": "disculparse",
+    "level": "A2"
+  },
+  "apprehend": {
+    "translation": "aprehender",
+    "level": "B2"
+  },
+  "apprehension": {
+    "translation": "aprensión",
+    "level": "B2"
+  },
+  "approach": {
+    "translation": "enfoque",
+    "level": "B2"
+  },
+  "approbation": {
+    "translation": "aprobación",
+    "level": "C2"
+  },
+  "appropriate": {
+    "translation": "apropiado",
+    "level": "B1"
+  },
+  "approve": {
+    "translation": "aprobar",
+    "level": "A2"
+  },
+  "arbitrary": {
+    "translation": "arbitrario",
+    "level": "B2"
+  },
+  "arcane": {
+    "translation": "arcano",
+    "level": "B2"
+  },
+  "archive": {
+    "translation": "archivo",
+    "level": "B1"
+  },
+  "argument": {
+    "translation": "argumento",
+    "level": "B1"
+  },
+  "arid": {
+    "translation": "árido",
+    "level": "B2"
+  },
+  "arise": {
+    "translation": "surgir",
+    "level": "B2"
+  },
+  "armament": {
+    "translation": "armamento",
+    "level": "B2"
+  },
+  "armory": {
+    "translation": "armería",
+    "level": "B2"
+  },
+  "arouse": {
+    "translation": "despertar",
+    "level": "B2"
+  },
+  "arrange": {
+    "translation": "organizar",
+    "level": "A2"
+  },
+  "arrangement": {
+    "translation": "arreglo",
+    "level": "B1"
+  },
+  "arrest": {
+    "translation": "arresto",
+    "level": "B1"
+  },
+  "arrogance": {
+    "translation": "arrogancia",
+    "level": "B2"
+  },
+  "arrogant": {
+    "translation": "arrogante",
+    "level": "B1"
+  },
+  "arson": {
+    "translation": "incendio provocado",
+    "level": "B2"
+  },
+  "artificial": {
+    "translation": "artificial",
+    "level": "B1"
+  },
+  "ascetic": {
+    "translation": "ascético",
+    "level": "C2"
+  },
+  "assassin": {
+    "translation": "asesino",
+    "level": "B2"
+  },
+  "assassination": {
+    "translation": "asesinato",
+    "level": "B2"
+  },
+  "assault": {
+    "translation": "agresión",
+    "level": "B1"
+  },
+  "assert": {
+    "translation": "afirmar",
+    "level": "B2"
+  },
+  "assess": {
+    "translation": "evaluar",
+    "level": "B2"
+  },
+  "assiduous": {
+    "translation": "asiduo",
+    "level": "C1"
+  },
+  "assumption": {
+    "translation": "suposición",
+    "level": "B2"
+  },
+  "assurance": {
+    "translation": "garantía",
+    "level": "B2"
+  },
+  "assure": {
+    "translation": "asegurar",
+    "level": "B1"
+  },
+  "asylum": {
+    "translation": "asilo",
+    "level": "B2"
+  },
+  "atmosphere": {
+    "translation": "atmósfera",
+    "level": "B1"
+  },
+  "atrocity": {
+    "translation": "atrocidad",
+    "level": "B2"
+  },
+  "atrophy": {
+    "translation": "atrofia",
+    "level": "B1"
+  },
+  "attest": {
+    "translation": "atestiguar",
+    "level": "C1"
+  },
+  "attract": {
+    "translation": "atraer",
+    "level": "A2"
+  },
+  "attribute": {
+    "translation": "atribuir",
+    "level": "B2"
+  },
+  "aura": {
+    "translation": "aura",
+    "level": "B2"
+  },
+  "authentic": {
+    "translation": "auténtico",
+    "level": "B2"
+  },
+  "authority": {
+    "translation": "autoridad",
+    "level": "B1"
+  },
+  "authorize": {
+    "translation": "autorizar",
+    "level": "B2"
+  },
+  "autonomous": {
+    "translation": "autónomo",
+    "level": "B2"
+  },
+  "avarice": {
+    "translation": "avaricia",
+    "level": "B2"
+  },
+  "aversion": {
+    "translation": "aversión",
+    "level": "C1"
+  },
+  "aware": {
+    "translation": "consciente",
+    "level": "B1"
+  },
+  "awareness": {
+    "translation": "conciencia",
+    "level": "B2"
+  },
+  "awful": {
+    "translation": "terrible",
+    "level": "A2"
+  },
+  "background": {
+    "translation": "antecedentes",
+    "level": "B1"
+  },
+  "bail": {
+    "translation": "fianza",
+    "level": "B2"
+  },
+  "balanced": {
+    "translation": "equilibrado",
+    "level": "B2"
+  },
+  "ballot": {
+    "translation": "votación",
+    "level": "B2"
+  },
+  "banish": {
+    "translation": "desterrar",
+    "level": "B2"
+  },
+  "barren": {
+    "translation": "estéril",
+    "level": "B2"
+  },
+  "barrier": {
+    "translation": "barrera",
+    "level": "B1"
+  },
+  "battalion": {
+    "translation": "batallón",
+    "level": "B2"
+  },
+  "battle": {
+    "translation": "batalla",
+    "level": "B1"
+  },
+  "battlefield": {
+    "translation": "campo de batalla",
+    "level": "B2"
+  },
+  "beg": {
+    "translation": "rogar",
+    "level": "B1"
+  },
+  "begin": {
+    "translation": "comenzar",
+    "level": "A2"
+  },
+  "behavior": {
+    "translation": "comportamiento",
+    "level": "B1"
+  },
+  "belief": {
+    "translation": "creencia",
+    "level": "B1"
+  },
+  "benefit": {
+    "translation": "beneficio",
+    "level": "B1"
+  },
+  "betray": {
+    "translation": "traicionar",
+    "level": "B1"
+  },
+  "betrayal": {
+    "translation": "traición",
+    "level": "B2"
+  },
+  "bitter": {
+    "translation": "amargo",
+    "level": "B1"
+  },
+  "bitterness": {
+    "translation": "amargura",
+    "level": "B2"
+  },
+  "bizarre": {
+    "translation": "extraño",
+    "level": "B2"
+  },
+  "blackmail": {
+    "translation": "chantaje",
+    "level": "B2"
+  },
+  "blame": {
+    "translation": "culpar",
+    "level": "B1"
+  },
+  "blandishment": {
+    "translation": "halago",
+    "level": "B2"
+  },
+  "blaze": {
+    "translation": "llamarada",
+    "level": "B2"
+  },
+  "bliss": {
+    "translation": "dicha",
+    "level": "B2"
+  },
+  "blizzard": {
+    "translation": "ventisca",
+    "level": "B2"
+  },
+  "block": {
+    "translation": "bloquear",
+    "level": "B1"
+  },
+  "boast": {
+    "translation": "presumir",
+    "level": "B2"
+  },
+  "bold": {
+    "translation": "audaz",
+    "level": "B2"
+  },
+  "bomb": {
+    "translation": "bombardear",
+    "level": "B1"
+  },
+  "bond": {
+    "translation": "vínculo",
+    "level": "B1"
+  },
+  "border": {
+    "translation": "frontera",
+    "level": "B1"
+  },
+  "boundary": {
+    "translation": "límite",
+    "level": "B2"
+  },
+  "brave": {
+    "translation": "valiente",
+    "level": "B1"
+  },
+  "bravery": {
+    "translation": "valentía",
+    "level": "B2"
+  },
+  "break": {
+    "translation": "romper",
+    "level": "A2"
+  },
+  "bribery": {
+    "translation": "soborno",
+    "level": "B2"
+  },
+  "brutal": {
+    "translation": "brutal",
+    "level": "B2"
+  },
+  "brutality": {
+    "translation": "brutalidad",
+    "level": "B2"
+  },
+  "bunker": {
+    "translation": "búnker",
+    "level": "B2"
+  },
+  "burden": {
+    "translation": "carga",
+    "level": "B1"
+  },
+  "burglary": {
+    "translation": "robo",
+    "level": "B2"
+  },
+  "burial": {
+    "translation": "entierro",
+    "level": "B2"
+  },
+  "cabinet": {
+    "translation": "gabinete",
+    "level": "B2"
+  },
+  "cacophony": {
+    "translation": "cacofonía",
+    "level": "C1"
+  },
+  "cajole": {
+    "translation": "engatusar",
+    "level": "C2"
+  },
+  "calculate": {
+    "translation": "calcular",
+    "level": "B1"
+  },
+  "calculated": {
+    "translation": "calculado",
+    "level": "B2"
+  },
+  "calculation": {
+    "translation": "cálculo",
+    "level": "B2"
+  },
+  "callous": {
+    "translation": "insensible",
+    "level": "C1"
+  },
+  "calumny": {
+    "translation": "calumnia",
+    "level": "C2"
+  },
+  "campaign": {
+    "translation": "campaña",
+    "level": "B1"
+  },
+  "candidate": {
+    "translation": "candidato",
+    "level": "B1"
+  },
+  "capability": {
+    "translation": "capacidad",
+    "level": "B2"
+  },
+  "capacity": {
+    "translation": "capacidad",
+    "level": "B1"
+  },
+  "capitulate": {
+    "translation": "capitular",
+    "level": "C2"
+  },
+  "captor": {
+    "translation": "captor",
+    "level": "B2"
+  },
+  "capture": {
+    "translation": "capturar",
+    "level": "B1"
+  },
+  "career": {
+    "translation": "carrera",
+    "level": "B1"
+  },
+  "careless": {
+    "translation": "descuidado",
+    "level": "B1"
+  },
+  "carouse": {
+    "translation": "parrandear",
+    "level": "C2"
+  },
+  "carry": {
+    "translation": "llevar",
+    "level": "A2"
+  },
+  "casual": {
+    "translation": "casual",
+    "level": "A2"
+  },
+  "casualty": {
+    "translation": "baja",
+    "level": "B2"
+  },
+  "catastrophe": {
+    "translation": "catástrofe",
+    "level": "B2"
+  },
+  "caucus": {
+    "translation": "reunión de grupo",
+    "level": "C2"
+  },
+  "causality": {
+    "translation": "causalidad",
+    "level": "C1"
+  },
+  "caution": {
+    "translation": "cautela",
+    "level": "B2"
+  },
+  "cautious": {
+    "translation": "cauteloso",
+    "level": "B2"
+  },
+  "cavern": {
+    "translation": "caverna",
+    "level": "B1"
+  },
+  "cease": {
+    "translation": "cesar",
+    "level": "B2"
+  },
+  "cemetery": {
+    "translation": "cementerio",
+    "level": "B1"
+  },
+  "certainty": {
+    "translation": "certeza",
+    "level": "B2"
+  },
+  "challenge": {
+    "translation": "desafiar",
+    "level": "B1"
+  },
+  "chamber": {
+    "translation": "cámara",
+    "level": "B2"
+  },
+  "champion": {
+    "translation": "campeón",
+    "level": "B1"
+  },
+  "chaos": {
+    "translation": "caos",
+    "level": "B1"
+  },
+  "chaotic": {
+    "translation": "caótico",
+    "level": "B1"
+  },
+  "chapter": {
+    "translation": "capítulo",
+    "level": "A2"
+  },
+  "character": {
+    "translation": "carácter",
+    "level": "A2"
+  },
+  "charge": {
+    "translation": "acusar",
+    "level": "B1"
+  },
+  "charisma": {
+    "translation": "carisma",
+    "level": "B2"
+  },
+  "cheerful": {
+    "translation": "alegre",
+    "level": "B1"
+  },
+  "childhood": {
+    "translation": "infancia",
+    "level": "B1"
+  },
+  "choose": {
+    "translation": "elegir",
+    "level": "A2"
+  },
+  "chronic": {
+    "translation": "crónico",
+    "level": "B2"
+  },
+  "circumlocution": {
+    "translation": "circunloquio",
+    "level": "C1"
+  },
+  "circumspect": {
+    "translation": "circunspecto",
+    "level": "C2"
+  },
+  "circumstance": {
+    "translation": "circunstancia",
+    "level": "B2"
+  },
+  "citizen": {
+    "translation": "ciudadano",
+    "level": "A2"
+  },
+  "civil": {
+    "translation": "civil",
+    "level": "B1"
+  },
+  "civilian": {
+    "translation": "civil",
+    "level": "B1"
+  },
+  "claim": {
+    "translation": "afirmar",
+    "level": "B1"
+  },
+  "clarity": {
+    "translation": "claridad",
+    "level": "B2"
+  },
+  "clash": {
+    "translation": "enfrentarse",
+    "level": "B2"
+  },
+  "cleave": {
+    "translation": "hendir",
+    "level": "C2"
+  },
+  "clever": {
+    "translation": "inteligente",
+    "level": "A2"
+  },
+  "clue": {
+    "translation": "pista",
+    "level": "B1"
+  },
+  "coalition": {
+    "translation": "coalición",
+    "level": "C1"
+  },
+  "code": {
+    "translation": "código",
+    "level": "B1"
+  },
+  "cognizant": {
+    "translation": "consciente",
+    "level": "C2"
+  },
+  "coincidence": {
+    "translation": "coincidencia",
+    "level": "B2"
+  },
+  "cold": {
+    "translation": "frío",
+    "level": "A1"
+  },
+  "collapse": {
+    "translation": "colapso",
+    "level": "B2"
+  },
+  "colleague": {
+    "translation": "colega",
+    "level": "B1"
+  },
+  "collect": {
+    "translation": "recopilar",
+    "level": "A2"
+  },
+  "colony": {
+    "translation": "colonia",
+    "level": "B2"
+  },
+  "colossal": {
+    "translation": "colosal",
+    "level": "B2"
+  },
+  "combat": {
+    "translation": "combate",
+    "level": "B2"
+  },
+  "combine": {
+    "translation": "combinar",
+    "level": "B1"
+  },
+  "command": {
+    "translation": "mando",
+    "level": "B1"
+  },
+  "commander": {
+    "translation": "comandante",
+    "level": "B2"
+  },
+  "commit": {
+    "translation": "cometer",
+    "level": "B1"
+  },
+  "commitment": {
+    "translation": "compromiso",
+    "level": "B2"
+  },
+  "communication": {
+    "translation": "comunicación",
+    "level": "A2"
+  },
+  "companion": {
+    "translation": "compañero",
+    "level": "A2"
+  },
+  "compassion": {
+    "translation": "compasión",
+    "level": "B1"
+  },
+  "compassionate": {
+    "translation": "compasivo",
+    "level": "B2"
+  },
+  "compensate": {
+    "translation": "compensar",
+    "level": "B2"
+  },
+  "compete": {
+    "translation": "competir",
+    "level": "B1"
+  },
+  "competition": {
+    "translation": "competencia",
+    "level": "B1"
+  },
+  "competitor": {
+    "translation": "competidor",
+    "level": "B1"
+  },
+  "complaint": {
+    "translation": "queja",
+    "level": "B1"
+  },
+  "complex": {
+    "translation": "complejo",
+    "level": "B1"
+  },
+  "complexity": {
+    "translation": "complejidad",
+    "level": "B2"
+  },
+  "compromise": {
+    "translation": "comprometerse",
+    "level": "B1"
+  },
+  "comrade": {
+    "translation": "camarada",
+    "level": "B2"
+  },
+  "conceal": {
+    "translation": "ocultar",
+    "level": "B2"
+  },
+  "concomitant": {
+    "translation": "concomitante",
+    "level": "B1"
+  },
+  "condemn": {
+    "translation": "condenar",
+    "level": "B2"
+  },
+  "confess": {
+    "translation": "confesar",
+    "level": "B1"
+  },
+  "confession": {
+    "translation": "confesión",
+    "level": "B1"
+  },
+  "confine": {
+    "translation": "confinar",
+    "level": "B2"
+  },
+  "conflagration": {
+    "translation": "conflagración",
+    "level": "B1"
+  },
+  "conflict": {
+    "translation": "conflicto",
+    "level": "B1"
+  },
+  "conflicted": {
+    "translation": "conflictuado",
+    "level": "B2"
+  },
+  "confluent": {
+    "translation": "confluente",
+    "level": "B1"
+  },
+  "confront": {
+    "translation": "confrontar",
+    "level": "B2"
+  },
+  "confrontation": {
+    "translation": "confrontación",
+    "level": "B2"
+  },
+  "congenial": {
+    "translation": "congenial",
+    "level": "C2"
+  },
+  "connotation": {
+    "translation": "connotación",
+    "level": "C1"
+  },
+  "conquer": {
+    "translation": "conquistar",
+    "level": "B2"
+  },
+  "conquest": {
+    "translation": "conquista",
+    "level": "B2"
+  },
+  "consequence": {
+    "translation": "consecuencia",
+    "level": "B1"
+  },
+  "conspiracy": {
+    "translation": "conspiración",
+    "level": "B2"
+  },
+  "conspirator": {
+    "translation": "conspirador",
+    "level": "B2"
+  },
+  "constitution": {
+    "translation": "constitución",
+    "level": "B2"
+  },
+  "contagious": {
+    "translation": "contagioso",
+    "level": "B1"
+  },
+  "contaminate": {
+    "translation": "contaminar",
+    "level": "B2"
+  },
+  "contempt": {
+    "translation": "desprecio",
+    "level": "B2"
+  },
+  "contentment": {
+    "translation": "satisfacción",
+    "level": "B2"
+  },
+  "context": {
+    "translation": "contexto",
+    "level": "B2"
+  },
+  "contrite": {
+    "translation": "contrito",
+    "level": "B2"
+  },
+  "control": {
+    "translation": "controlar",
+    "level": "A2"
+  },
+  "controversy": {
+    "translation": "controversia",
+    "level": "B2"
+  },
+  "contusion": {
+    "translation": "contusión",
+    "level": "B1"
+  },
+  "conundrum": {
+    "translation": "acertijo",
+    "level": "A2"
+  },
+  "conviction": {
+    "translation": "condena",
+    "level": "B2"
+  },
+  "convince": {
+    "translation": "convencer",
+    "level": "B1"
+  },
+  "convivial": {
+    "translation": "convivial",
+    "level": "B2"
+  },
+  "cooperate": {
+    "translation": "cooperar",
+    "level": "B1"
+  },
+  "cooperation": {
+    "translation": "cooperación",
+    "level": "B2"
+  },
+  "cooperative": {
+    "translation": "cooperativo",
+    "level": "B2"
+  },
+  "corrupt": {
+    "translation": "corrupto",
+    "level": "B1"
+  },
+  "corruption": {
+    "translation": "corrupción",
+    "level": "B1"
+  },
+  "counter": {
+    "translation": "contrarrestar",
+    "level": "B2"
+  },
+  "courage": {
+    "translation": "valentía",
+    "level": "B1"
+  },
+  "covert": {
+    "translation": "encubierto",
+    "level": "C1"
+  },
+  "coward": {
+    "translation": "cobarde",
+    "level": "B1"
+  },
+  "cowardice": {
+    "translation": "cobardía",
+    "level": "B2"
+  },
+  "cowardly": {
+    "translation": "cobarde",
+    "level": "B2"
+  },
+  "creativity": {
+    "translation": "creatividad",
+    "level": "B1"
+  },
+  "crime": {
+    "translation": "crimen",
+    "level": "A2"
+  },
+  "criminal": {
+    "translation": "criminal",
+    "level": "A2"
+  },
+  "crisis": {
+    "translation": "crisis",
+    "level": "B1"
+  },
+  "critic": {
+    "translation": "crítico",
+    "level": "B1"
+  },
+  "critical": {
+    "translation": "crítico",
+    "level": "B1"
+  },
+  "criticism": {
+    "translation": "crítica",
+    "level": "B1"
+  },
+  "crooked": {
+    "translation": "corrupto",
+    "level": "B2"
+  },
+  "crowd": {
+    "translation": "multitud",
+    "level": "A2"
+  },
+  "cruel": {
+    "translation": "cruel",
+    "level": "B1"
+  },
+  "cruelty": {
+    "translation": "crueldad",
+    "level": "B2"
+  },
+  "crush": {
+    "translation": "aplastar",
+    "level": "B2"
+  },
+  "culprit": {
+    "translation": "culpable",
+    "level": "B2"
+  },
+  "culture": {
+    "translation": "cultura",
+    "level": "A2"
+  },
+  "cunning": {
+    "translation": "astuto",
+    "level": "B2"
+  },
+  "cupidity": {
+    "translation": "cupidez",
+    "level": "B1"
+  },
+  "cure": {
+    "translation": "cura",
+    "level": "B1"
+  },
+  "curiosity": {
+    "translation": "curiosidad",
+    "level": "A2"
+  },
+  "cursed": {
+    "translation": "maldito",
+    "level": "B2"
+  },
+  "custody": {
+    "translation": "custodia",
+    "level": "B2"
+  },
+  "cynical": {
+    "translation": "cínico",
+    "level": "B2"
+  },
+  "cynicism": {
+    "translation": "cinismo",
+    "level": "C1"
+  },
+  "damage": {
+    "translation": "dañar",
+    "level": "A2"
+  },
+  "danger": {
+    "translation": "peligro",
+    "level": "A2"
+  },
+  "dangerous": {
+    "translation": "peligroso",
+    "level": "A2"
+  },
+  "dare": {
+    "translation": "atreverse",
+    "level": "B1"
+  },
+  "dark": {
+    "translation": "oscuro",
+    "level": "A2"
+  },
+  "darkness": {
+    "translation": "oscuridad",
+    "level": "B1"
+  },
+  "dead": {
+    "translation": "muerto",
+    "level": "A2"
+  },
+  "deadly": {
+    "translation": "mortal",
+    "level": "B2"
+  },
+  "deal": {
+    "translation": "trato",
+    "level": "A2"
+  },
+  "dearth": {
+    "translation": "escasez",
+    "level": "A2"
+  },
+  "debacle": {
+    "translation": "debacle",
+    "level": "A2"
+  },
+  "debate": {
+    "translation": "debate",
+    "level": "B1"
+  },
+  "decay": {
+    "translation": "descomposición",
+    "level": "B2"
+  },
+  "deceit": {
+    "translation": "engaño",
+    "level": "B2"
+  },
+  "deceive": {
+    "translation": "engañar",
+    "level": "B2"
+  },
+  "deception": {
+    "translation": "engaño",
+    "level": "B2"
+  },
+  "deceptive": {
+    "translation": "engañoso",
+    "level": "B2"
+  },
+  "decision": {
+    "translation": "decisión",
+    "level": "A2"
+  },
+  "decisive": {
+    "translation": "decisivo",
+    "level": "B2"
+  },
+  "declaration": {
+    "translation": "declaración",
+    "level": "B2"
+  },
+  "declare": {
+    "translation": "declarar",
+    "level": "B1"
+  },
+  "decrease": {
+    "translation": "disminuir",
+    "level": "B2"
+  },
+  "dedicated": {
+    "translation": "dedicado",
+    "level": "B1"
+  },
+  "defeat": {
+    "translation": "derrota",
+    "level": "B1"
+  },
+  "defend": {
+    "translation": "defender",
+    "level": "A2"
+  },
+  "defiance": {
+    "translation": "desafío",
+    "level": "B2"
+  },
+  "defiant": {
+    "translation": "desafiante",
+    "level": "B2"
+  },
+  "delay": {
+    "translation": "retrasar",
+    "level": "B1"
+  },
+  "deliberate": {
+    "translation": "deliberado",
+    "level": "B2"
+  },
+  "deliberately": {
+    "translation": "deliberadamente",
+    "level": "B2"
+  },
+  "demagogue": {
+    "translation": "demagogo",
+    "level": "B1"
+  },
+  "demand": {
+    "translation": "exigir",
+    "level": "B1"
+  },
+  "democracy": {
+    "translation": "democracia",
+    "level": "B1"
+  },
+  "demolished": {
+    "translation": "demolido",
+    "level": "B2"
+  },
+  "denial": {
+    "translation": "negación",
+    "level": "B2"
+  },
+  "denigrate": {
+    "translation": "denigrar",
+    "level": "A2"
+  },
+  "deny": {
+    "translation": "negar",
+    "level": "B1"
+  },
+  "deploy": {
+    "translation": "desplegar",
+    "level": "B2"
+  },
+  "depravity": {
+    "translation": "depravación",
+    "level": "C1"
+  },
+  "depression": {
+    "translation": "depresión",
+    "level": "B1"
+  },
+  "deranged": {
+    "translation": "desquiciado",
+    "level": "B2"
+  },
+  "descendant": {
+    "translation": "descendiente",
+    "level": "B2"
+  },
+  "desiccated": {
+    "translation": "desecado",
+    "level": "A2"
+  },
+  "desire": {
+    "translation": "deseo",
+    "level": "A2"
+  },
+  "despair": {
+    "translation": "desesperación",
+    "level": "B2"
+  },
+  "desperate": {
+    "translation": "desesperado",
+    "level": "B1"
+  },
+  "destiny": {
+    "translation": "destino",
+    "level": "B1"
+  },
+  "destroy": {
+    "translation": "destruir",
+    "level": "A2"
+  },
+  "destruction": {
+    "translation": "destrucción",
+    "level": "B1"
+  },
+  "detain": {
+    "translation": "detener",
+    "level": "B2"
+  },
+  "detect": {
+    "translation": "detectar",
+    "level": "B1"
+  },
+  "detective": {
+    "translation": "detective",
+    "level": "B1"
+  },
+  "detention": {
+    "translation": "detención",
+    "level": "B2"
+  },
+  "determination": {
+    "translation": "determinación",
+    "level": "B1"
+  },
+  "devastate": {
+    "translation": "devastar",
+    "level": "B2"
+  },
+  "devastating": {
+    "translation": "devastador",
+    "level": "B2"
+  },
+  "devastation": {
+    "translation": "devastación",
+    "level": "B2"
+  },
+  "devious": {
+    "translation": "taimado",
+    "level": "C1"
+  },
+  "devise": {
+    "translation": "idear",
+    "level": "B2"
+  },
+  "devoted": {
+    "translation": "devoto",
+    "level": "B2"
+  },
+  "devotion": {
+    "translation": "devoción",
+    "level": "B2"
+  },
+  "diagnosis": {
+    "translation": "diagnóstico",
+    "level": "B2"
+  },
+  "diaphanous": {
+    "translation": "diáfano",
+    "level": "C1"
+  },
+  "dictatorship": {
+    "translation": "dictadura",
+    "level": "B2"
+  },
+  "didactic": {
+    "translation": "didáctico",
+    "level": "C1"
+  },
+  "dilemma": {
+    "translation": "dilema",
+    "level": "B2"
+  },
+  "diplomat": {
+    "translation": "diplomático",
+    "level": "B2"
+  },
+  "diplomatic": {
+    "translation": "diplomático",
+    "level": "B2"
+  },
+  "dire": {
+    "translation": "grave",
+    "level": "B2"
+  },
+  "disagree": {
+    "translation": "disentir",
+    "level": "B1"
+  },
+  "disagreement": {
+    "translation": "desacuerdo",
+    "level": "B1"
+  },
+  "disaster": {
+    "translation": "desastre",
+    "level": "B1"
+  },
+  "disbelief": {
+    "translation": "incredulidad",
+    "level": "B2"
+  },
+  "discipline": {
+    "translation": "disciplina",
+    "level": "B1"
+  },
+  "disclose": {
+    "translation": "revelar",
+    "level": "B2"
+  },
+  "disclosure": {
+    "translation": "divulgación",
+    "level": "B2"
+  },
+  "discreet": {
+    "translation": "discreto",
+    "level": "B2"
+  },
+  "discrimination": {
+    "translation": "discriminación",
+    "level": "B1"
+  },
+  "discursive": {
+    "translation": "discursivo",
+    "level": "C2"
+  },
+  "disease": {
+    "translation": "enfermedad",
+    "level": "B1"
+  },
+  "disgrace": {
+    "translation": "deshonra",
+    "level": "B2"
+  },
+  "disguise": {
+    "translation": "disfraz",
+    "level": "B2"
+  },
+  "disgust": {
+    "translation": "asco",
+    "level": "B1"
+  },
+  "dishonest": {
+    "translation": "deshonesto",
+    "level": "B1"
+  },
+  "disloyal": {
+    "translation": "desleal",
+    "level": "B2"
+  },
+  "dismiss": {
+    "translation": "descartar",
+    "level": "B1"
+  },
+  "dismissal": {
+    "translation": "despido",
+    "level": "B2"
+  },
+  "disobedient": {
+    "translation": "desobediente",
+    "level": "B1"
+  },
+  "disorder": {
+    "translation": "trastorno",
+    "level": "B2"
+  },
+  "dispute": {
+    "translation": "disputa",
+    "level": "B2"
+  },
+  "dissemble": {
+    "translation": "disimular",
+    "level": "C2"
+  },
+  "dissident": {
+    "translation": "disidente",
+    "level": "C1"
+  },
+  "distress": {
+    "translation": "angustia",
+    "level": "B2"
+  },
+  "distrust": {
+    "translation": "desconfianza",
+    "level": "B2"
+  },
+  "dither": {
+    "translation": "vacilar",
+    "level": "C2"
+  },
+  "divide": {
+    "translation": "dividir",
+    "level": "B1"
+  },
+  "dominance": {
+    "translation": "dominancia",
+    "level": "B2"
+  },
+  "dominant": {
+    "translation": "dominante",
+    "level": "B2"
+  },
+  "dominate": {
+    "translation": "dominar",
+    "level": "B2"
+  },
+  "dominion": {
+    "translation": "dominio",
+    "level": "B2"
+  },
+  "doomed": {
+    "translation": "condenado",
+    "level": "B2"
+  },
+  "doubt": {
+    "translation": "duda",
+    "level": "A2"
+  },
+  "doubtful": {
+    "translation": "dudoso",
+    "level": "B2"
+  },
+  "downfall": {
+    "translation": "caída",
+    "level": "B2"
+  },
+  "drama": {
+    "translation": "drama",
+    "level": "B1"
+  },
+  "dramatic": {
+    "translation": "dramático",
+    "level": "B1"
+  },
+  "drastic": {
+    "translation": "drástico",
+    "level": "B2"
+  },
+  "dread": {
+    "translation": "pavor",
+    "level": "B2"
+  },
+  "drought": {
+    "translation": "sequía",
+    "level": "B2"
+  },
+  "dubious": {
+    "translation": "dudoso",
+    "level": "B2"
+  },
+  "dungeon": {
+    "translation": "mazmorra",
+    "level": "B2"
+  },
+  "dusk": {
+    "translation": "anochecer",
+    "level": "B2"
+  },
+  "duty": {
+    "translation": "deber",
+    "level": "B1"
+  },
+  "dynamic": {
+    "translation": "dinámico",
+    "level": "B2"
+  },
+  "dynasty": {
+    "translation": "dinastía",
+    "level": "B2"
+  },
+  "earnest": {
+    "translation": "serio",
+    "level": "B2"
+  },
+  "ebullient": {
+    "translation": "ebulliente",
+    "level": "C2"
+  },
+  "ecstasy": {
+    "translation": "éxtasis",
+    "level": "B2"
+  },
+  "edict": {
+    "translation": "edicto",
+    "level": "C1"
+  },
+  "effect": {
+    "translation": "efecto",
+    "level": "A2"
+  },
+  "effort": {
+    "translation": "esfuerzo",
+    "level": "A2"
+  },
+  "effrontery": {
+    "translation": "descaro",
+    "level": "C1"
+  },
+  "egregious": {
+    "translation": "atroz",
+    "level": "B2"
+  },
+  "elaborate": {
+    "translation": "elaborado",
+    "level": "B2"
+  },
+  "election": {
+    "translation": "elección",
+    "level": "B1"
+  },
+  "eliminate": {
+    "translation": "eliminar",
+    "level": "B1"
+  },
+  "elite": {
+    "translation": "de élite",
+    "level": "B2"
+  },
+  "elucidate": {
+    "translation": "elucidar",
+    "level": "C1"
+  },
+  "embarrassment": {
+    "translation": "vergüenza",
+    "level": "B1"
+  },
+  "emergency": {
+    "translation": "emergencia",
+    "level": "A2"
+  },
+  "emotional": {
+    "translation": "emocional",
+    "level": "B1"
+  },
+  "empathy": {
+    "translation": "empatía",
+    "level": "B2"
+  },
+  "emphasize": {
+    "translation": "enfatizar",
+    "level": "B2"
+  },
+  "empire": {
+    "translation": "imperio",
+    "level": "B2"
+  },
+  "empower": {
+    "translation": "empoderar",
+    "level": "B2"
+  },
+  "enable": {
+    "translation": "permitir",
+    "level": "B2"
+  },
+  "encounter": {
+    "translation": "encuentro",
+    "level": "B2"
+  },
+  "encourage": {
+    "translation": "alentar",
+    "level": "B1"
+  },
+  "endurance": {
+    "translation": "resistencia",
+    "level": "B2"
+  },
+  "endure": {
+    "translation": "aguantar",
+    "level": "B2"
+  },
+  "enemy": {
+    "translation": "enemigo",
+    "level": "A2"
+  },
+  "enervate": {
+    "translation": "enervar",
+    "level": "C1"
+  },
+  "enforce": {
+    "translation": "hacer cumplir",
+    "level": "B2"
+  },
+  "enforcement": {
+    "translation": "aplicación de la ley",
+    "level": "B2"
+  },
+  "engage": {
+    "translation": "comprometerse",
+    "level": "B2"
+  },
+  "enmity": {
+    "translation": "enemistad",
+    "level": "C1"
+  },
+  "ensure": {
+    "translation": "asegurar",
+    "level": "B2"
+  },
+  "envy": {
+    "translation": "envidia",
+    "level": "B1"
+  },
+  "ephemeral": {
+    "translation": "efímero",
+    "level": "C1"
+  },
+  "epidemic": {
+    "translation": "epidemia",
+    "level": "B2"
+  },
+  "equality": {
+    "translation": "igualdad",
+    "level": "B1"
+  },
+  "escalate": {
+    "translation": "escalar",
+    "level": "B2"
+  },
+  "escalation": {
+    "translation": "escalada",
+    "level": "B2"
+  },
+  "escape": {
+    "translation": "escapar",
+    "level": "B1"
+  },
+  "eschew": {
+    "translation": "evitar",
+    "level": "A2"
+  },
+  "establish": {
+    "translation": "establecer",
+    "level": "B1"
+  },
+  "evaluate": {
+    "translation": "evaluar",
+    "level": "B2"
+  },
+  "event": {
+    "translation": "evento",
+    "level": "A2"
+  },
+  "evidence": {
+    "translation": "evidencia",
+    "level": "B1"
+  },
+  "evil": {
+    "translation": "maldad",
+    "level": "B1"
+  },
+  "examine": {
+    "translation": "examinar",
+    "level": "B1"
+  },
+  "exceed": {
+    "translation": "superar",
+    "level": "B2"
+  },
+  "excess": {
+    "translation": "exceso",
+    "level": "B1"
+  },
+  "excessive": {
+    "translation": "excesivo",
+    "level": "B2"
+  },
+  "exculpate": {
+    "translation": "exculpar",
+    "level": "B2"
+  },
+  "execrable": {
+    "translation": "execrable",
+    "level": "C1"
+  },
+  "execute": {
+    "translation": "ejecutar",
+    "level": "B2"
+  },
+  "execution": {
+    "translation": "ejecución",
+    "level": "B2"
+  },
+  "exegesis": {
+    "translation": "exégesis",
+    "level": "C2"
+  },
+  "exhausted": {
+    "translation": "agotado",
+    "level": "B1"
+  },
+  "exile": {
+    "translation": "exilio",
+    "level": "B2"
+  },
+  "expand": {
+    "translation": "expandir",
+    "level": "B1"
+  },
+  "expansion": {
+    "translation": "expansión",
+    "level": "B2"
+  },
+  "experience": {
+    "translation": "experiencia",
+    "level": "A2"
+  },
+  "expiate": {
+    "translation": "expiar",
+    "level": "B2"
+  },
+  "explicit": {
+    "translation": "explícito",
+    "level": "B2"
+  },
+  "exploit": {
+    "translation": "explotar",
+    "level": "B2"
+  },
+  "exploitation": {
+    "translation": "explotación",
+    "level": "B2"
+  },
+  "explosion": {
+    "translation": "explosión",
+    "level": "B1"
+  },
+  "explosive": {
+    "translation": "explosivo",
+    "level": "B2"
+  },
+  "expose": {
+    "translation": "exponer",
+    "level": "B2"
+  },
+  "exposure": {
+    "translation": "exposición",
+    "level": "B2"
+  },
+  "expunge": {
+    "translation": "borrar",
+    "level": "C2"
+  },
+  "extant": {
+    "translation": "existente",
+    "level": "C1"
+  },
+  "extend": {
+    "translation": "extender",
+    "level": "B1"
+  },
+  "extinction": {
+    "translation": "extinción",
+    "level": "B2"
+  },
+  "extol": {
+    "translation": "ensalzar",
+    "level": "C2"
+  },
+  "extract": {
+    "translation": "extraer",
+    "level": "B2"
+  },
+  "extreme": {
+    "translation": "extremo",
+    "level": "B1"
+  },
+  "extremist": {
+    "translation": "extremista",
+    "level": "B2"
+  },
+  "fabricate": {
+    "translation": "fabricar",
+    "level": "B2"
+  },
+  "faction": {
+    "translation": "facción",
+    "level": "C1"
+  },
+  "factor": {
+    "translation": "factor",
+    "level": "B1"
+  },
+  "fail": {
+    "translation": "fracasar",
+    "level": "A2"
+  },
+  "failure": {
+    "translation": "fracaso",
+    "level": "B1"
+  },
+  "faith": {
+    "translation": "fe",
+    "level": "B1"
+  },
+  "fake": {
+    "translation": "falso",
+    "level": "A2"
+  },
+  "fallacious": {
+    "translation": "falaz",
+    "level": "C2"
+  },
+  "fame": {
+    "translation": "fama",
+    "level": "B1"
+  },
+  "fastidious": {
+    "translation": "fastidioso",
+    "level": "B1"
+  },
+  "fatal": {
+    "translation": "fatal",
+    "level": "B2"
+  },
+  "fate": {
+    "translation": "destino",
+    "level": "B1"
+  },
+  "fatuous": {
+    "translation": "fatuo",
+    "level": "C2"
+  },
+  "fear": {
+    "translation": "miedo",
+    "level": "A2"
+  },
+  "fearless": {
+    "translation": "intrépido",
+    "level": "B2"
+  },
+  "fecund": {
+    "translation": "fecundo",
+    "level": "C1"
+  },
+  "feeling": {
+    "translation": "sentimiento",
+    "level": "A2"
+  },
+  "feral": {
+    "translation": "feral",
+    "level": "B2"
+  },
+  "ferocious": {
+    "translation": "feroz",
+    "level": "B2"
+  },
+  "ferocity": {
+    "translation": "ferocidad",
+    "level": "B2"
+  },
+  "fetid": {
+    "translation": "fétido",
+    "level": "C1"
+  },
+  "fierce": {
+    "translation": "feroz",
+    "level": "B2"
+  },
+  "fight": {
+    "translation": "luchar",
+    "level": "A2"
+  },
+  "flaw": {
+    "translation": "defecto",
+    "level": "B2"
+  },
+  "flee": {
+    "translation": "huir",
+    "level": "B2"
+  },
+  "florid": {
+    "translation": "florido",
+    "level": "C1"
+  },
+  "focus": {
+    "translation": "concentrarse",
+    "level": "B1"
+  },
+  "foolish": {
+    "translation": "tonto",
+    "level": "A2"
+  },
+  "forbid": {
+    "translation": "prohibir",
+    "level": "B2"
+  },
+  "force": {
+    "translation": "obligar",
+    "level": "A2"
+  },
+  "forced": {
+    "translation": "forzado",
+    "level": "B1"
+  },
+  "fortification": {
+    "translation": "fortificación",
+    "level": "B2"
+  },
+  "fortitude": {
+    "translation": "fortaleza",
+    "level": "C1"
+  },
+  "fortress": {
+    "translation": "fortaleza",
+    "level": "B2"
+  },
+  "foster": {
+    "translation": "fomentar",
+    "level": "B2"
+  },
+  "founder": {
+    "translation": "fundador",
+    "level": "B2"
+  },
+  "fractious": {
+    "translation": "rebelde",
+    "level": "C1"
+  },
+  "fracture": {
+    "translation": "fractura",
+    "level": "B1"
+  },
+  "fragile": {
+    "translation": "frágil",
+    "level": "B1"
+  },
+  "frantic": {
+    "translation": "frenético",
+    "level": "B2"
+  },
+  "fraud": {
+    "translation": "fraude",
+    "level": "B2"
+  },
+  "freedom": {
+    "translation": "libertad",
+    "level": "A2"
+  },
+  "frontier": {
+    "translation": "frontera",
+    "level": "B2"
+  },
+  "frustration": {
+    "translation": "frustración",
+    "level": "B1"
+  },
+  "fugitive": {
+    "translation": "fugitivo",
+    "level": "B2"
+  },
+  "fulfill": {
+    "translation": "cumplir",
+    "level": "B2"
+  },
+  "fundamental": {
+    "translation": "fundamental",
+    "level": "B2"
+  },
+  "furious": {
+    "translation": "furioso",
+    "level": "B1"
+  },
+  "furtive": {
+    "translation": "furtivo",
+    "level": "C1"
+  },
+  "fury": {
+    "translation": "furia",
+    "level": "B1"
+  },
+  "future": {
+    "translation": "futuro",
+    "level": "A2"
+  },
+  "gain": {
+    "translation": "ganar",
+    "level": "A2"
+  },
+  "garrison": {
+    "translation": "guarnición",
+    "level": "C1"
+  },
+  "garrulous": {
+    "translation": "gárrulo",
+    "level": "A2"
+  },
+  "gather": {
+    "translation": "reunir",
+    "level": "A2"
+  },
+  "general": {
+    "translation": "general",
+    "level": "B1"
+  },
+  "generate": {
+    "translation": "generar",
+    "level": "B1"
+  },
+  "generation": {
+    "translation": "generación",
+    "level": "B1"
+  },
+  "generosity": {
+    "translation": "generosidad",
+    "level": "B2"
+  },
+  "genuine": {
+    "translation": "genuino",
+    "level": "B2"
+  },
+  "glory": {
+    "translation": "gloria",
+    "level": "B1"
+  },
+  "goal": {
+    "translation": "objetivo",
+    "level": "B1"
+  },
+  "govern": {
+    "translation": "gobernar",
+    "level": "B2"
+  },
+  "government": {
+    "translation": "gobierno",
+    "level": "A2"
+  },
+  "graceful": {
+    "translation": "elegante",
+    "level": "B2"
+  },
+  "grandiloquence": {
+    "translation": "grandilocuencia",
+    "level": "C2"
+  },
+  "grant": {
+    "translation": "conceder",
+    "level": "B2"
+  },
+  "gratuitous": {
+    "translation": "gratuito",
+    "level": "B1"
+  },
+  "greedy": {
+    "translation": "codicioso",
+    "level": "B1"
+  },
+  "grief": {
+    "translation": "duelo",
+    "level": "B2"
+  },
+  "grim": {
+    "translation": "siniestro",
+    "level": "B2"
+  },
+  "grit": {
+    "translation": "determinación",
+    "level": "C1"
+  },
+  "grudge": {
+    "translation": "rencor",
+    "level": "B2"
+  },
+  "guarantee": {
+    "translation": "garantizar",
+    "level": "B2"
+  },
+  "guardian": {
+    "translation": "guardián",
+    "level": "B2"
+  },
+  "guerrilla": {
+    "translation": "guerrilla",
+    "level": "B2"
+  },
+  "guidance": {
+    "translation": "orientación",
+    "level": "B2"
+  },
+  "guilt": {
+    "translation": "culpa",
+    "level": "B1"
+  },
+  "guilty": {
+    "translation": "culpable",
+    "level": "B1"
+  },
+  "habit": {
+    "translation": "hábito",
+    "level": "B1"
+  },
+  "handle": {
+    "translation": "manejar",
+    "level": "B1"
+  },
+  "hapless": {
+    "translation": "desafortunado",
+    "level": "B2"
+  },
+  "harm": {
+    "translation": "daño",
+    "level": "B1"
+  },
+  "harsh": {
+    "translation": "severo",
+    "level": "B2"
+  },
+  "hasty": {
+    "translation": "apresurado",
+    "level": "B2"
+  },
+  "hatred": {
+    "translation": "odio",
+    "level": "B1"
+  },
+  "hegemony": {
+    "translation": "hegemonía",
+    "level": "B1"
+  },
+  "heir": {
+    "translation": "heredero",
+    "level": "B1"
+  },
+  "helpless": {
+    "translation": "desamparado",
+    "level": "B2"
+  },
+  "heritage": {
+    "translation": "herencia",
+    "level": "B2"
+  },
+  "hero": {
+    "translation": "héroe",
+    "level": "A2"
+  },
+  "hesitate": {
+    "translation": "dudar",
+    "level": "B2"
+  },
+  "heterogeneous": {
+    "translation": "heterogéneo",
+    "level": "C1"
+  },
+  "hidden": {
+    "translation": "oculto",
+    "level": "B1"
+  },
+  "hideout": {
+    "translation": "escondite",
+    "level": "B2"
+  },
+  "hierarchy": {
+    "translation": "jerarquía",
+    "level": "B2"
+  },
+  "hollow": {
+    "translation": "hueco",
+    "level": "B2"
+  },
+  "homicide": {
+    "translation": "homicidio",
+    "level": "B2"
+  },
+  "honesty": {
+    "translation": "honestidad",
+    "level": "B1"
+  },
+  "honor": {
+    "translation": "honor",
+    "level": "B1"
+  },
+  "honorable": {
+    "translation": "honorable",
+    "level": "B2"
+  },
+  "hope": {
+    "translation": "esperanza",
+    "level": "A2"
+  },
+  "horror": {
+    "translation": "horror",
+    "level": "A2"
+  },
+  "hostage": {
+    "translation": "rehén",
+    "level": "B2"
+  },
+  "hostile": {
+    "translation": "hostil",
+    "level": "B2"
+  },
+  "hostility": {
+    "translation": "hostilidad",
+    "level": "B2"
+  },
+  "household": {
+    "translation": "hogar",
+    "level": "B1"
+  },
+  "humble": {
+    "translation": "humilde",
+    "level": "B1"
+  },
+  "humiliation": {
+    "translation": "humillación",
+    "level": "B2"
+  },
+  "humility": {
+    "translation": "humildad",
+    "level": "B2"
+  },
+  "hunt": {
+    "translation": "cazar",
+    "level": "B1"
+  },
+  "hunter": {
+    "translation": "cazador",
+    "level": "B1"
+  },
+  "hurt": {
+    "translation": "herir",
+    "level": "A2"
+  },
+  "hypocrisy": {
+    "translation": "hipocresía",
+    "level": "B2"
+  },
+  "hypocritical": {
+    "translation": "hipócrita",
+    "level": "B2"
+  },
+  "hysteria": {
+    "translation": "histeria",
+    "level": "C1"
+  },
+  "iconoclast": {
+    "translation": "iconoclasta",
+    "level": "C1"
+  },
+  "ideal": {
+    "translation": "ideal",
+    "level": "B1"
+  },
+  "identify": {
+    "translation": "identificar",
+    "level": "B1"
+  },
+  "identity": {
+    "translation": "identidad",
+    "level": "B1"
+  },
+  "idiosyncratic": {
+    "translation": "idiosincrásico",
+    "level": "B2"
+  },
+  "ignorance": {
+    "translation": "ignorancia",
+    "level": "B2"
+  },
+  "ignore": {
+    "translation": "ignorar",
+    "level": "A2"
+  },
+  "illegal": {
+    "translation": "ilegal",
+    "level": "B1"
+  },
+  "imminent": {
+    "translation": "inminente",
+    "level": "B2"
+  },
+  "immune": {
+    "translation": "inmune",
+    "level": "B2"
+  },
+  "immunity": {
+    "translation": "inmunidad",
+    "level": "C1"
+  },
+  "impact": {
+    "translation": "impacto",
+    "level": "B1"
+  },
+  "impassive": {
+    "translation": "impasible",
+    "level": "B2"
+  },
+  "imperious": {
+    "translation": "imperioso",
+    "level": "C2"
+  },
+  "imperturbable": {
+    "translation": "imperturbable",
+    "level": "C1"
+  },
+  "impervious": {
+    "translation": "impermeable",
+    "level": "B2"
+  },
+  "impetuous": {
+    "translation": "impetuoso",
+    "level": "B2"
+  },
+  "impingement": {
+    "translation": "incidencia",
+    "level": "C1"
+  },
+  "implacable": {
+    "translation": "implacable",
+    "level": "C1"
+  },
+  "implement": {
+    "translation": "implementar",
+    "level": "B2"
+  },
+  "impose": {
+    "translation": "imponer",
+    "level": "B2"
+  },
+  "impostor": {
+    "translation": "impostor",
+    "level": "B2"
+  },
+  "imprisonment": {
+    "translation": "encarcelamiento",
+    "level": "C1"
+  },
+  "impudent": {
+    "translation": "impudente",
+    "level": "C2"
+  },
+  "impulsive": {
+    "translation": "impulsivo",
+    "level": "B2"
+  },
+  "inchoate": {
+    "translation": "incipiente",
+    "level": "C1"
+  },
+  "incident": {
+    "translation": "incidente",
+    "level": "B1"
+  },
+  "incite": {
+    "translation": "incitar",
+    "level": "B2"
+  },
+  "incompetent": {
+    "translation": "incompetente",
+    "level": "B2"
+  },
+  "incontrovertible": {
+    "translation": "incontrovertible",
+    "level": "C1"
+  },
+  "indefatigable": {
+    "translation": "indatigable",
+    "level": "A1"
+  },
+  "independence": {
+    "translation": "independencia",
+    "level": "B1"
+  },
+  "independent": {
+    "translation": "independiente",
+    "level": "B1"
+  },
+  "indifference": {
+    "translation": "indiferencia",
+    "level": "B2"
+  },
+  "indifferent": {
+    "translation": "indiferente",
+    "level": "B2"
+  },
+  "ineffable": {
+    "translation": "inefable",
+    "level": "C1"
+  },
+  "inequality": {
+    "translation": "desigualdad",
+    "level": "B2"
+  },
+  "inexorable": {
+    "translation": "inexorable",
+    "level": "B2"
+  },
+  "infection": {
+    "translation": "infección",
+    "level": "B1"
+  },
+  "inferior": {
+    "translation": "inferior",
+    "level": "B1"
+  },
+  "infiltrate": {
+    "translation": "infiltrarse",
+    "level": "B2"
+  },
+  "influence": {
+    "translation": "influencia",
+    "level": "B1"
+  },
+  "influential": {
+    "translation": "influyente",
+    "level": "B2"
+  },
+  "informant": {
+    "translation": "informante",
+    "level": "B2"
+  },
+  "ingenuous": {
+    "translation": "ingenuo",
+    "level": "C2"
+  },
+  "inimical": {
+    "translation": "inimical",
+    "level": "B2"
+  },
+  "iniquity": {
+    "translation": "iniquidad",
+    "level": "B1"
+  },
+  "initiate": {
+    "translation": "iniciar",
+    "level": "B2"
+  },
+  "initiative": {
+    "translation": "iniciativa",
+    "level": "B2"
+  },
+  "injustice": {
+    "translation": "injusticia",
+    "level": "B1"
+  },
+  "innocence": {
+    "translation": "inocencia",
+    "level": "B1"
+  },
+  "insanity": {
+    "translation": "locura",
+    "level": "B2"
+  },
+  "insecurity": {
+    "translation": "inseguridad",
+    "level": "B2"
+  },
+  "insidious": {
+    "translation": "insidioso",
+    "level": "B1"
+  },
+  "insight": {
+    "translation": "perspectiva",
+    "level": "C1"
+  },
+  "inspiration": {
+    "translation": "inspiración",
+    "level": "B1"
+  },
+  "inspire": {
+    "translation": "inspirar",
+    "level": "B1"
+  },
+  "instinct": {
+    "translation": "instinto",
+    "level": "B1"
+  },
+  "institution": {
+    "translation": "institución",
+    "level": "B2"
+  },
+  "integrity": {
+    "translation": "integridad",
+    "level": "B2"
+  },
+  "intelligence": {
+    "translation": "inteligencia",
+    "level": "B1"
+  },
+  "intention": {
+    "translation": "intención",
+    "level": "B1"
+  },
+  "intercept": {
+    "translation": "interceptar",
+    "level": "B2"
+  },
+  "interference": {
+    "translation": "interferencia",
+    "level": "B2"
+  },
+  "interrogation": {
+    "translation": "interrogatorio",
+    "level": "B2"
+  },
+  "intimidate": {
+    "translation": "intimidar",
+    "level": "B2"
+  },
+  "intransigent": {
+    "translation": "intransigente",
+    "level": "A2"
+  },
+  "inure": {
+    "translation": "habituar",
+    "level": "C2"
+  },
+  "invade": {
+    "translation": "invadir",
+    "level": "B2"
+  },
+  "invasion": {
+    "translation": "invasión",
+    "level": "B2"
+  },
+  "invective": {
+    "translation": "invectiva",
+    "level": "B2"
+  },
+  "investigate": {
+    "translation": "investigar",
+    "level": "B1"
+  },
+  "investigation": {
+    "translation": "investigación",
+    "level": "B1"
+  },
+  "investigator": {
+    "translation": "investigador",
+    "level": "B1"
+  },
+  "inveterate": {
+    "translation": "inveterado",
+    "level": "B1"
+  },
+  "irrational": {
+    "translation": "irracional",
+    "level": "B2"
+  },
+  "irreversible": {
+    "translation": "irreversible",
+    "level": "B2"
+  },
+  "isolate": {
+    "translation": "aislar",
+    "level": "B2"
+  },
+  "isolated": {
+    "translation": "aislado",
+    "level": "B2"
+  },
+  "isolation": {
+    "translation": "aislamiento",
+    "level": "B2"
+  },
+  "jealousy": {
+    "translation": "celos",
+    "level": "B1"
+  },
+  "joint": {
+    "translation": "conjunto",
+    "level": "B1"
+  },
+  "joy": {
+    "translation": "alegría",
+    "level": "A2"
+  },
+  "jubilant": {
+    "translation": "jubiloso",
+    "level": "C1"
+  },
+  "judgment": {
+    "translation": "juicio",
+    "level": "B1"
+  },
+  "justice": {
+    "translation": "justicia",
+    "level": "B1"
+  },
+  "justification": {
+    "translation": "justificación",
+    "level": "B2"
+  },
+  "justify": {
+    "translation": "justificar",
+    "level": "B2"
+  },
+  "juxtaposition": {
+    "translation": "yuxtaposición",
+    "level": "B2"
+  },
+  "keen": {
+    "translation": "entusiasta",
+    "level": "B2"
+  },
+  "kidnapping": {
+    "translation": "secuestro",
+    "level": "B2"
+  },
+  "kill": {
+    "translation": "matar",
+    "level": "A2"
+  },
+  "kingdom": {
+    "translation": "reino",
+    "level": "B1"
+  },
+  "kinship": {
+    "translation": "parentesco",
+    "level": "B2"
+  },
+  "knowledge": {
+    "translation": "conocimiento",
+    "level": "A2"
+  },
+  "laboratory": {
+    "translation": "laboratorio",
+    "level": "B1"
+  },
+  "laconic": {
+    "translation": "lacónico",
+    "level": "C1"
+  },
+  "landscape": {
+    "translation": "paisaje",
+    "level": "B1"
+  },
+  "languid": {
+    "translation": "lánguido",
+    "level": "C1"
+  },
+  "largess": {
+    "translation": "liberalidad",
+    "level": "C2"
+  },
+  "latent": {
+    "translation": "latente",
+    "level": "C1"
+  },
+  "law": {
+    "translation": "ley",
+    "level": "A2"
+  },
+  "lead": {
+    "translation": "liderar",
+    "level": "B1"
+  },
+  "leader": {
+    "translation": "líder",
+    "level": "A2"
+  },
+  "leadership": {
+    "translation": "liderazgo",
+    "level": "B2"
+  },
+  "legacy": {
+    "translation": "legado",
+    "level": "B2"
+  },
+  "legend": {
+    "translation": "leyenda",
+    "level": "B1"
+  },
+  "legerdemain": {
+    "translation": "prestidigitación",
+    "level": "A2"
+  },
+  "legislation": {
+    "translation": "legislación",
+    "level": "B2"
+  },
+  "lesson": {
+    "translation": "lección",
+    "level": "A2"
+  },
+  "lethal": {
+    "translation": "letal",
+    "level": "B2"
+  },
+  "liability": {
+    "translation": "responsabilidad",
+    "level": "B2"
+  },
+  "liberal": {
+    "translation": "liberal",
+    "level": "B1"
+  },
+  "liberty": {
+    "translation": "libertad",
+    "level": "B1"
+  },
+  "licentious": {
+    "translation": "licencioso",
+    "level": "C1"
+  },
+  "lie": {
+    "translation": "mentira",
+    "level": "A2"
+  },
+  "limit": {
+    "translation": "limitar",
+    "level": "A2"
+  },
+  "limpid": {
+    "translation": "límpido",
+    "level": "B1"
+  },
+  "logical": {
+    "translation": "lógico",
+    "level": "B1"
+  },
+  "loneliness": {
+    "translation": "soledad",
+    "level": "B1"
+  },
+  "longing": {
+    "translation": "anhelo",
+    "level": "B2"
+  },
+  "loyalty": {
+    "translation": "lealtad",
+    "level": "B1"
+  },
+  "maelstrom": {
+    "translation": "torbellino",
+    "level": "B1"
+  },
+  "magnanimous": {
+    "translation": "magnánimo",
+    "level": "C1"
+  },
+  "maintain": {
+    "translation": "mantener",
+    "level": "B1"
+  },
+  "majority": {
+    "translation": "mayoría",
+    "level": "B1"
+  },
+  "malediction": {
+    "translation": "maldición",
+    "level": "C1"
+  },
+  "malevolent": {
+    "translation": "malevolente",
+    "level": "C1"
+  },
+  "malicious": {
+    "translation": "malintencionado",
+    "level": "B2"
+  },
+  "manage": {
+    "translation": "gestionar",
+    "level": "B1"
+  },
+  "maneuver": {
+    "translation": "maniobra",
+    "level": "B2"
+  },
+  "manifold": {
+    "translation": "múltiple",
+    "level": "B1"
+  },
+  "manipulate": {
+    "translation": "manipular",
+    "level": "B2"
+  },
+  "manipulation": {
+    "translation": "manipulación",
+    "level": "B2"
+  },
+  "manipulative": {
+    "translation": "manipulador",
+    "level": "B2"
+  },
+  "manipulator": {
+    "translation": "manipulador",
+    "level": "B2"
+  },
+  "mansion": {
+    "translation": "mansión",
+    "level": "B2"
+  },
+  "massacre": {
+    "translation": "masacre",
+    "level": "B2"
+  },
+  "massive": {
+    "translation": "masivo",
+    "level": "B1"
+  },
+  "mature": {
+    "translation": "maduro",
+    "level": "B1"
+  },
+  "maudlin": {
+    "translation": "sentimental",
+    "level": "B1"
+  },
+  "mawkish": {
+    "translation": "meloso",
+    "level": "B2"
+  },
+  "melancholy": {
+    "translation": "melancolía",
+    "level": "B2"
+  },
+  "memory": {
+    "translation": "memoria",
+    "level": "A2"
+  },
+  "mendacious": {
+    "translation": "mendaz",
+    "level": "A2"
+  },
+  "mentor": {
+    "translation": "mentor",
+    "level": "B1"
+  },
+  "mercenary": {
+    "translation": "mercenario",
+    "level": "C1"
+  },
+  "merciless": {
+    "translation": "despiadado",
+    "level": "B2"
+  },
+  "mercurial": {
+    "translation": "mercurial",
+    "level": "B2"
+  },
+  "mercy": {
+    "translation": "misericordia",
+    "level": "B2"
+  },
+  "methodology": {
+    "translation": "metodología",
+    "level": "B2"
+  },
+  "meticulous": {
+    "translation": "meticuloso",
+    "level": "B2"
+  },
+  "military": {
+    "translation": "militar",
+    "level": "B1"
+  },
+  "mind": {
+    "translation": "mente",
+    "level": "A2"
+  },
+  "minimal": {
+    "translation": "mínimo",
+    "level": "B1"
+  },
+  "miserable": {
+    "translation": "miserable",
+    "level": "B1"
+  },
+  "misery": {
+    "translation": "miseria",
+    "level": "B1"
+  },
+  "misguided": {
+    "translation": "equivocado",
+    "level": "B2"
+  },
+  "missile": {
+    "translation": "misil",
+    "level": "B2"
+  },
+  "mission": {
+    "translation": "misión",
+    "level": "B1"
+  },
+  "mistake": {
+    "translation": "error",
+    "level": "A2"
+  },
+  "mockery": {
+    "translation": "burla",
+    "level": "B2"
+  },
+  "modicum": {
+    "translation": "módico",
+    "level": "A1"
+  },
+  "monarchy": {
+    "translation": "monarquía",
+    "level": "B2"
+  },
+  "monitor": {
+    "translation": "supervisar",
+    "level": "B2"
+  },
+  "monster": {
+    "translation": "monstruo",
+    "level": "A2"
+  },
+  "moral": {
+    "translation": "moral",
+    "level": "B1"
+  },
+  "morale": {
+    "translation": "moral",
+    "level": "B2"
+  },
+  "morality": {
+    "translation": "moralidad",
+    "level": "B2"
+  },
+  "motivation": {
+    "translation": "motivación",
+    "level": "B1"
+  },
+  "motive": {
+    "translation": "motivo",
+    "level": "B1"
+  },
+  "movement": {
+    "translation": "movimiento",
+    "level": "B1"
+  },
+  "multifarious": {
+    "translation": "multifacético",
+    "level": "C1"
+  },
+  "munificent": {
+    "translation": "munificente",
+    "level": "A1"
+  },
+  "murder": {
+    "translation": "asesinato",
+    "level": "B1"
+  },
+  "murderer": {
+    "translation": "asesino",
+    "level": "B1"
+  },
+  "mutation": {
+    "translation": "mutación",
+    "level": "B2"
+  },
+  "mutual": {
+    "translation": "mutuo",
+    "level": "B2"
+  },
+  "myriad": {
+    "translation": "miríada",
+    "level": "C2"
+  },
+  "mysterious": {
+    "translation": "misterioso",
+    "level": "B1"
+  },
+  "mystery": {
+    "translation": "misterio",
+    "level": "B1"
+  },
+  "nadir": {
+    "translation": "nadir",
+    "level": "C1"
+  },
+  "naive": {
+    "translation": "ingenuo",
+    "level": "B2"
+  },
+  "naivety": {
+    "translation": "ingenuidad",
+    "level": "B2"
+  },
+  "narrative": {
+    "translation": "narrativa",
+    "level": "B2"
+  },
+  "narrow": {
+    "translation": "estrecho",
+    "level": "B1"
+  },
+  "nascent": {
+    "translation": "naciente",
+    "level": "C1"
+  },
+  "nationalism": {
+    "translation": "nacionalismo",
+    "level": "B2"
+  },
+  "nature": {
+    "translation": "naturaleza",
+    "level": "A2"
+  },
+  "necessity": {
+    "translation": "necesidad",
+    "level": "B1"
+  },
+  "nefarious": {
+    "translation": "nefario",
+    "level": "B1"
+  },
+  "neglect": {
+    "translation": "descuidar",
+    "level": "B2"
+  },
+  "negotiate": {
+    "translation": "negociar",
+    "level": "B2"
+  },
+  "negotiation": {
+    "translation": "negociación",
+    "level": "B2"
+  },
+  "negotiator": {
+    "translation": "negociador",
+    "level": "B2"
+  },
+  "nemesis": {
+    "translation": "némesis",
+    "level": "C1"
+  },
+  "neophyte": {
+    "translation": "neófito",
+    "level": "C2"
+  },
+  "neutral": {
+    "translation": "neutral",
+    "level": "B1"
+  },
+  "neutralize": {
+    "translation": "neutralizar",
+    "level": "B2"
+  },
+  "never": {
+    "translation": "nunca",
+    "level": "A1"
+  },
+  "noble": {
+    "translation": "noble",
+    "level": "B1"
+  },
+  "nostalgia": {
+    "translation": "nostalgia",
+    "level": "B2"
+  },
+  "notorious": {
+    "translation": "notorio",
+    "level": "B2"
+  },
+  "nuclear": {
+    "translation": "nuclear",
+    "level": "B2"
+  },
+  "nurture": {
+    "translation": "criar",
+    "level": "B2"
+  },
+  "oath": {
+    "translation": "juramento",
+    "level": "B2"
+  },
+  "obdurate": {
+    "translation": "obdurado",
+    "level": "B2"
+  },
+  "obedience": {
+    "translation": "obediencia",
+    "level": "B2"
+  },
+  "obfuscate": {
+    "translation": "ofuscar",
+    "level": "B2"
+  },
+  "objective": {
+    "translation": "objetivo",
+    "level": "B1"
+  },
+  "obligation": {
+    "translation": "obligación",
+    "level": "B2"
+  },
+  "oblique": {
+    "translation": "oblicuo",
+    "level": "B2"
+  },
+  "obscure": {
+    "translation": "oscuro",
+    "level": "B2"
+  },
+  "obsequious": {
+    "translation": "obsequioso",
+    "level": "C2"
+  },
+  "observe": {
+    "translation": "observar",
+    "level": "B1"
+  },
+  "obsession": {
+    "translation": "obsesión",
+    "level": "B2"
+  },
+  "obstacle": {
+    "translation": "obstáculo",
+    "level": "B2"
+  },
+  "obstreperous": {
+    "translation": "estrepitoso",
+    "level": "B2"
+  },
+  "obtain": {
+    "translation": "obtener",
+    "level": "B2"
+  },
+  "obtuse": {
+    "translation": "obtuso",
+    "level": "A2"
+  },
+  "offense": {
+    "translation": "infracción",
+    "level": "B2"
+  },
+  "officious": {
+    "translation": "oficioso",
+    "level": "C1"
+  },
+  "onerous": {
+    "translation": "oneroso",
+    "level": "C2"
+  },
+  "operative": {
+    "translation": "operativo",
+    "level": "B2"
+  },
+  "opponent": {
+    "translation": "oponente",
+    "level": "B2"
+  },
+  "opposition": {
+    "translation": "oposición",
+    "level": "B2"
+  },
+  "optimism": {
+    "translation": "optimismo",
+    "level": "B1"
+  },
+  "optimistic": {
+    "translation": "optimista",
+    "level": "B1"
+  },
+  "ordeal": {
+    "translation": "suplicio",
+    "level": "B2"
+  },
+  "organization": {
+    "translation": "organización",
+    "level": "B1"
+  },
+  "orphan": {
+    "translation": "huérfano",
+    "level": "B1"
+  },
+  "ostensible": {
+    "translation": "ostensible",
+    "level": "C1"
+  },
+  "outcast": {
+    "translation": "marginado",
+    "level": "B2"
+  },
+  "outcome": {
+    "translation": "resultado",
+    "level": "B2"
+  },
+  "outrage": {
+    "translation": "indignación",
+    "level": "B2"
+  },
+  "outrageous": {
+    "translation": "ultrajante",
+    "level": "B2"
+  },
+  "outsider": {
+    "translation": "forastero",
+    "level": "B2"
+  },
+  "overcome": {
+    "translation": "superar",
+    "level": "B1"
+  },
+  "overdose": {
+    "translation": "sobredosis",
+    "level": "B2"
+  },
+  "overpower": {
+    "translation": "someter",
+    "level": "B2"
+  },
+  "overthrow": {
+    "translation": "derrocar",
+    "level": "B2"
+  },
+  "overwhelmed": {
+    "translation": "abrumado",
+    "level": "B2"
+  },
+  "overwhelming": {
+    "translation": "abrumador",
+    "level": "B2"
+  },
+  "pain": {
+    "translation": "dolor",
+    "level": "A2"
+  },
+  "palliate": {
+    "translation": "paliar",
+    "level": "B2"
+  },
+  "panacea": {
+    "translation": "panacea",
+    "level": "A2"
+  },
+  "panic": {
+    "translation": "pánico",
+    "level": "B1"
+  },
+  "paradigm": {
+    "translation": "paradigma",
+    "level": "C2"
+  },
+  "pariah": {
+    "translation": "paria",
+    "level": "B1"
+  },
+  "parole": {
+    "translation": "libertad condicional",
+    "level": "C1"
+  },
+  "passion": {
+    "translation": "pasión",
+    "level": "B1"
+  },
+  "patience": {
+    "translation": "paciencia",
+    "level": "B1"
+  },
+  "patriotism": {
+    "translation": "patriotismo",
+    "level": "B2"
+  },
+  "pattern": {
+    "translation": "patrón",
+    "level": "B2"
+  },
+  "paucity": {
+    "translation": "escasez",
+    "level": "A2"
+  },
+  "peculiar": {
+    "translation": "peculiar",
+    "level": "B2"
+  },
+  "pejorative": {
+    "translation": "peyorativo",
+    "level": "C2"
+  },
+  "pellucid": {
+    "translation": "translúcido",
+    "level": "C2"
+  },
+  "penalize": {
+    "translation": "penalizar",
+    "level": "B2"
+  },
+  "penalty": {
+    "translation": "penalidad",
+    "level": "B2"
+  },
+  "penurious": {
+    "translation": "penurioso",
+    "level": "C2"
+  },
+  "perception": {
+    "translation": "percepción",
+    "level": "B2"
+  },
+  "perfidious": {
+    "translation": "pérfido",
+    "level": "C1"
+  },
+  "perform": {
+    "translation": "realizar",
+    "level": "B1"
+  },
+  "perfunctory": {
+    "translation": "perfunctorio",
+    "level": "C2"
+  },
+  "pernicious": {
+    "translation": "pernicioso",
+    "level": "C1"
+  },
+  "persecution": {
+    "translation": "persecución",
+    "level": "B2"
+  },
+  "perseverance": {
+    "translation": "perseverancia",
+    "level": "B2"
+  },
+  "persist": {
+    "translation": "persistir",
+    "level": "B2"
+  },
+  "persistence": {
+    "translation": "persistencia",
+    "level": "B2"
+  },
+  "persistent": {
+    "translation": "persistente",
+    "level": "B2"
+  },
+  "perspective": {
+    "translation": "perspectiva",
+    "level": "B2"
+  },
+  "perspicacity": {
+    "translation": "perspicacia",
+    "level": "C1"
+  },
+  "pertinacious": {
+    "translation": "pertinaz",
+    "level": "A2"
+  },
+  "pessimism": {
+    "translation": "pesimismo",
+    "level": "B1"
+  },
+  "pessimistic": {
+    "translation": "pesimista",
+    "level": "B1"
+  },
+  "phenomenon": {
+    "translation": "fenómeno",
+    "level": "B2"
+  },
+  "philanthropic": {
+    "translation": "filantrópico",
+    "level": "B2"
+  },
+  "phlegmatic": {
+    "translation": "flemático",
+    "level": "C1"
+  },
+  "physical": {
+    "translation": "físico",
+    "level": "A2"
+  },
+  "pithy": {
+    "translation": "sucinto",
+    "level": "B1"
+  },
+  "plan": {
+    "translation": "planificar",
+    "level": "A2"
+  },
+  "platitude": {
+    "translation": "platitud",
+    "level": "B1"
+  },
+  "platoon": {
+    "translation": "pelotón",
+    "level": "B2"
+  },
+  "pledge": {
+    "translation": "prometer",
+    "level": "B2"
+  },
+  "plethora": {
+    "translation": "plétora",
+    "level": "A2"
+  },
+  "plot": {
+    "translation": "trama",
+    "level": "B2"
+  },
+  "point": {
+    "translation": "punto / sentido",
+    "level": "B1"
+  },
+  "poison": {
+    "translation": "veneno",
+    "level": "B1"
+  },
+  "policy": {
+    "translation": "política",
+    "level": "B1"
+  },
+  "political": {
+    "translation": "político",
+    "level": "B1"
+  },
+  "portent": {
+    "translation": "portento",
+    "level": "B2"
+  },
+  "poverty": {
+    "translation": "pobreza",
+    "level": "B1"
+  },
+  "power": {
+    "translation": "poder",
+    "level": "A2"
+  },
+  "powerful": {
+    "translation": "poderoso",
+    "level": "B1"
+  },
+  "precarious": {
+    "translation": "precario",
+    "level": "B2"
+  },
+  "preclude": {
+    "translation": "excluir",
+    "level": "B2"
+  },
+  "prediction": {
+    "translation": "predicción",
+    "level": "B2"
+  },
+  "predilection": {
+    "translation": "predilección",
+    "level": "B1"
+  },
+  "prejudice": {
+    "translation": "prejuicio",
+    "level": "B2"
+  },
+  "preponderance": {
+    "translation": "preponderancia",
+    "level": "B1"
+  },
+  "prescient": {
+    "translation": "presciente",
+    "level": "B1"
+  },
+  "pressure": {
+    "translation": "presión",
+    "level": "B1"
+  },
+  "prevent": {
+    "translation": "prevenir",
+    "level": "B1"
+  },
+  "pride": {
+    "translation": "orgullo",
+    "level": "B1"
+  },
+  "principal": {
+    "translation": "principal",
+    "level": "A2"
+  },
+  "principle": {
+    "translation": "principio",
+    "level": "B2"
+  },
+  "priority": {
+    "translation": "prioridad",
+    "level": "B2"
+  },
+  "prison": {
+    "translation": "prisión",
+    "level": "B1"
+  },
+  "prisoner": {
+    "translation": "prisionero",
+    "level": "B1"
+  },
+  "probity": {
+    "translation": "probidad",
+    "level": "C2"
+  },
+  "problem": {
+    "translation": "problema",
+    "level": "A2"
+  },
+  "proclivity": {
+    "translation": "proclividad",
+    "level": "C1"
+  },
+  "profligate": {
+    "translation": "pródigo",
+    "level": "C2"
+  },
+  "profound": {
+    "translation": "profundo",
+    "level": "B2"
+  },
+  "prohibit": {
+    "translation": "prohibir",
+    "level": "B2"
+  },
+  "promulgate": {
+    "translation": "promulgar",
+    "level": "B1"
+  },
+  "propaganda": {
+    "translation": "propaganda",
+    "level": "B2"
+  },
+  "propensity": {
+    "translation": "propensión",
+    "level": "C2"
+  },
+  "propitious": {
+    "translation": "propicio",
+    "level": "A2"
+  },
+  "prosaic": {
+    "translation": "prosaico",
+    "level": "C1"
+  },
+  "proscribe": {
+    "translation": "proscribir",
+    "level": "A2"
+  },
+  "protagonist": {
+    "translation": "protagonista",
+    "level": "B2"
+  },
+  "protect": {
+    "translation": "proteger",
+    "level": "A2"
+  },
+  "protection": {
+    "translation": "protección",
+    "level": "B1"
+  },
+  "protest": {
+    "translation": "protesta",
+    "level": "B1"
+  },
+  "prove": {
+    "translation": "demostrar",
+    "level": "B1"
+  },
+  "provocative": {
+    "translation": "provocativo",
+    "level": "B2"
+  },
+  "provoke": {
+    "translation": "provocar",
+    "level": "B2"
+  },
+  "puerile": {
+    "translation": "pueril",
+    "level": "C2"
+  },
+  "pugnacious": {
+    "translation": "pugnaz",
+    "level": "B1"
+  },
+  "punctilious": {
+    "translation": "puntilloso",
+    "level": "A1"
+  },
+  "punish": {
+    "translation": "castigar",
+    "level": "B1"
+  },
+  "punishment": {
+    "translation": "castigo",
+    "level": "B1"
+  },
+  "pure": {
+    "translation": "puro",
+    "level": "B1"
+  },
+  "purpose": {
+    "translation": "propósito",
+    "level": "B1"
+  },
+  "pursue": {
+    "translation": "perseguir",
+    "level": "B2"
+  },
+  "pursuit": {
+    "translation": "persecución",
+    "level": "B2"
+  },
+  "quagmire": {
+    "translation": "atolladero",
+    "level": "C1"
+  },
+  "quarantine": {
+    "translation": "cuarentena",
+    "level": "B2"
+  },
+  "querulous": {
+    "translation": "querulante",
+    "level": "B1"
+  },
+  "quest": {
+    "translation": "búsqueda",
+    "level": "B2"
+  },
+  "quixotic": {
+    "translation": "quijotesco",
+    "level": "C2"
+  },
+  "radiation": {
+    "translation": "radiación",
+    "level": "B2"
+  },
+  "rage": {
+    "translation": "rabia",
+    "level": "B1"
+  },
+  "rancor": {
+    "translation": "rencor",
+    "level": "C2"
+  },
+  "ransom": {
+    "translation": "rescate",
+    "level": "B2"
+  },
+  "rational": {
+    "translation": "racional",
+    "level": "B2"
+  },
+  "react": {
+    "translation": "reaccionar",
+    "level": "B1"
+  },
+  "reality": {
+    "translation": "realidad",
+    "level": "B1"
+  },
+  "reason": {
+    "translation": "razón",
+    "level": "A2"
+  },
+  "rebel": {
+    "translation": "rebelde",
+    "level": "B1"
+  },
+  "rebellion": {
+    "translation": "rebelión",
+    "level": "B2"
+  },
+  "recalcitrant": {
+    "translation": "recalcitrante",
+    "level": "C2"
+  },
+  "reckless": {
+    "translation": "imprudente",
+    "level": "B2"
+  },
+  "reckoning": {
+    "translation": "ajuste de cuentas",
+    "level": "B2"
+  },
+  "recognition": {
+    "translation": "reconocimiento",
+    "level": "B2"
+  },
+  "recover": {
+    "translation": "recuperarse",
+    "level": "B1"
+  },
+  "recruit": {
+    "translation": "reclutar",
+    "level": "B2"
+  },
+  "rectitude": {
+    "translation": "rectitud",
+    "level": "C1"
+  },
+  "redemption": {
+    "translation": "redención",
+    "level": "B2"
+  },
+  "reform": {
+    "translation": "reforma",
+    "level": "B2"
+  },
+  "refugee": {
+    "translation": "refugiado",
+    "level": "B1"
+  },
+  "regime": {
+    "translation": "régimen",
+    "level": "B2"
+  },
+  "regret": {
+    "translation": "arrepentimiento",
+    "level": "B2"
+  },
+  "reify": {
+    "translation": "reificar",
+    "level": "B1"
+  },
+  "reject": {
+    "translation": "rechazar",
+    "level": "B1"
+  },
+  "relapse": {
+    "translation": "recaída",
+    "level": "B2"
+  },
+  "release": {
+    "translation": "liberar",
+    "level": "B1"
+  },
+  "relentless": {
+    "translation": "implacable",
+    "level": "B2"
+  },
+  "reliable": {
+    "translation": "confiable",
+    "level": "B2"
+  },
+  "relief": {
+    "translation": "alivio",
+    "level": "B1"
+  },
+  "reluctant": {
+    "translation": "reticente",
+    "level": "B2"
+  },
+  "remain": {
+    "translation": "permanecer",
+    "level": "A2"
+  },
+  "remedy": {
+    "translation": "remedio",
+    "level": "B1"
+  },
+  "remiss": {
+    "translation": "remiso",
+    "level": "C2"
+  },
+  "remorse": {
+    "translation": "remordimiento",
+    "level": "B2"
+  },
+  "remote": {
+    "translation": "remoto",
+    "level": "B2"
+  },
+  "renounce": {
+    "translation": "renunciar",
+    "level": "C1"
+  },
+  "reprobate": {
+    "translation": "réprobo",
+    "level": "C2"
+  },
+  "reputation": {
+    "translation": "reputación",
+    "level": "B2"
+  },
+  "rescind": {
+    "translation": "rescindir",
+    "level": "B1"
+  },
+  "rescue": {
+    "translation": "rescate",
+    "level": "B1"
+  },
+  "resentment": {
+    "translation": "resentimiento",
+    "level": "B2"
+  },
+  "resilience": {
+    "translation": "resiliencia",
+    "level": "B2"
+  },
+  "resist": {
+    "translation": "resistir",
+    "level": "B2"
+  },
+  "resistance": {
+    "translation": "resistencia",
+    "level": "B2"
+  },
+  "resolve": {
+    "translation": "resolver",
+    "level": "B1"
+  },
+  "responsibility": {
+    "translation": "responsabilidad",
+    "level": "B1"
+  },
+  "restrain": {
+    "translation": "contener",
+    "level": "B2"
+  },
+  "retaliate": {
+    "translation": "represaliar",
+    "level": "B2"
+  },
+  "retaliation": {
+    "translation": "represalia",
+    "level": "B2"
+  },
+  "retreat": {
+    "translation": "retirada",
+    "level": "B2"
+  },
+  "retribution": {
+    "translation": "represalia",
+    "level": "B2"
+  },
+  "reveal": {
+    "translation": "revelar",
+    "level": "B1"
+  },
+  "revelation": {
+    "translation": "revelación",
+    "level": "B2"
+  },
+  "revenge": {
+    "translation": "venganza",
+    "level": "B1"
+  },
+  "revolution": {
+    "translation": "revolución",
+    "level": "B1"
+  },
+  "ribald": {
+    "translation": "obsceno",
+    "level": "B2"
+  },
+  "rife": {
+    "translation": "plagado",
+    "level": "A1"
+  },
+  "right": {
+    "translation": "correcto",
+    "level": "A1"
+  },
+  "rights": {
+    "translation": "derechos",
+    "level": "A2"
+  },
+  "risk": {
+    "translation": "riesgo",
+    "level": "B1"
+  },
+  "ritual": {
+    "translation": "ritual",
+    "level": "B2"
+  },
+  "rival": {
+    "translation": "rival",
+    "level": "B1"
+  },
+  "rivalry": {
+    "translation": "rivalidad",
+    "level": "B2"
+  },
+  "role": {
+    "translation": "rol",
+    "level": "B1"
+  },
+  "ruins": {
+    "translation": "ruinas",
+    "level": "B1"
+  },
+  "run": {
+    "translation": "correr",
+    "level": "A1"
+  },
+  "ruthless": {
+    "translation": "despiadado",
+    "level": "C1"
+  },
+  "sabotage": {
+    "translation": "sabotear",
+    "level": "B2"
+  },
+  "sacrifice": {
+    "translation": "sacrificar",
+    "level": "B1"
+  },
+  "sadness": {
+    "translation": "tristeza",
+    "level": "A2"
+  },
+  "sanctimonious": {
+    "translation": "santurrón",
+    "level": "B2"
+  },
+  "sanctuary": {
+    "translation": "santuario",
+    "level": "B2"
+  },
+  "sanguine": {
+    "translation": "optimista",
+    "level": "C2"
+  },
+  "satisfied": {
+    "translation": "satisfecho",
+    "level": "B2"
+  },
+  "savior": {
+    "translation": "salvador",
+    "level": "B2"
+  },
+  "scapegoat": {
+    "translation": "chivo expiatorio",
+    "level": "C1"
+  },
+  "scar": {
+    "translation": "cicatriz",
+    "level": "B1"
+  },
+  "scheme": {
+    "translation": "trama",
+    "level": "B2"
+  },
+  "scurrilous": {
+    "translation": "escurriloso",
+    "level": "A1"
+  },
+  "search": {
+    "translation": "buscar",
+    "level": "A2"
+  },
+  "secret": {
+    "translation": "secreto",
+    "level": "A2"
+  },
+  "secretive": {
+    "translation": "reservado",
+    "level": "B2"
+  },
+  "seize": {
+    "translation": "apoderarse",
+    "level": "B2"
+  },
+  "seizure": {
+    "translation": "convulsión",
+    "level": "B2"
+  },
+  "selfish": {
+    "translation": "egoísta",
+    "level": "B1"
+  },
+  "selfishness": {
+    "translation": "egoísmo",
+    "level": "B2"
+  },
+  "sensitive": {
+    "translation": "sensible",
+    "level": "B1"
+  },
+  "sentence": {
+    "translation": "sentencia",
+    "level": "B2"
+  },
+  "serendipity": {
+    "translation": "serendipia",
+    "level": "A2"
+  },
+  "severe": {
+    "translation": "severo",
+    "level": "B2"
+  },
+  "shallow": {
+    "translation": "superficial",
+    "level": "B2"
+  },
+  "shame": {
+    "translation": "vergüenza",
+    "level": "B1"
+  },
+  "siege": {
+    "translation": "asedio",
+    "level": "B2"
+  },
+  "signal": {
+    "translation": "señal",
+    "level": "B1"
+  },
+  "silence": {
+    "translation": "silencio",
+    "level": "A2"
+  },
+  "silent": {
+    "translation": "silencioso",
+    "level": "B1"
+  },
+  "simulate": {
+    "translation": "simular",
+    "level": "B2"
+  },
+  "sincere": {
+    "translation": "sincero",
+    "level": "B1"
+  },
+  "sincerity": {
+    "translation": "sinceridad",
+    "level": "B2"
+  },
+  "skilled": {
+    "translation": "hábil",
+    "level": "B1"
+  },
+  "slaughter": {
+    "translation": "masacre",
+    "level": "B2"
+  },
+  "slave": {
+    "translation": "esclavo",
+    "level": "B1"
+  },
+  "smuggler": {
+    "translation": "contrabandista",
+    "level": "B2"
+  },
+  "smuggling": {
+    "translation": "contrabando",
+    "level": "B2"
+  },
+  "sniper": {
+    "translation": "francotirador",
+    "level": "B2"
+  },
+  "solicitous": {
+    "translation": "solícito",
+    "level": "C1"
+  },
+  "solidarity": {
+    "translation": "solidaridad",
+    "level": "B2"
+  },
+  "solve": {
+    "translation": "resolver",
+    "level": "A2"
+  },
+  "sorrow": {
+    "translation": "pesar",
+    "level": "B2"
+  },
+  "sovereignty": {
+    "translation": "soberanía",
+    "level": "C1"
+  },
+  "spurious": {
+    "translation": "espurio",
+    "level": "C1"
+  },
+  "spy": {
+    "translation": "espía",
+    "level": "B1"
+  },
+  "squad": {
+    "translation": "escuadra",
+    "level": "B2"
+  },
+  "stability": {
+    "translation": "estabilidad",
+    "level": "B2"
+  },
+  "stabilize": {
+    "translation": "estabilizar",
+    "level": "B2"
+  },
+  "staid": {
+    "translation": "serio",
+    "level": "B2"
+  },
+  "still": {
+    "translation": "todavía",
+    "level": "A2"
+  },
+  "stolid": {
+    "translation": "estólido",
+    "level": "A2"
+  },
+  "strategic": {
+    "translation": "estratégico",
+    "level": "B2"
+  },
+  "strategy": {
+    "translation": "estrategia",
+    "level": "B2"
+  },
+  "stress": {
+    "translation": "estrés",
+    "level": "A2"
+  },
+  "strict": {
+    "translation": "estricto",
+    "level": "B1"
+  },
+  "struggle": {
+    "translation": "lucha",
+    "level": "B1"
+  },
+  "stubborn": {
+    "translation": "terco",
+    "level": "B1"
+  },
+  "stubbornness": {
+    "translation": "terquedad",
+    "level": "B2"
+  },
+  "submission": {
+    "translation": "sumisión",
+    "level": "B2"
+  },
+  "submit": {
+    "translation": "presentar",
+    "level": "B1"
+  },
+  "subtle": {
+    "translation": "sutil",
+    "level": "B2"
+  },
+  "succeed": {
+    "translation": "tener éxito",
+    "level": "B1"
+  },
+  "success": {
+    "translation": "éxito",
+    "level": "A2"
+  },
+  "successor": {
+    "translation": "sucesor",
+    "level": "B2"
+  },
+  "suffering": {
+    "translation": "sufrimiento",
+    "level": "B2"
+  },
+  "superiority": {
+    "translation": "superioridad",
+    "level": "B2"
+  },
+  "support": {
+    "translation": "apoyar",
+    "level": "A2"
+  },
+  "surfeit": {
+    "translation": "exceso",
+    "level": "B2"
+  },
+  "surrender": {
+    "translation": "rendirse",
+    "level": "B1"
+  },
+  "surreptitious": {
+    "translation": "subrepticio",
+    "level": "B1"
+  },
+  "survive": {
+    "translation": "sobrevivir",
+    "level": "B1"
+  },
+  "survivor": {
+    "translation": "superviviente",
+    "level": "B2"
+  },
+  "suspense": {
+    "translation": "suspenso",
+    "level": "B2"
+  },
+  "suspicion": {
+    "translation": "sospecha",
+    "level": "B1"
+  },
+  "suspicious": {
+    "translation": "sospechoso",
+    "level": "B1"
+  },
+  "sycophant": {
+    "translation": "sicofante",
+    "level": "B2"
+  },
+  "symbol": {
+    "translation": "símbolo",
+    "level": "B1"
+  },
+  "symbolic": {
+    "translation": "simbólico",
+    "level": "B2"
+  },
+  "sympathy": {
+    "translation": "simpatía",
+    "level": "B1"
+  },
+  "symptom": {
+    "translation": "síntoma",
+    "level": "B2"
+  },
+  "tacit": {
+    "translation": "tácito",
+    "level": "C2"
+  },
+  "taciturn": {
+    "translation": "taciturno",
+    "level": "B1"
+  },
+  "tactical": {
+    "translation": "táctico",
+    "level": "B2"
+  },
+  "tactics": {
+    "translation": "tácticas",
+    "level": "B2"
+  },
+  "tantamount": {
+    "translation": "equivalente",
+    "level": "C1"
+  },
+  "temerity": {
+    "translation": "temeridad",
+    "level": "B1"
+  },
+  "tenacity": {
+    "translation": "tenacidad",
+    "level": "B2"
+  },
+  "tension": {
+    "translation": "tensión",
+    "level": "B1"
+  },
+  "tenuous": {
+    "translation": "tenue",
+    "level": "C1"
+  },
+  "territory": {
+    "translation": "territorio",
+    "level": "B1"
+  },
+  "terror": {
+    "translation": "terror",
+    "level": "B1"
+  },
+  "testimony": {
+    "translation": "testimonio",
+    "level": "B2"
+  },
+  "therapy": {
+    "translation": "terapia",
+    "level": "B2"
+  },
+  "threat": {
+    "translation": "amenaza",
+    "level": "B1"
+  },
+  "threaten": {
+    "translation": "amenazar",
+    "level": "B1"
+  },
+  "timeline": {
+    "translation": "cronología",
+    "level": "B2"
+  },
+  "timorous": {
+    "translation": "temeroso",
+    "level": "B2"
+  },
+  "tolerance": {
+    "translation": "tolerancia",
+    "level": "B2"
+  },
+  "tolerant": {
+    "translation": "tolerante",
+    "level": "B2"
+  },
+  "torpid": {
+    "translation": "tórpido",
+    "level": "C1"
+  },
+  "toxic": {
+    "translation": "tóxico",
+    "level": "B2"
+  },
+  "tractable": {
+    "translation": "dócil",
+    "level": "C1"
+  },
+  "tragedy": {
+    "translation": "tragedia",
+    "level": "B2"
+  },
+  "tragic": {
+    "translation": "trágico",
+    "level": "B1"
+  },
+  "train": {
+    "translation": "entrenar",
+    "level": "B1"
+  },
+  "traitor": {
+    "translation": "traidor",
+    "level": "B1"
+  },
+  "transform": {
+    "translation": "transformar",
+    "level": "B1"
+  },
+  "transformation": {
+    "translation": "transformación",
+    "level": "B2"
+  },
+  "transient": {
+    "translation": "transitorio",
+    "level": "C1"
+  },
+  "transmit": {
+    "translation": "transmitir",
+    "level": "B2"
+  },
+  "trauma": {
+    "translation": "trauma",
+    "level": "B2"
+  },
+  "treacherous": {
+    "translation": "traicionero",
+    "level": "B2"
+  },
+  "treachery": {
+    "translation": "traición",
+    "level": "B2"
+  },
+  "treason": {
+    "translation": "traición",
+    "level": "B2"
+  },
+  "troops": {
+    "translation": "tropas",
+    "level": "B2"
+  },
+  "troubled": {
+    "translation": "perturbado",
+    "level": "B2"
+  },
+  "trust": {
+    "translation": "confianza",
+    "level": "A2"
+  },
+  "trustworthy": {
+    "translation": "confiable",
+    "level": "B2"
+  },
+  "truth": {
+    "translation": "verdad",
+    "level": "A2"
+  },
+  "turbulent": {
+    "translation": "turbulento",
+    "level": "B2"
+  },
+  "turgid": {
+    "translation": "túrgido",
+    "level": "A2"
+  },
+  "turpitude": {
+    "translation": "turpitud",
+    "level": "C2"
+  },
+  "twisted": {
+    "translation": "retorcido",
+    "level": "B2"
+  },
+  "tyranny": {
+    "translation": "tiranía",
+    "level": "B2"
+  },
+  "tyrant": {
+    "translation": "tirano",
+    "level": "B2"
+  },
+  "ubiquitous": {
+    "translation": "ubicuo",
+    "level": "C1"
+  },
+  "umbrage": {
+    "translation": "resentimiento",
+    "level": "C2"
+  },
+  "uncertainty": {
+    "translation": "incertidumbre",
+    "level": "B2"
+  },
+  "uncover": {
+    "translation": "descubrir",
+    "level": "B2"
+  },
+  "unctuous": {
+    "translation": "untuoso",
+    "level": "B1"
+  },
+  "undermine": {
+    "translation": "socavar",
+    "level": "C1"
+  },
+  "uneasy": {
+    "translation": "inquieto",
+    "level": "B2"
+  },
+  "unfair": {
+    "translation": "injusto",
+    "level": "A2"
+  },
+  "unite": {
+    "translation": "unir",
+    "level": "B2"
+  },
+  "unity": {
+    "translation": "unidad",
+    "level": "B1"
+  },
+  "unjust": {
+    "translation": "injusto",
+    "level": "B1"
+  },
+  "unstable": {
+    "translation": "inestable",
+    "level": "B2"
+  },
+  "untenable": {
+    "translation": "insostenible",
+    "level": "C1"
+  },
+  "untouchable": {
+    "translation": "intocable",
+    "level": "B2"
+  },
+  "upbraid": {
+    "translation": "reprender",
+    "level": "C2"
+  },
+  "uprising": {
+    "translation": "levantamiento",
+    "level": "B2"
+  },
+  "urgency": {
+    "translation": "urgencia",
+    "level": "B2"
+  },
+  "utilitarian": {
+    "translation": "utilitario",
+    "level": "B1"
+  },
+  "utilize": {
+    "translation": "utilizar",
+    "level": "B2"
+  },
+  "vaccine": {
+    "translation": "vacuna",
+    "level": "B2"
+  },
+  "vacillate": {
+    "translation": "vacilar",
+    "level": "C2"
+  },
+  "vague": {
+    "translation": "vago",
+    "level": "B2"
+  },
+  "validity": {
+    "translation": "validez",
+    "level": "B2"
+  },
+  "valor": {
+    "translation": "valor",
+    "level": "B2"
+  },
+  "vanity": {
+    "translation": "vanidad",
+    "level": "B2"
+  },
+  "variegated": {
+    "translation": "veteado",
+    "level": "B2"
+  },
+  "venerable": {
+    "translation": "venerable",
+    "level": "B2"
+  },
+  "vengeance": {
+    "translation": "venganza",
+    "level": "B2"
+  },
+  "vengeful": {
+    "translation": "vengativo",
+    "level": "B2"
+  },
+  "veracity": {
+    "translation": "veracidad",
+    "level": "B2"
+  },
+  "verdict": {
+    "translation": "veredicto",
+    "level": "B2"
+  },
+  "vicissitude": {
+    "translation": "vicisitud",
+    "level": "B1"
+  },
+  "victim": {
+    "translation": "víctima",
+    "level": "B1"
+  },
+  "victory": {
+    "translation": "victoria",
+    "level": "B1"
+  },
+  "vigilance": {
+    "translation": "vigilancia",
+    "level": "B2"
+  },
+  "vilify": {
+    "translation": "vilipendiar",
+    "level": "B2"
+  },
+  "villain": {
+    "translation": "villano",
+    "level": "B1"
+  },
+  "violence": {
+    "translation": "violencia",
+    "level": "B1"
+  },
+  "violent": {
+    "translation": "violento",
+    "level": "A2"
+  },
+  "virtue": {
+    "translation": "virtud",
+    "level": "B2"
+  },
+  "viscous": {
+    "translation": "viscoso",
+    "level": "C1"
+  },
+  "vital": {
+    "translation": "vital",
+    "level": "B1"
+  },
+  "vitriolic": {
+    "translation": "vitriólico",
+    "level": "A2"
+  },
+  "vituperate": {
+    "translation": "vituperar",
+    "level": "C2"
+  },
+  "vociferous": {
+    "translation": "vociferante",
+    "level": "A2"
+  },
+  "volatile": {
+    "translation": "volátil",
+    "level": "C1"
+  },
+  "vulnerability": {
+    "translation": "vulnerabilidad",
+    "level": "B2"
+  },
+  "vulnerable": {
+    "translation": "vulnerable",
+    "level": "B2"
+  },
+  "wanton": {
+    "translation": "desenfrenado",
+    "level": "C1"
+  },
+  "warfare": {
+    "translation": "guerra",
+    "level": "B2"
+  },
+  "warn": {
+    "translation": "advertir",
+    "level": "B1"
+  },
+  "warning": {
+    "translation": "advertencia",
+    "level": "B1"
+  },
+  "warrant": {
+    "translation": "orden judicial",
+    "level": "B2"
+  },
+  "warrior": {
+    "translation": "guerrero",
+    "level": "B1"
+  },
+  "wary": {
+    "translation": "cauteloso",
+    "level": "B2"
+  },
+  "watch": {
+    "translation": "observar",
+    "level": "A2"
+  },
+  "weakness": {
+    "translation": "debilidad",
+    "level": "B1"
+  },
+  "weapon": {
+    "translation": "arma",
+    "level": "B1"
+  },
+  "welfare": {
+    "translation": "bienestar",
+    "level": "B2"
+  },
+  "wicked": {
+    "translation": "malvado",
+    "level": "B2"
+  },
+  "wilderness": {
+    "translation": "naturaleza salvaje",
+    "level": "B2"
+  },
+  "will": {
+    "translation": "voluntad",
+    "level": "B1"
+  },
+  "willing": {
+    "translation": "dispuesto",
+    "level": "B1"
+  },
+  "winsome": {
+    "translation": "atractivo",
+    "level": "A2"
+  },
+  "wisdom": {
+    "translation": "sabiduría",
+    "level": "B2"
+  },
+  "wit": {
+    "translation": "ingenio",
+    "level": "B2"
+  },
+  "withdraw": {
+    "translation": "retirarse",
+    "level": "B2"
+  },
+  "witness": {
+    "translation": "testigo",
+    "level": "B1"
+  },
+  "wonder": {
+    "translation": "asombro",
+    "level": "B1"
+  },
+  "worry": {
+    "translation": "preocupación",
+    "level": "A2"
+  },
+  "wound": {
+    "translation": "herida",
+    "level": "B1"
+  },
+  "wounded": {
+    "translation": "herido",
+    "level": "B2"
+  },
+  "wrath": {
+    "translation": "cólera",
+    "level": "B2"
+  },
+  "yield": {
+    "translation": "ceder",
+    "level": "B2"
+  },
+  "yoke": {
+    "translation": "yugo",
+    "level": "C2"
+  },
+  "zephyr": {
+    "translation": "cefiro",
+    "level": "B2"
+  }
 }
