@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-04-14
+
+### Added
+- **Context-Aware Translations**: Words now resolve their best translation based on sentence context:
+  - `translation_question` — activated when the subtitle ends with `?` (e.g. `who` → `¿quién?`)
+  - `translation_start` — activated for words in the first 20% of a sentence (e.g. `well` → `bueno / pues`)
+  - `translation_end` — activated for words in the last 20% (e.g. `right` → `¿no? / ¿verdad?`)
+- **Longest-Match-First Phrase Detection**: Multi-word expressions now take priority over individual words. `"look who's talking"` is translated as a phrase, never as `"look"` + `"who"` separately.
+- **Structural Word Differentiation**: Connectors and auxiliary verbs are now visually distinct — rendered in muted gray-blue (smaller, non-bold) to focus attention on content vocabulary.
+  - **55 connectors** tagged: `and`, `but`, `however`, `although`, `therefore`, `whereas`, `albeit`, and more.
+  - **27 auxiliary verbs** tagged: `can`, `will`, `would`, `should`, `must`, `do`, `have`, `be`, and all conjugations.
+- **Massive Dictionary Expansion**: 3,140 real entries (up from ~1,300), focused on subtitle realism:
+  - 652 idioms, 510 informal expressions, 301 phrasal verbs, 98 slang
+  - 5 topic batches: conversational/daily, crime/thriller, relationships/romance, sci-fi/action/fantasy
+  - Zero fake placeholder entries (`complexWord189` style fully removed)
+- **Tooling**:
+  - `scripts/merge-dictionary.py` — merge new batches without overwriting existing entries
+  - `scripts/patch-context.py` — apply context patches (`translation_start/end/question`, tags) to existing entries
+
+### Changed
+- `checkAndTranslateText()` rewritten with a tokenizer-based approach: tracks char offsets, supports multi-word windows, and propagates context signals (`isQuestion`, `posRatio`) to every lookup.
+- `injectTranslation()` now accepts an `isStructural` flag to apply the `.nwt-connector` CSS class.
+- Dictionary schema extended with optional `translation_start`, `translation_end`, `translation_question`, and `tags` fields.
+
 ## [1.1.0] - 2026-04-14
 
 ### Added

@@ -14,7 +14,7 @@
 .nwt-translation {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.9);
-  color: #00ff00; /* High contrast green */
+  color: #00ff00; /* High contrast green — regular vocabulary */
   padding: 1px 4px;
   border-radius: 3px;
   font-family: 'Netflix Sans', Arial, sans-serif;
@@ -25,4 +25,13 @@
   transform: translate(-50%, -125%); /* Position further above the word to avoid line overlap */
   pointer-events: none;
   z-index: 10001;
+}
+
+/* Connectors (and, but, however, although…) shown in muted gray-blue.
+   Less prominent than content words since they are structural, not new vocab. */
+.nwt-translation.nwt-connector {
+  color: #90b8d0;
+  font-weight: normal;
+  font-size: 11px;
+  background-color: rgba(0, 0, 0, 0.7);
 }

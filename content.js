@@ -7,6 +7,10 @@
 let DICTIONARY = new Map();
 const LEVEL_MAP = { 'A1': 1, 'A2': 2, 'B1': 3, 'B2': 4, 'C1': 5, 'C2': 6 };
 
+// Sorted phrase keys by descending word-count for longest-match-first lookup.
+// Rebuilt once after dictionary loads. Only includes multi-word entries.
+let PHRASE_KEYS = [];
+
 class NetflixTranslator {
   constructor() {
     this.overlay = null;
@@ -31,6 +35,12 @@ class NetflixTranslator {
       if (!dictResponse.ok) throw new Error(`HTTP status ${dictResponse.status}`);
       const data = await dictResponse.json();
       DICTIONARY = new Map(Object.entries(data));
+
+      // Build phrase index: multi-word keys only, sorted longest first.
+      PHRASE_KEYS = [...DICTIONARY.keys()]
+        .filter(k => k.includes(' '))
+        .sort((a, b) => b.split(' ').length - a.split(' ').length);
+
       this.isDictionaryLoaded = true;
 
       if (settings.selectedLevel) {
@@ -153,29 +163,117 @@ class NetflixTranslator {
   }
 
   /**
-   * Normalize text and check against the dictionary.
-   * Uses DOM Range to find the precise location of words within the text.
-   * @param {Text} textNode 
+   * Resolve the best translation for an entry given sentence context.
+   *
+   * Priority:
+   *   1. translation_question  — if the subtitle is a question AND the entry has it
+   *   2. translation_start     — if the token is in the first 20% AND the entry has it
+   *   3. translation_end       — if the token is in the last 20% AND the entry has it
+   *   4. translation           — default fallback
+   *
+   * @param {Object} entry         - Dictionary entry
+   * @param {boolean} isQuestion   - Whether the full subtitle ends with '?'
+   * @param {number}  posRatio     - Word position (0 = first word, 1 = last word)
+   * @returns {string}
+   */
+  resolveTranslation(entry, isQuestion, posRatio) {
+    if (isQuestion && entry.translation_question) return entry.translation_question;
+    if (posRatio <= 0.20 && entry.translation_start) return entry.translation_start;
+    if (posRatio >= 0.80 && entry.translation_end)   return entry.translation_end;
+    return entry.translation;
+  }
+
+  /**
+   * Tokenize subtitle text and look up phrases/words using longest-match-first.
+   *
+   * Algorithm:
+   *   1. Split text into tokens (words + non-word separators), tracking char offsets.
+   *   2. At each word token, try to match the longest phrase in PHRASE_KEYS first.
+   *   3. If a multi-word phrase matches, inject it and skip all its tokens.
+   *   4. If no phrase matches, fall back to the single word lookup.
+   *
+   * This ensures "look who's talking" is translated as a phrase, not "look" + "who" separately.
+   *
+   * @param {Text} textNode
    */
   checkAndTranslateText(textNode) {
     const originalText = textNode.textContent;
     if (!originalText || originalText.trim().length < 3) return;
 
-    const wordRegex = /[a-zA-Z]{3,}/g; 
-    let match;
+    // Context signals derived from the whole subtitle line.
+    const isQuestion = originalText.trim().endsWith('?');
+    // Split into alternating [word, separator, word, separator …] tokens with offsets.
+    // Each token: { text, start, end, isWord }
+    const TOKEN_RE = /([a-zA-Z']+)|([^a-zA-Z']+)/g;
+    const tokens = [];
+    let m;
+    while ((m = TOKEN_RE.exec(originalText)) !== null) {
+      tokens.push({
+        text: m[0],
+        start: m.index,
+        end: m.index + m[0].length,
+        isWord: /[a-zA-Z]/.test(m[0])
+      });
+    }
 
-    while ((match = wordRegex.exec(originalText)) !== null) {
-      const word = match[0];
-      const normalized = word.toLowerCase();
-      
+    // Word tokens only, in order — we iterate these for matching.
+    const wordTokens = tokens.filter(t => t.isWord);
+    const totalWords = wordTokens.length;
+
+    // Track which word-token indices are already covered by a phrase match.
+    const covered = new Set();
+
+    // --- Phase 1: longest-match phrase scan ---
+    for (let wi = 0; wi < wordTokens.length; wi++) {
+      if (covered.has(wi)) continue;
+
+      // Position ratio: 0 = first word of subtitle, 1 = last word.
+      const posRatio = totalWords <= 1 ? 0.5 : wi / (totalWords - 1);
+
+      // Build candidate windows from this word position outward.
+      // Max phrase length in the dictionary (capped at 8 words for perf).
+      const maxLen = Math.min(8, wordTokens.length - wi);
+
+      let matched = false;
+      for (let len = maxLen; len >= 2; len--) {
+        // Reconstruct the candidate string from word wi to wi+len-1,
+        // preserving original separators between them.
+        const firstToken = wordTokens[wi];
+        const lastToken  = wordTokens[wi + len - 1];
+        const candidate  = originalText.slice(firstToken.start, lastToken.end).toLowerCase()
+          .replace(/['']/g, "'");  // normalise smart quotes
+
+        const entry = DICTIONARY.get(candidate);
+        if (entry) {
+          const lvl = LEVEL_MAP[entry.level] || 6;
+          if (lvl >= this.selectedLevelValue) {
+            // Phrases always use position of first token.
+            const translation = this.resolveTranslation(entry, isQuestion, posRatio);
+            const isStructural = Array.isArray(entry.tags) &&
+              (entry.tags.includes('connector') || entry.tags.includes('auxiliary'));
+            this.injectTranslation(textNode, firstToken.start, lastToken.end, translation, isStructural);
+          }
+          // Mark all consumed word-token positions as covered.
+          for (let k = wi; k < wi + len; k++) covered.add(k);
+          wi += len - 1; // advance outer loop past matched tokens
+          matched = true;
+          break;
+        }
+      }
+
+      if (matched) continue;
+
+      // --- Phase 2: single-word fallback ---
+      const token = wordTokens[wi];
+      const normalized = token.text.toLowerCase();
       const entry = DICTIONARY.get(normalized);
       if (entry) {
-        const wordLevelValue = LEVEL_MAP[entry.level] || 6; // Default to C2 if missing
-        
-        // Only translate if word is AT or ABOVE user's proficiency threshold
-        // (Beginners see A1+, Experts see only C2)
-        if (wordLevelValue >= this.selectedLevelValue) {
-          this.injectTranslation(textNode, match.index, match.index + word.length, entry.translation);
+        const lvl = LEVEL_MAP[entry.level] || 6;
+        if (lvl >= this.selectedLevelValue) {
+          const translation = this.resolveTranslation(entry, isQuestion, posRatio);
+          const isStructural = Array.isArray(entry.tags) &&
+            (entry.tags.includes('connector') || entry.tags.includes('auxiliary'));
+          this.injectTranslation(textNode, token.start, token.end, translation, isStructural);
         }
       }
     }
@@ -183,9 +281,13 @@ class NetflixTranslator {
 
   /**
    * Inject a translation label into the overlay at precise word coordinates.
-   * @param {Text} textNode 
+   * @param {Text}    textNode
+   * @param {number}  startOffset
+   * @param {number}  endOffset
+   * @param {string}  translation
+   * @param {boolean} [isConnector=false] - Whether this is a grammatical connector (different style)
    */
-  injectTranslation(textNode, startOffset, endOffset, translation) {
+  injectTranslation(textNode, startOffset, endOffset, translation, isConnector = false) {
     if (!this.overlay) return;
 
     try {
@@ -213,7 +315,7 @@ class NetflixTranslator {
       }
 
       const label = document.createElement('span');
-      label.className = 'nwt-translation';
+      label.className = isConnector ? 'nwt-translation nwt-connector' : 'nwt-translation';
       label.textContent = translation;
       label.style.left = `${left}px`;
 
