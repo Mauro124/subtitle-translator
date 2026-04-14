@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Word Translator",
+  "version": "1.0",
+  "description": "Translates complex words in Netflix subtitles using a non-invasive overlay.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://www.netflix.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.netflix.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dictionary.json"],
+      "matches": ["*://www.netflix.com/*"]
+    }
+  ]
+}

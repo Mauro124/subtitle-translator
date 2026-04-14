@@ -1,0 +1,28 @@
+/* Overlay container that covers the entire video viewport */
+#nwt-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Do not block clicks on Netflix player */
+  z-index: 10000; /* Ensure it stays above Netflix timed text */
+  overflow: hidden;
+}
+
+/* Individual translation labels */
+.nwt-translation {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #00ff00; /* High contrast green */
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-family: 'Netflix Sans', Arial, sans-serif;
+  font-size: 13px; /* Slightly smaller to fit lines better */
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -125%); /* Position further above the word to avoid line overlap */
+  pointer-events: none;
+  z-index: 10001;
+}
