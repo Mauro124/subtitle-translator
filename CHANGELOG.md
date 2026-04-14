@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-04-14
+
+### Added
+- **Customizable Label Appearance**: Users can now control how translation labels look from the popup:
+  - **Color** — color picker + 6 quick presets (green, white, gold, cyan, red, purple)
+  - **Font Size** — slider from 10px to 22px with live numeric display
+  - **Font Family** — Netflix Sans, Inter, Monospace, Georgia, System UI
+  - **Connector/Auxiliary Color** — separate picker + presets for structural words
+  - **Live Preview** — shows how labels will look before opening Netflix
+  - **Reset to defaults** — one-click restore
+- **CSS Custom Properties system**: All label styles are now driven by `--nwt-color`, `--nwt-font-size`, `--nwt-font-family`, `--nwt-connector-color` on the overlay element. Changes from the popup are applied instantly via `applyAppearanceVars()` — no DOM iteration required.
+- **Popup redesign**: New interface inspired by the extension icon (ES/EN badges, blue gradient header, dark theme, Inter typography). Sections: Proficiency Level, Label Appearance, Structural Color.
+
+### Changed
+- App renamed from **Netflix Word Translator** to **Subtitle Translator** across `manifest.json`, `popup.html`, and `README.md`.
+- `init()` now loads all appearance settings alongside `selectedLevel` in a single `storage.local.get` call.
+- `storage.onChanged` listener extended to react to all five persisted settings in real time (no reload needed).
+
 ## [1.2.0] - 2026-04-14
 
 ### Added

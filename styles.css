@@ -10,28 +10,28 @@
   overflow: hidden;
 }
 
-/* Individual translation labels */
+/* Individual translation labels — appearance driven by CSS custom properties
+   set by applyAppearanceVars() in content.js. Defaults match popup.js DEFAULTS. */
 .nwt-translation {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.9);
-  color: #00ff00; /* High contrast green — regular vocabulary */
+  color: var(--nwt-color, #00ff00);
+  font-size: var(--nwt-font-size, 13px);
+  font-family: var(--nwt-font-family, 'Netflix Sans', Arial, sans-serif);
   padding: 1px 4px;
   border-radius: 3px;
-  font-family: 'Netflix Sans', Arial, sans-serif;
-  font-size: 13px; /* Slightly smaller to fit lines better */
   font-weight: bold;
   white-space: nowrap;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  transform: translate(-50%, -125%); /* Position further above the word to avoid line overlap */
+  transform: translate(-50%, -125%);
   pointer-events: none;
   z-index: 10001;
 }
 
-/* Connectors (and, but, however, although…) shown in muted gray-blue.
-   Less prominent than content words since they are structural, not new vocab. */
+/* Connectors & auxiliaries — muted, non-bold, slightly smaller than main labels */
 .nwt-translation.nwt-connector {
-  color: #90b8d0;
+  color: var(--nwt-connector-color, #90b8d0);
   font-weight: normal;
-  font-size: 11px;
+  font-size: calc(var(--nwt-font-size, 13px) - 2px);
   background-color: rgba(0, 0, 0, 0.7);
 }

@@ -15,9 +15,14 @@ class NetflixTranslator {
   constructor() {
     this.overlay = null;
     this.observer = null;
-    this.observedNode = null; // Track the node the observer is watching
+    this.observedNode = null;
     this.isDictionaryLoaded = false;
-    this.selectedLevelValue = 1; // Default to A1 (show all)
+    this.selectedLevelValue = 1; // Default A1 (show all)
+    // Appearance defaults (mirrors popup.js DEFAULTS)
+    this.labelColor      = '#00ff00';
+    this.labelFontSize   = 13;
+    this.labelFontFamily = "'Netflix Sans', Arial, sans-serif";
+    this.connectorColor  = '#90b8d0';
     this.init();
   }
 
@@ -29,7 +34,7 @@ class NetflixTranslator {
     try {
       const [dictResponse, settings] = await Promise.all([
         fetch(chrome.runtime.getURL('dictionary.json')),
-        chrome.storage.local.get('selectedLevel')
+        chrome.storage.local.get(['selectedLevel', 'labelColor', 'labelFontSize', 'labelFontFamily', 'connectorColor'])
       ]);
 
       if (!dictResponse.ok) throw new Error(`HTTP status ${dictResponse.status}`);
@@ -43,20 +48,25 @@ class NetflixTranslator {
 
       this.isDictionaryLoaded = true;
 
-      if (settings.selectedLevel) {
-        this.selectedLevelValue = LEVEL_MAP[settings.selectedLevel] || 1;
-      }
+      if (settings.selectedLevel)  this.selectedLevelValue = LEVEL_MAP[settings.selectedLevel] || 1;
+      if (settings.labelColor)     this.labelColor      = settings.labelColor;
+      if (settings.labelFontSize)  this.labelFontSize   = settings.labelFontSize;
+      if (settings.labelFontFamily) this.labelFontFamily = settings.labelFontFamily;
+      if (settings.connectorColor) this.connectorColor  = settings.connectorColor;
 
-      // T006: Listen for real-time changes
+      // Listen for real-time setting changes from the popup
       chrome.storage.onChanged.addListener((changes, area) => {
-        if (area === 'local' && changes.selectedLevel) {
+        if (area !== 'local') return;
+        if (changes.selectedLevel)  {
           this.selectedLevelValue = LEVEL_MAP[changes.selectedLevel.newValue] || 1;
-          // FIX #3: Only clear — the live Observer handles the next subtitle cycle.
-          // Re-processing the container root here is a no-op: DOM Ranges are only
-          // valid during the current paint cycle, so getBoundingClientRect() returns
-          // zeros for already-rendered nodes. Let MutationObserver do it naturally.
           this.clearOverlay();
         }
+        if (changes.labelColor)     this.labelColor      = changes.labelColor.newValue;
+        if (changes.labelFontSize)  this.labelFontSize   = changes.labelFontSize.newValue;
+        if (changes.labelFontFamily) this.labelFontFamily = changes.labelFontFamily.newValue;
+        if (changes.connectorColor) this.connectorColor  = changes.connectorColor.newValue;
+        // Re-apply CSS vars so existing labels update immediately
+        this.applyAppearanceVars();
       });
     } catch (e) {
       console.error("NWT: Failed to load dictionary or settings", e);
@@ -86,10 +96,24 @@ class NetflixTranslator {
 
     this.overlay = document.createElement('div');
     this.overlay.id = 'nwt-overlay';
-    
+
     const container = video.parentElement;
     container.style.position = container.style.position || 'relative';
     container.appendChild(this.overlay);
+
+    this.applyAppearanceVars();
+  }
+
+  /**
+   * Apply user appearance preferences as CSS custom properties on the overlay.
+   * labels read these via var() in styles.css — no JS DOM iteration needed.
+   */
+  applyAppearanceVars() {
+    if (!this.overlay) return;
+    this.overlay.style.setProperty('--nwt-color',       this.labelColor);
+    this.overlay.style.setProperty('--nwt-font-size',   `${this.labelFontSize}px`);
+    this.overlay.style.setProperty('--nwt-font-family', this.labelFontFamily);
+    this.overlay.style.setProperty('--nwt-connector-color', this.connectorColor);
   }
 
   /**

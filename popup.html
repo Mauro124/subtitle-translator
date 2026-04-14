@@ -2,26 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NWT Settings</title>
+  <title>Subtitle Translator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Translation Level</h1>
-    <p class="description">Select your English proficiency to filter common words.</p>
-    
-    <div class="level-selector" id="level-selector">
-      <button class="level-btn" data-level="A1" title="Beginner - All translations">A1</button>
-      <button class="level-btn" data-level="A2" title="Elementary">A2</button>
-      <button class="level-btn" data-level="B1" title="Intermediate">B1</button>
-      <button class="level-btn" data-level="B2" title="Upper Intermediate">B2</button>
-      <button class="level-btn" data-level="C1" title="Advanced">C1</button>
-      <button class="level-btn" data-level="C2" title="Proficient - Only rare words">C2</button>
+  <div class="popup-root">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-logo">
+        <div class="logo-badge es">ES</div>
+        <div class="logo-badge en">EN</div>
+      </div>
+      <div class="header-text">
+        <span class="header-title">Subtitle Translator</span>
+        <span class="header-sub">Subtitle learning overlay</span>
+      </div>
     </div>
-    
-    <div class="status" id="status">
-      Current Level: <span id="current-level">A1</span>
+
+    <!-- Section: CEFR Level -->
+    <section class="section">
+      <div class="section-label">
+        <span class="section-icon">📚</span>
+        <span>Proficiency Level</span>
+        <span class="section-badge" id="current-level">A1</span>
+      </div>
+      <div class="level-selector" id="level-selector">
+        <button class="level-btn" data-level="A1" title="Beginner – see everything">A1</button>
+        <button class="level-btn" data-level="A2" title="Elementary">A2</button>
+        <button class="level-btn" data-level="B1" title="Intermediate">B1</button>
+        <button class="level-btn" data-level="B2" title="Upper Intermediate">B2</button>
+        <button class="level-btn" data-level="C1" title="Advanced">C1</button>
+        <button class="level-btn" data-level="C2" title="Proficient – rare words only">C2</button>
+      </div>
+      <p class="hint">Shows words at or above your selected level.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Section: Label Appearance -->
+    <section class="section">
+      <div class="section-label">
+        <span class="section-icon">🎨</span>
+        <span>Label Appearance</span>
+      </div>
+
+      <!-- Color -->
+      <div class="control-row">
+        <label class="control-label" for="label-color">Color</label>
+        <div class="color-row">
+          <input type="color" id="label-color" class="color-input" value="#00ff00">
+          <div class="color-presets">
+            <button class="color-preset" data-color="#00ff00" style="background:#00ff00" title="Green"></button>
+            <button class="color-preset" data-color="#ffffff" style="background:#ffffff" title="White"></button>
+            <button class="color-preset" data-color="#ffd700" style="background:#ffd700" title="Gold"></button>
+            <button class="color-preset" data-color="#00cfff" style="background:#00cfff" title="Cyan"></button>
+            <button class="color-preset" data-color="#ff6b6b" style="background:#ff6b6b" title="Red"></button>
+            <button class="color-preset" data-color="#c084fc" style="background:#c084fc" title="Purple"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Font Size -->
+      <div class="control-row">
+        <label class="control-label" for="font-size">
+          Size
+          <span class="control-value" id="font-size-val">13px</span>
+        </label>
+        <input type="range" id="font-size" class="slider" min="10" max="22" value="13" step="1">
+      </div>
+
+      <!-- Font Family -->
+      <div class="control-row">
+        <label class="control-label" for="font-family">Font</label>
+        <select id="font-family" class="select">
+          <option value="'Netflix Sans', Arial, sans-serif">Netflix Sans</option>
+          <option value="Inter, sans-serif">Inter</option>
+          <option value="'Courier New', monospace">Monospace</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="system-ui, sans-serif">System UI</option>
+        </select>
+      </div>
+
+      <!-- Live preview -->
+      <div class="preview-box">
+        <span class="preview-label" id="preview-label">traducción</span>
+        <span class="preview-word">Netflix</span>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Section: Structural words -->
+    <section class="section">
+      <div class="section-label">
+        <span class="section-icon">🔗</span>
+        <span>Structural Color</span>
+        <span class="hint-inline">connectors &amp; auxiliaries</span>
+      </div>
+      <div class="control-row">
+        <label class="control-label" for="connector-color">Color</label>
+        <div class="color-row">
+          <input type="color" id="connector-color" class="color-input" value="#90b8d0">
+          <div class="color-presets">
+            <button class="color-preset" data-color="#90b8d0" data-target="connector" style="background:#90b8d0" title="Blue-gray"></button>
+            <button class="color-preset" data-color="#888888" data-target="connector" style="background:#888888" title="Gray"></button>
+            <button class="color-preset" data-color="#64748b" data-target="connector" style="background:#64748b" title="Slate"></button>
+            <button class="color-preset" data-color="#a3e635" data-target="connector" style="background:#a3e635" title="Lime"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <button class="reset-btn" id="reset-btn">Reset to defaults</button>
     </div>
+
   </div>
   <script src="popup.js"></script>
 </body>

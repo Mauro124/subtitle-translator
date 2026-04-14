@@ -1,9 +1,10 @@
-# Netflix Word Translator 🎬
+# Subtitle Translator 🎬
 
-A Chrome Extension (Manifest V3) designed to help you master advanced English while watching Netflix. It automatically translates complex words within subtitles and displays them in a non-invasive overlay, ensuring a seamless and high-performance learning experience.
+A Chrome Extension (Manifest V3) that helps you master English while watching Netflix. It automatically translates words and expressions within subtitles using a non-invasive overlay — with full control over appearance and learning level.
 
 ## ✨ Key Features
 
+- **Customizable Appearance**: Full control over how translation labels look — chooseable color (with presets), font size (slider), and font family. Separate color for structural words. Live preview before touching Netflix.
 - **Non-Invasive Overlay Architecture**: Translations are rendered in a parallel layer over the video. **Zero Netflix DOM mutations**, preventing conflicts with its internal React state and Virtual DOM.
 - **Translation Difficulty Levels**: Select your English proficiency (A1–C2) from the extension popup. Filter out common words and focus on terms that match your learning level.
 - **Longest-Match-First Phrase Detection**: Multi-word expressions are matched before individual words. `"look who's talking"` translates as a full phrase — never as `"who"` alone.
