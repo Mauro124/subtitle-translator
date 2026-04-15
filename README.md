@@ -21,6 +21,8 @@ A Chrome Extension (Manifest V3) that helps you master English while watching se
   - **Second-line** translations appear below the word.
 - **O(1) Performance**: Instant word lookups using an in-memory `Map`, ensuring zero lag during video playback.
 - **Robust Synchronization**: `MutationObserver` with `characterData` support detects subtitle changes even when series or movies updates text in place.
+- **Manual Page Reload**: Dedicated button in the popup to refresh the tab and force-apply level or style settings if needed.
+- **Project Support Integration**: Built-in link to the project's Cafecito page in the popup footer for community contributions.
 
 ## 🚀 Local Installation
 

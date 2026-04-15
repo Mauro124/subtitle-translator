@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const previewLabel    = document.getElementById('preview-label');
   const resetBtn        = document.getElementById('reset-btn');
+  const reloadBtn       = document.getElementById('reload-btn');
 
   // ── Load persisted settings ───────────────────────────────────────────────
   chrome.storage.local.get(Object.keys(DEFAULTS), (stored) => {
@@ -123,6 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
       markActivePreset(colorPresets,    DEFAULTS.labelColor);
       markActivePreset(connectorPresets, DEFAULTS.connectorColor);
       updatePreview(DEFAULTS.labelColor, DEFAULTS.labelFontSize, DEFAULTS.labelFontFamily);
+    });
+  });
+
+  // ── Reload Page ──────────────────────────────────────────────────────────
+  reloadBtn.addEventListener('click', () => {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      if (tabs[0]) {
+        chrome.tabs.reload(tabs[0].id);
+      }
     });
   });
 

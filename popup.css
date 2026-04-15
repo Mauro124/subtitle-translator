@@ -355,3 +355,56 @@ body {
   border-color: #475569;
   color: #94a3b8;
 }
+
+/* ── Maintenance & Support ── */
+.reload-btn {
+  width: 100%;
+  background: #1e2433;
+  border: 1.5px solid #2d3748;
+  color: #e2e8f0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.reload-btn:hover {
+  background: #252d40;
+  border-color: #1a9be8;
+  color: #ffffff;
+}
+
+.reload-btn:active {
+  transform: scale(0.98);
+}
+
+.support-footer {
+  padding: 12px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.cafecito-btn {
+  display: inline-flex;
+  transition: transform 0.2s ease;
+}
+
+.cafecito-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cafecito-btn img {
+  display: block;
+  height: 40px; /* Standard size for the button */
+  width: auto;
+}
+
