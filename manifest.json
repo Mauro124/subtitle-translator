@@ -2,8 +2,10 @@
   "manifest_version": 3,
   "name": "Subtitle Translator",
   "version": "1.2.0",
-  "description": "Translates complex words in Netflix subtitles using a non-invasive overlay.",
-  "permissions": ["storage"],
+  "description": "Translates complex words in series and movies subtitles using a non-invasive overlay.",
+  "permissions": [
+    "storage"
+  ],
   "host_permissions": [
     "*://www.netflix.com/*"
   ],
@@ -22,15 +24,25 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.netflix.com/*"],
-      "js": ["content.js"],
-      "css": ["styles.css"]
+      "matches": [
+        "*://www.netflix.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["dictionary.json"],
-      "matches": ["*://www.netflix.com/*"]
+      "resources": [
+        "dictionary.json"
+      ],
+      "matches": [
+        "*://www.netflix.com/*"
+      ]
     }
   ]
 }
