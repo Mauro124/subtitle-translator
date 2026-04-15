@@ -1,11 +1,11 @@
 # Subtitle Translator 🎬
 
-A Chrome Extension (Manifest V3) that helps you master English while watching Netflix. It automatically translates words and expressions within subtitles using a non-invasive overlay — with full control over appearance and learning level.
+A Chrome Extension (Manifest V3) that helps you master English while watching series or movies. It automatically translates words and expressions within subtitles using a non-invasive overlay — with full control over appearance and learning level.
 
 ## ✨ Key Features
 
-- **Customizable Appearance**: Full control over how translation labels look — chooseable color (with presets), font size (slider), and font family. Separate color for structural words. Live preview before touching Netflix.
-- **Non-Invasive Overlay Architecture**: Translations are rendered in a parallel layer over the video. **Zero Netflix DOM mutations**, preventing conflicts with its internal React state and Virtual DOM.
+- **Customizable Appearance**: Full control over how translation labels look — chooseable color (with presets), font size (slider), and font family. Separate color for structural words. Live preview before touching series or movies.
+- **Non-Invasive Overlay Architecture**: Translations are rendered in a parallel layer over the video. **Zero series or movies DOM mutations**, preventing conflicts with its internal React state and Virtual DOM.
 - **Translation Difficulty Levels**: Select your English proficiency (A1–C2) from the extension popup. Filter out common words and focus on terms that match your learning level.
 - **Longest-Match-First Phrase Detection**: Multi-word expressions are matched before individual words. `"look who's talking"` translates as a full phrase — never as `"who"` alone.
 - **Context-Aware Translations**: Each word resolves its best translation based on sentence context:
@@ -20,7 +20,7 @@ A Chrome Extension (Manifest V3) that helps you master English while watching Ne
   - **First-line** translations appear above the word.
   - **Second-line** translations appear below the word.
 - **O(1) Performance**: Instant word lookups using an in-memory `Map`, ensuring zero lag during video playback.
-- **Robust Synchronization**: `MutationObserver` with `characterData` support detects subtitle changes even when Netflix updates text in place.
+- **Robust Synchronization**: `MutationObserver` with `characterData` support detects subtitle changes even when series or movies updates text in place.
 
 ## 🚀 Local Installation
 
@@ -47,7 +47,7 @@ A Chrome Extension (Manifest V3) that helps you master English while watching Ne
 - **Context Signals via `posRatio`**: Each token gets a position ratio (0–1) within the subtitle. The first 20% activates `translation_start`, the last 20% activates `translation_end`. Question detection uses a simple `endsWith('?')` check on the full subtitle line.
 - **DOM Range API**: Pixel-perfect translation placement by querying `getBoundingClientRect()` on the exact char range — no HTML wrapping needed.
 - **Async Loading + PHRASE_KEYS Index**: Dictionary is fetched once at startup. Multi-word keys are pre-sorted by descending word count into `PHRASE_KEYS` for efficient longest-match scanning.
-- **Smart Cleanup**: Overlay clears automatically when subtitles disappear; `startSentinel()` re-initializes the observer if Netflix replaces the subtitle DOM between episodes.
+- **Smart Cleanup**: Overlay clears automatically when subtitles disappear; `startSentinel()` re-initializes the observer if series or movies replaces the subtitle DOM between episodes.
 
 ## 📝 License
 
