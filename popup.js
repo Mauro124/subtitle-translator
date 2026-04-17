@@ -4,6 +4,7 @@
  */
 
 const DEFAULTS = {
+  isEnabled:        true,
   selectedLevel:    'A1',
   labelColor:       '#00ff00',
   labelFontSize:    13,
@@ -13,6 +14,9 @@ const DEFAULTS = {
 
 document.addEventListener('DOMContentLoaded', () => {
   // ── Element refs ──────────────────────────────────────────────────────────
+  const masterToggle    = document.getElementById('master-toggle');
+  const statusLabel     = document.getElementById('status-label');
+
   const levelSelector   = document.getElementById('level-selector');
   const levelBtns       = document.querySelectorAll('.level-btn');
   const currentLevelEl  = document.getElementById('current-level');
@@ -34,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
   chrome.storage.local.get(Object.keys(DEFAULTS), (stored) => {
     const s = { ...DEFAULTS, ...stored };
 
+    // Master Toggle
+    applyToggle(s.isEnabled);
+
     // Level
     applyLevel(s.selectedLevel);
 
@@ -48,6 +55,19 @@ document.addEventListener('DOMContentLoaded', () => {
     markActivePreset(connectorPresets, s.connectorColor);
     updatePreview(s.labelColor, s.labelFontSize, s.labelFontFamily);
   });
+
+  // ── Master Toggle ─────────────────────────────────────────────────────────
+  masterToggle.addEventListener('change', () => {
+    const isEnabled = masterToggle.checked;
+    applyToggle(isEnabled);
+    chrome.storage.local.set({ isEnabled });
+  });
+
+  function applyToggle(isEnabled) {
+    masterToggle.checked = isEnabled;
+    statusLabel.textContent = isEnabled ? 'Enabled' : 'Disabled';
+    statusLabel.style.color = isEnabled ? '#ffffff' : 'rgba(255,255,255,0.6)';
+  }
 
   // ── Level selection ───────────────────────────────────────────────────────
   levelSelector.addEventListener('click', (e) => {
@@ -115,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Reset ─────────────────────────────────────────────────────────────────
   resetBtn.addEventListener('click', () => {
     chrome.storage.local.set({ ...DEFAULTS }, () => {
+      applyToggle(DEFAULTS.isEnabled);
       applyLevel(DEFAULTS.selectedLevel);
       colorInput.value      = DEFAULTS.labelColor;
       fontSizeSlider.value  = DEFAULTS.labelFontSize;

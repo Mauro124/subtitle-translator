@@ -1,62 +1,82 @@
 /**
- * Netflix Word Translator Content Script
- * 
- * Architectural Pattern: Non-invasive Overlay.
+ * Multi-Platform Subtitle Translator Content Script
  */
+console.log('ST: Content script loaded');
 
 let DICTIONARY = new Map();
 const LEVEL_MAP = { 'A1': 1, 'A2': 2, 'B1': 3, 'B2': 4, 'C1': 5, 'C2': 6 };
 
 // Sorted phrase keys by descending word-count for longest-match-first lookup.
-// Rebuilt once after dictionary loads. Only includes multi-word entries.
 let PHRASE_KEYS = [];
 
-class NetflixTranslator {
+class SubtitleTranslator {
   constructor() {
     this.overlay = null;
     this.observer = null;
     this.observedNode = null;
     this.isDictionaryLoaded = false;
-    this.selectedLevelValue = 1; // Default A1 (show all)
-    // Appearance defaults (mirrors popup.js DEFAULTS)
+    this.selectedLevelValue = 1;
+    this.isEnabled = true;
+    this.checkReadyInterval = null;
+    this.sentinelInterval = null;
+    
+    // Appearance defaults
     this.labelColor      = '#00ff00';
     this.labelFontSize   = 13;
     this.labelFontFamily = "'Netflix Sans', Arial, sans-serif";
     this.connectorColor  = '#90b8d0';
+
+    // Platform handling
+    this.adapters = [
+      new NetflixAdapter(),
+      new YouTubeAdapter(),
+      new DisneyAdapter(),
+      new BaseAdapter() // Generic fallback
+    ];
+    this.activeAdapter = null;
+
     this.init();
   }
 
   /**
-   * Initialize the dictionary, overlay, and observer.
+   * Initialize dictionary, settings, and start the platform engine.
    */
   async init() {
-    // 1. Load dictionary and user settings
     try {
       const [dictResponse, settings] = await Promise.all([
         fetch(chrome.runtime.getURL('dictionary.json')),
-        chrome.storage.local.get(['selectedLevel', 'labelColor', 'labelFontSize', 'labelFontFamily', 'connectorColor'])
+        chrome.storage.local.get(['isEnabled', 'selectedLevel', 'labelColor', 'labelFontSize', 'labelFontFamily', 'connectorColor'])
       ]);
 
       if (!dictResponse.ok) throw new Error(`HTTP status ${dictResponse.status}`);
       const data = await dictResponse.json();
       DICTIONARY = new Map(Object.entries(data));
 
-      // Build phrase index: multi-word keys only, sorted longest first.
       PHRASE_KEYS = [...DICTIONARY.keys()]
         .filter(k => k.includes(' '))
         .sort((a, b) => b.split(' ').length - a.split(' ').length);
 
       this.isDictionaryLoaded = true;
 
+      this.isEnabled = settings.isEnabled !== false;
       if (settings.selectedLevel)  this.selectedLevelValue = LEVEL_MAP[settings.selectedLevel] || 1;
       if (settings.labelColor)     this.labelColor      = settings.labelColor;
       if (settings.labelFontSize)  this.labelFontSize   = settings.labelFontSize;
       if (settings.labelFontFamily) this.labelFontFamily = settings.labelFontFamily;
       if (settings.connectorColor) this.connectorColor  = settings.connectorColor;
 
-      // Listen for real-time setting changes from the popup
       chrome.storage.onChanged.addListener((changes, area) => {
         if (area !== 'local') return;
+        
+        if (changes.isEnabled) {
+          this.isEnabled = changes.isEnabled.newValue;
+          if (this.isEnabled) {
+            this.startEngine();
+          } else {
+            this.stopEngine();
+          }
+        }
+
         if (changes.selectedLevel)  {
           this.selectedLevelValue = LEVEL_MAP[changes.selectedLevel.newValue] || 1;
           this.clearOverlay();
@@ -65,49 +85,137 @@ class NetflixTranslator {
         if (changes.labelFontSize)  this.labelFontSize   = changes.labelFontSize.newValue;
         if (changes.labelFontFamily) this.labelFontFamily = changes.labelFontFamily.newValue;
         if (changes.connectorColor) this.connectorColor  = changes.connectorColor.newValue;
-        // Re-apply CSS vars so existing labels update immediately
         this.applyAppearanceVars();
       });
-    } catch (e) {
-      console.error("NWT: Failed to load dictionary or settings", e);
-      return; 
-    }
 
-    const checkReady = setInterval(() => {
-      const container = document.querySelector('.player-timedtext') || document.querySelector('.watch-video--timed-text-container');
-      const video = document.querySelector('video');
+      this.detectPlatform();
+      
+      if (this.isEnabled) {
+        this.startEngine();
+      }
+      
+      this.setupObservers();
+
+    } catch (e) {
+      console.error("ST: Failed to initialize", e);
+    }
+  }
+
+  /**
+   * Detect the correct adapter for the current platform.
+   */
+  detectPlatform() {
+    this.activeAdapter = this.adapters.find(a => a.isMatch()) || this.adapters[this.adapters.length - 1];
+    console.log(`ST: Detected platform adapter: ${this.activeAdapter.name}`);
+  }
+
+  /**
+   * Main engine loop to detect video and subtitles.
+   */
+  startEngine() {
+    if (this.checkReadyInterval) return;
+    
+    console.log('ST: Starting engine...');
+    this.checkReadyInterval = setInterval(() => {
+      if (!this.isEnabled) {
+        this.stopEngine();
+        return;
+      }
+
+      const container = this.activeAdapter.getSubtitleContainer();
+      const video = findElementRecursive(document.body, 'video'); // Use recursive helper
       
       if (container && video && this.isDictionaryLoaded) {
-        clearInterval(checkReady);
+        clearInterval(this.checkReadyInterval);
+        this.checkReadyInterval = null;
         this.setupOverlay(video);
-        this.setupObserver(container);
+        this.setupSubtitleObserver(container);
         this.processNode(container);
-        this.startSentinel(); // FIX #2: Watch for Netflix DOM replacement between episodes
+        this.startSentinel();
       }
     }, 1000);
   }
 
   /**
+   * Stop engine logic, disconnect observer and clear overlay.
+   */
+  stopEngine() {
+    console.log('ST: Stopping engine...');
+    if (this.checkReadyInterval) {
+      clearInterval(this.checkReadyInterval);
+      this.checkReadyInterval = null;
+    }
+    if (this.sentinelInterval) {
+      clearInterval(this.sentinelInterval);
+      this.sentinelInterval = null;
+    }
+    if (this.observer) {
+      this.observer.disconnect();
+      this.observer = null;
+    }
+    this.clearOverlay();
+    this.observedNode = null;
+  }
+
+  /**
+   * Set up observers for navigation (SPA) and fullscreen.
+   */
+  setupObservers() {
+    // 1. SPA Navigation Tracking (URL Observer)
+    let lastUrl = window.location.href;
+    const urlObserver = new MutationObserver(() => {
+      if (window.location.href !== lastUrl) {
+        lastUrl = window.location.href;
+        console.log('ST: URL changed — re-detecting platform and engine.');
+        this.reset();
+      }
+    });
+    urlObserver.observe(document, { subtree: true, childList: true });
+
+    // 2. Fullscreen Support
+    document.addEventListener('fullscreenchange', () => {
+      console.log('ST: Fullscreen changed — verifying overlay.');
+      setTimeout(() => {
+        const video = findElementRecursive(document.body, 'video');
+        if (video) this.setupOverlay(video);
+      }, 500);
+    });
+  }
+
+  /**
+   * Reset the engine state.
+   */
+  reset() {
+    if (this.observer) this.observer.disconnect();
+    this.clearOverlay();
+    this.detectPlatform();
+    this.startEngine();
+  }
+
+  /**
    * Create and attach the translation overlay.
-   * @param {HTMLVideoElement} video 
    */
   setupOverlay(video) {
-    if (document.getElementById('nwt-overlay')) return;
+    if (document.getElementById('nwt-overlay')) {
+      const existing = document.getElementById('nwt-overlay');
+      const targetContainer = this.activeAdapter.getVideoContainer() || video.parentElement;
+      if (existing.parentElement !== targetContainer) {
+        targetContainer.appendChild(existing);
+      }
+      return;
+    }
 
     this.overlay = document.createElement('div');
     this.overlay.id = 'nwt-overlay';
 
-    const container = video.parentElement;
-    container.style.position = container.style.position || 'relative';
-    container.appendChild(this.overlay);
-
-    this.applyAppearanceVars();
+    const container = this.activeAdapter.getVideoContainer() || video.parentElement;
+    if (container) {
+      container.style.position = container.style.position || 'relative';
+      container.appendChild(this.overlay);
+      this.applyAppearanceVars();
+    }
   }
 
-  /**
-   * Apply user appearance preferences as CSS custom properties on the overlay.
-   * labels read these via var() in styles.css — no JS DOM iteration needed.
-   */
   applyAppearanceVars() {
     if (!this.overlay) return;
     this.overlay.style.setProperty('--nwt-color',       this.labelColor);
@@ -116,27 +224,39 @@ class NetflixTranslator {
     this.overlay.style.setProperty('--nwt-connector-color', this.connectorColor);
   }
 
-  /**
-   * Observe subtitle container for text changes.
-   * @param {HTMLElement} container 
-   */
-  setupObserver(container) {
-    this.observedNode = container; // FIX #2: Track for sentinel checks
+  setupSubtitleObserver(container) {
+    this.observedNode = container;
+    let updateTimeout = null;
 
     this.observer = new MutationObserver((mutations) => {
+      const nodesToProcess = new Set();
+      let shouldClear = false;
+
       mutations.forEach((mutation) => {
-        if (mutation.type === 'childList') {
-          mutation.addedNodes.forEach(node => {
-            setTimeout(() => this.processNode(node), 20);
-          });
-        } else if (mutation.type === 'characterData') {
-          setTimeout(() => this.processNode(mutation.target), 20);
-        }
+        // Guard: ignore mutations originating from our own overlay
+        if (mutation.target.id === 'nwt-overlay' || (mutation.target.closest && mutation.target.closest('#nwt-overlay'))) return;
+        if (mutation.type === 'childList' && Array.from(mutation.addedNodes).some(n => n.id === 'nwt-overlay' || (n.classList && n.classList.contains('nwt-translation')))) return;
+
+        const nodes = this.activeAdapter.getNodesToProcess(mutation);
+        nodes.forEach(n => nodesToProcess.add(n));
         
-        if (container.childNodes.length === 0) {
-          this.clearOverlay();
+        if (this.activeAdapter.isCleared(container)) {
+          shouldClear = true;
         }
       });
+
+      if (nodesToProcess.size > 0 || shouldClear) {
+        // Debounce: Cancel pending updates to only process the last one in the batch
+        if (updateTimeout) cancelAnimationFrame(updateTimeout);
+        
+        updateTimeout = requestAnimationFrame(() => {
+          this.clearOverlay();
+          if (!shouldClear) {
+            nodesToProcess.forEach(node => this.processNode(node));
+          }
+          updateTimeout = null;
+        });
+      }
     });
 
     this.observer.observe(container, {
@@ -146,35 +266,21 @@ class NetflixTranslator {
     });
   }
 
-  /**
-   * FIX #2: Periodically verify the observed node is still in the live DOM.
-   * Netflix replaces `.player-timedtext` between episodes, silently detaching the observer.
-   */
   startSentinel() {
-    setInterval(() => {
-      if (this.observedNode && !document.contains(this.observedNode)) {
-        console.log('NWT: Subtitle node detached — re-initializing observer.');
-        if (this.observer) this.observer.disconnect();
-        this.clearOverlay();
-
-        const newContainer = document.querySelector('.player-timedtext') || document.querySelector('.watch-video--timed-text-container');
-        const newVideo = document.querySelector('video');
-
-        if (newContainer && newVideo) {
-          this.setupOverlay(newVideo);
-          this.setupObserver(newContainer);
-        }
+    if (this.sentinelInterval) clearInterval(this.sentinelInterval);
+    
+    this.sentinelInterval = setInterval(() => {
+      // Use isConnected instead of document.contains()
+      // isConnected works across Shadow DOM boundaries.
+      if (this.observedNode && !this.observedNode.isConnected) {
+        console.log('ST: Subtitle node detached — re-initializing.');
+        this.reset();
       }
-    }, 2000);
+    }, 3000);
   }
 
-  /**
-   * Process a node to find target words.
-   * @param {Node} node 
-   */
   processNode(node) {
     if (!node) return;
-    
     if (node.nodeType === Node.TEXT_NODE) {
       this.checkAndTranslateText(node);
     } else if (node.nodeType === Node.ELEMENT_NODE) {
@@ -186,20 +292,6 @@ class NetflixTranslator {
     }
   }
 
-  /**
-   * Resolve the best translation for an entry given sentence context.
-   *
-   * Priority:
-   *   1. translation_question  — if the subtitle is a question AND the entry has it
-   *   2. translation_start     — if the token is in the first 20% AND the entry has it
-   *   3. translation_end       — if the token is in the last 20% AND the entry has it
-   *   4. translation           — default fallback
-   *
-   * @param {Object} entry         - Dictionary entry
-   * @param {boolean} isQuestion   - Whether the full subtitle ends with '?'
-   * @param {number}  posRatio     - Word position (0 = first word, 1 = last word)
-   * @returns {string}
-   */
   resolveTranslation(entry, isQuestion, posRatio) {
     if (isQuestion && entry.translation_question) return entry.translation_question;
     if (posRatio <= 0.20 && entry.translation_start) return entry.translation_start;
@@ -207,27 +299,11 @@ class NetflixTranslator {
     return entry.translation;
   }
 
-  /**
-   * Tokenize subtitle text and look up phrases/words using longest-match-first.
-   *
-   * Algorithm:
-   *   1. Split text into tokens (words + non-word separators), tracking char offsets.
-   *   2. At each word token, try to match the longest phrase in PHRASE_KEYS first.
-   *   3. If a multi-word phrase matches, inject it and skip all its tokens.
-   *   4. If no phrase matches, fall back to the single word lookup.
-   *
-   * This ensures "look who's talking" is translated as a phrase, not "look" + "who" separately.
-   *
-   * @param {Text} textNode
-   */
   checkAndTranslateText(textNode) {
     const originalText = textNode.textContent;
     if (!originalText || originalText.trim().length < 3) return;
 
-    // Context signals derived from the whole subtitle line.
     const isQuestion = originalText.trim().endsWith('?');
-    // Split into alternating [word, separator, word, separator …] tokens with offsets.
-    // Each token: { text, start, end, isWord }
     const TOKEN_RE = /([a-zA-Z']+)|([^a-zA-Z']+)/g;
     const tokens = [];
     let m;
@@ -240,46 +316,34 @@ class NetflixTranslator {
       });
     }
 
-    // Word tokens only, in order — we iterate these for matching.
     const wordTokens = tokens.filter(t => t.isWord);
     const totalWords = wordTokens.length;
-
-    // Track which word-token indices are already covered by a phrase match.
     const covered = new Set();
 
-    // --- Phase 1: longest-match phrase scan ---
     for (let wi = 0; wi < wordTokens.length; wi++) {
       if (covered.has(wi)) continue;
 
-      // Position ratio: 0 = first word of subtitle, 1 = last word.
       const posRatio = totalWords <= 1 ? 0.5 : wi / (totalWords - 1);
-
-      // Build candidate windows from this word position outward.
-      // Max phrase length in the dictionary (capped at 8 words for perf).
       const maxLen = Math.min(8, wordTokens.length - wi);
 
       let matched = false;
       for (let len = maxLen; len >= 2; len--) {
-        // Reconstruct the candidate string from word wi to wi+len-1,
-        // preserving original separators between them.
         const firstToken = wordTokens[wi];
         const lastToken  = wordTokens[wi + len - 1];
         const candidate  = originalText.slice(firstToken.start, lastToken.end).toLowerCase()
-          .replace(/['']/g, "'");  // normalise smart quotes
+          .replace(/['']/g, "'");
 
         const entry = DICTIONARY.get(candidate);
         if (entry) {
           const lvl = LEVEL_MAP[entry.level] || 6;
           if (lvl >= this.selectedLevelValue) {
-            // Phrases always use position of first token.
             const translation = this.resolveTranslation(entry, isQuestion, posRatio);
             const isStructural = Array.isArray(entry.tags) &&
               (entry.tags.includes('connector') || entry.tags.includes('auxiliary'));
             this.injectTranslation(textNode, firstToken.start, lastToken.end, translation, isStructural);
           }
-          // Mark all consumed word-token positions as covered.
           for (let k = wi; k < wi + len; k++) covered.add(k);
-          wi += len - 1; // advance outer loop past matched tokens
+          wi += len - 1;
           matched = true;
           break;
         }
@@ -287,7 +351,6 @@ class NetflixTranslator {
 
       if (matched) continue;
 
-      // --- Phase 2: single-word fallback ---
       const token = wordTokens[wi];
       const normalized = token.text.toLowerCase();
       const entry = DICTIONARY.get(normalized);
@@ -303,14 +366,6 @@ class NetflixTranslator {
     }
   }
 
-  /**
-   * Inject a translation label into the overlay at precise word coordinates.
-   * @param {Text}    textNode
-   * @param {number}  startOffset
-   * @param {number}  endOffset
-   * @param {string}  translation
-   * @param {boolean} [isConnector=false] - Whether this is a grammatical connector (different style)
-   */
   injectTranslation(textNode, startOffset, endOffset, translation, isConnector = false) {
     if (!this.overlay) return;
 
@@ -322,20 +377,15 @@ class NetflixTranslator {
       const rect = range.getBoundingClientRect();
       const overlayRect = this.overlay.getBoundingClientRect();
 
-      // FIX #1: If overlay has no dimensions yet, coordinates will be wrong (0,0).
-      // Skip this cycle — the observer will fire again on the next subtitle.
       if (overlayRect.width === 0) return;
 
       const left = rect.left - overlayRect.left + (rect.width / 2);
       
-      const subtitleContainer = textNode.parentElement.closest('.player-timedtext-text-container');
+      // Generic line detection (simple heuristic)
       let isSecondLine = false;
-      
-      if (subtitleContainer) {
-        const containerRect = subtitleContainer.getBoundingClientRect();
-        if ((rect.top - containerRect.top) > (containerRect.height * 0.4)) {
-          isSecondLine = true;
-        }
+      const windowHeight = window.innerHeight;
+      if (rect.top > windowHeight * 0.8) {
+        isSecondLine = true;
       }
 
       const label = document.createElement('span');
@@ -355,9 +405,6 @@ class NetflixTranslator {
     } catch (e) {}
   }
 
-  /**
-   * Clear all translations from the overlay.
-   */
   clearOverlay() {
     if (this.overlay) {
       this.overlay.innerHTML = '';
@@ -365,4 +412,4 @@ class NetflixTranslator {
   }
 }
 
-new NetflixTranslator();
+new SubtitleTranslator();

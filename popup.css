@@ -77,6 +77,72 @@ body {
   font-weight: 400;
 }
 
+/* ── Header Toggle ── */
+.header-action {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  transition: .4s;
+  border-radius: 22px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 2.5px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+input:checked + .toggle-slider {
+  background-color: #4ade80;
+  border-color: #4ade80;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(21px);
+}
+
+.status-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
 /* ── Sections ── */
 .section {
   padding: 14px 16px;

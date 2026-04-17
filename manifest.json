@@ -6,8 +6,15 @@
   "permissions": [
     "storage"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "host_permissions": [
-    "*://www.netflix.com/*"
+    "*://*.netflix.com/*",
+    "*://*.youtube.com/*",
+    "*://*.primevideo.com/*",
+    "*://*.disneyplus.com/*",
+    "*://*.apple.com/*"
   ],
   "icons": {
     "16": "assets/icons/icon-192.png",
@@ -25,9 +32,18 @@
   "content_scripts": [
     {
       "matches": [
-        "*://www.netflix.com/*"
+        "*://*.netflix.com/*",
+        "*://*.youtube.com/*",
+        "*://*.primevideo.com/*",
+        "*://*.disneyplus.com/*",
+        "*://*.apple.com/*"
       ],
       "js": [
+        "utils/dom.js",
+        "adapters/base.js",
+        "adapters/netflix.js",
+        "adapters/youtube.js",
+        "adapters/disney.js",
         "content.js"
       ],
       "css": [
@@ -41,7 +57,11 @@
         "dictionary.json"
       ],
       "matches": [
-        "*://www.netflix.com/*"
+        "*://*.netflix.com/*",
+        "*://*.youtube.com/*",
+        "*://*.primevideo.com/*",
+        "*://*.disneyplus.com/*",
+        "*://*.apple.com/*"
       ]
     }
   ]
