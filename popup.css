@@ -21,6 +21,42 @@ body {
   gap: 0;
 }
 
+/* ── Developer Bar ── */
+.developer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px;
+  background: #0f1117;
+  text-decoration: none;
+  border-bottom: 1px solid #1e2433;
+  transition: background 0.2s;
+}
+
+.developer-bar:hover {
+  background: #161b26;
+}
+
+.dev-text {
+  font-size: 10px;
+  font-weight: 500;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dev-logo {
+  height: 14px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.developer-bar:hover .dev-logo {
+  opacity: 1;
+}
+
 /* ── Header ── */
 .header {
   display: flex;
