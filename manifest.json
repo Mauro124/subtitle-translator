@@ -1,10 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Subtitle Translator",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Translates complex words in series and movies subtitles using a non-invasive overlay.",
   "permissions": [
-    "storage"
+    "storage",
+    "alarms",
+    "declarativeContent"
   ],
   "background": {
     "service_worker": "background.js"
@@ -14,7 +16,9 @@
     "*://*.youtube.com/*",
     "*://*.primevideo.com/*",
     "*://*.disneyplus.com/*",
-    "*://*.apple.com/*"
+    "*://*.apple.com/*",
+    "https://api.github.com/*",
+    "https://gist.githubusercontent.com/*"
   ],
   "icons": {
     "16": "assets/icons/icon-192.png",

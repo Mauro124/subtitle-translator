@@ -10,6 +10,7 @@ const DEFAULTS = {
   labelFontSize:    13,
   labelFontFamily:  "'Netflix Sans', Arial, sans-serif",
   connectorColor:   '#90b8d0',
+  showConnectors:   true,
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const fontFamilySel   = document.getElementById('font-family');
   const colorPresets    = document.querySelectorAll('.color-preset:not([data-target])');
 
+  const connectorToggle = document.getElementById('connector-toggle');
   const connectorInput  = document.getElementById('connector-color');
   const connectorPresets = document.querySelectorAll('.color-preset[data-target="connector"]');
 
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fontSizeSlider.value = s.labelFontSize;
     fontSizeVal.textContent = `${s.labelFontSize}px`;
     fontFamilySel.value  = s.labelFontFamily;
+    connectorToggle.checked = s.showConnectors;
     connectorInput.value = s.connectorColor;
 
     markActivePreset(colorPresets,    s.labelColor);
@@ -116,7 +119,11 @@ document.addEventListener('DOMContentLoaded', () => {
     chrome.storage.local.set({ labelFontFamily: family });
   });
 
-  // ── Connector color ───────────────────────────────────────────────────────
+  // ── Connector visibility & color ──────────────────────────────────────────
+  connectorToggle.addEventListener('change', () => {
+    chrome.storage.local.set({ showConnectors: connectorToggle.checked });
+  });
+
   connectorInput.addEventListener('input', () => {
     const color = connectorInput.value;
     markActivePreset(connectorPresets, color);
@@ -141,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fontSizeSlider.value  = DEFAULTS.labelFontSize;
       fontSizeVal.textContent = `${DEFAULTS.labelFontSize}px`;
       fontFamilySel.value   = DEFAULTS.labelFontFamily;
+      connectorToggle.checked = DEFAULTS.showConnectors;
       connectorInput.value  = DEFAULTS.connectorColor;
       markActivePreset(colorPresets,    DEFAULTS.labelColor);
       markActivePreset(connectorPresets, DEFAULTS.connectorColor);

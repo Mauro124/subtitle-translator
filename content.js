@@ -17,6 +17,7 @@ class SubtitleTranslator {
     this.isDictionaryLoaded = false;
     this.selectedLevelValue = 1;
     this.isEnabled = true;
+    this.showConnectors = true;
     this.checkReadyInterval = null;
     this.sentinelInterval = null;
     
@@ -43,22 +44,32 @@ class SubtitleTranslator {
    */
   async init() {
     try {
-      const [dictResponse, settings] = await Promise.all([
-        fetch(chrome.runtime.getURL('dictionary.json')),
-        chrome.storage.local.get(['isEnabled', 'selectedLevel', 'labelColor', 'labelFontSize', 'labelFontFamily', 'connectorColor'])
+      const settings = await chrome.storage.local.get([
+        'isEnabled', 
+        'selectedLevel', 
+        'labelColor', 
+        'labelFontSize', 
+        'labelFontFamily', 
+        'connectorColor',
+        'showConnectors',
+        'syncedDictionary'
       ]);
 
-      if (!dictResponse.ok) throw new Error(`HTTP status ${dictResponse.status}`);
-      const data = await dictResponse.json();
-      DICTIONARY = new Map(Object.entries(data));
+      let data;
+      if (settings.syncedDictionary) {
+        console.log('ST: Using synced dictionary from storage');
+        data = settings.syncedDictionary;
+      } else {
+        console.log('ST: Synced dictionary not found, fetching local dictionary.json');
+        const dictResponse = await fetch(chrome.runtime.getURL('dictionary.json'));
+        if (!dictResponse.ok) throw new Error(`HTTP status ${dictResponse.status}`);
+        data = await dictResponse.json();
+      }
 
-      PHRASE_KEYS = [...DICTIONARY.keys()]
-        .filter(k => k.includes(' '))
-        .sort((a, b) => b.split(' ').length - a.split(' ').length);
-
-      this.isDictionaryLoaded = true;
+      this.processDictionary(data);
 
       this.isEnabled = settings.isEnabled !== false;
+      this.showConnectors = settings.showConnectors !== false;
       if (settings.selectedLevel)  this.selectedLevelValue = LEVEL_MAP[settings.selectedLevel] || 1;
       if (settings.labelColor)     this.labelColor      = settings.labelColor;
       if (settings.labelFontSize)  this.labelFontSize   = settings.labelFontSize;
@@ -68,6 +79,12 @@ class SubtitleTranslator {
       chrome.storage.onChanged.addListener((changes, area) => {
         if (area !== 'local') return;
         
+        if (changes.syncedDictionary) {
+          console.log('ST: Synced dictionary updated in storage');
+          this.processDictionary(changes.syncedDictionary.newValue);
+          this.clearOverlay();
+        }
+
         if (changes.isEnabled) {
           this.isEnabled = changes.isEnabled.newValue;
           if (this.isEnabled) {
@@ -75,6 +92,11 @@ class SubtitleTranslator {
           } else {
             this.stopEngine();
           }
+        }
+
+        if (changes.showConnectors) {
+          this.showConnectors = changes.showConnectors.newValue;
+          this.clearOverlay();
         }
 
         if (changes.selectedLevel)  {
@@ -99,6 +121,20 @@ class SubtitleTranslator {
     } catch (e) {
       console.error("ST: Failed to initialize", e);
     }
+  }
+
+  /**
+   * Process dictionary data into internal Map and search structures
+   * @param {Object} data 
+   */
+  processDictionary(data) {
+    DICTIONARY = new Map(Object.entries(data));
+
+    PHRASE_KEYS = [...DICTIONARY.keys()]
+      .filter(k => k.includes(' '))
+      .sort((a, b) => b.split(' ').length - a.split(' ').length);
+
+    this.isDictionaryLoaded = true;
   }
 
   /**
@@ -340,7 +376,9 @@ class SubtitleTranslator {
             const translation = this.resolveTranslation(entry, isQuestion, posRatio);
             const isStructural = Array.isArray(entry.tags) &&
               (entry.tags.includes('connector') || entry.tags.includes('auxiliary'));
-            this.injectTranslation(textNode, firstToken.start, lastToken.end, translation, isStructural);
+            if (!isStructural || this.showConnectors) {
+              this.injectTranslation(textNode, firstToken.start, lastToken.end, translation, isStructural);
+            }
           }
           for (let k = wi; k < wi + len; k++) covered.add(k);
           wi += len - 1;
@@ -360,7 +398,9 @@ class SubtitleTranslator {
           const translation = this.resolveTranslation(entry, isQuestion, posRatio);
           const isStructural = Array.isArray(entry.tags) &&
             (entry.tags.includes('connector') || entry.tags.includes('auxiliary'));
-          this.injectTranslation(textNode, token.start, token.end, translation, isStructural);
+          if (!isStructural || this.showConnectors) {
+            this.injectTranslation(textNode, token.start, token.end, translation, isStructural);
+          }
         }
       }
     }

@@ -5,8 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.4.0] - 2026-04-15
+## [1.5.0] - 2026-04-27
 
+### Added
+- **Remote Dictionary Sync**: Extension now automatically synchronizes the dictionary from a GitHub Gist. Updates can be pushed to the Gist without releasing new extension versions.
+- **Contextual Activation**: Used `declarativeContent` API to enable the extension only on supported domains (Netflix, YouTube, Prime Video, Disney+, Apple TV+).
+- **Structural Words Toggle**: New switch in the popup to enable or disable translations for connectors and auxiliary verbs.
+- **Multi-Donation Support**: Added "Buy Me A Coffee" link next to "Cafecito" in the popup footer.
+- **Developer Attribution**: Added a "Developed by MTC" bar at the top of the popup.
+
+### Changed
+- Refactored `content.js` to support storage-based dictionary loading with local file fallback.
+- Optimized popup layout for multiple support buttons.
+- Updated `manifest.json` with new permissions (`alarms`, `declarativeContent`) and host permissions for GitHub.
+
+## [1.4.0] - 2026-04-15
+...
 ### Added
 - **Manual Page Reload**: Dedicated button in popup to refresh current tab. Useful for force-syncing settings.
 - **Support Integration (Cafecito)**: Link to project's Cafecito page in popup footer for community support.

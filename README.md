@@ -5,6 +5,9 @@ A Chrome Extension (Manifest V3) that helps you master English while watching se
 ## ✨ Key Features
 
 - **Customizable Appearance**: Full control over how translation labels look — chooseable color (with presets), font size (slider), and font family. Separate color for structural words. Live preview before touching series or movies.
+- **Structural Word Visibility Toggle**: Option to enable or disable translations for connectors and auxiliaries, allowing users to reduce visual clutter if they only want to focus on main vocabulary.
+- **Remote Dictionary Synchronization (GitHub Gist)**: The extension automatically synchronizes its word database from a GitHub Gist. This allows for instant dictionary updates without requiring a full extension update in the store. Includes a robust local fallback for offline use.
+- **Contextual Activation**: To save resources, the extension only activates its interface and logic when on supported streaming sites (Netflix, YouTube, Disney+, etc.). The icon stays disabled on other pages.
 - **Non-Invasive Overlay Architecture**: Translations are rendered in a parallel layer over the video. **Zero series or movies DOM mutations**, preventing conflicts with its internal React state and Virtual DOM.
 - **Translation Difficulty Levels**: Select your English proficiency (A1–C2) from the extension popup. Filter out common words and focus on terms that match your learning level.
 - **Longest-Match-First Phrase Detection**: Multi-word expressions are matched before individual words. `"look who's talking"` translates as a full phrase — never as `"who"` alone.
@@ -20,9 +23,11 @@ A Chrome Extension (Manifest V3) that helps you master English while watching se
   - **First-line** translations appear above the word.
   - **Second-line** translations appear below the word.
 - **O(1) Performance**: Instant word lookups using an in-memory `Map`, ensuring zero lag during video playback.
+- **GitHub Gist Sync**: `background.js` handles daily fetching and caching of the remote dataset in `chrome.storage.local`.
+- **Declarative Context**: Uses `chrome.declarativeContent` to manage extension state based on the current URL.
 - **Robust Synchronization**: `MutationObserver` with `characterData` support detects subtitle changes even when series or movies updates text in place.
 - **Manual Page Reload**: Dedicated button in the popup to refresh the tab and force-apply level or style settings if needed.
-- **Project Support Integration**: Built-in link to the project's Cafecito page in the popup footer for community contributions.
+- **Developer Attribution & Support**: Linked attribution to the developer (MTC) and built-in support for Cafecito and Buy Me A Coffee in the popup footer.
 
 ## 🚀 Local Installation
 
